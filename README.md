@@ -13,7 +13,7 @@ A special thanks goes to my friends that have helped get this compendium to wher
 ## Installation
 For copyright reasons, 5e Complete will not be published on official platforms. Please install using the `module.zip` or the following manifest:
 
-```https://github.com/btbias/5e-complete/releases/latest/download/module.json```
+```https://github.com/brocasm/5e-complete-fr/blob/main/module.json?raw=true```
 
 ## Recommended Modules
 5e Complete has been designed utilizing the following modules and are recommended (but not required):
