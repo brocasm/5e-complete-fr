@@ -52,5 +52,5 @@ async function runGitCommands() {
 // Exécuter les fonctions
 (async () => {
   await unpackFolders();
-  await runGitCommands();
+  //await runGitCommands();
 })();
