@@ -1,0 +1,129 @@
+{
+  "_id": "8rNajBhqFI9BxZkz",
+  "name": "Arcane Jolt",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-dagger-runes-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Damage",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Healing",
+          "formulaSet": [
+            1
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.Rgwkj4STIKDGwMyW"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>At 9th level, you've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your @Compendium[5e-complete.5e-class-features.nikFRmRmqw3shUOm]{Steel Defender} hits a target, you can channel magical energy through the strike to create one of the following effects:</p>\n<ul>\n<li>The target takes an extra <strong>2d6 force damage</strong>.</li>\n<li>Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring <strong>2d6 hit points</strong> to it.</li>\n</ul>\n<p>You can use this energy a number of times equal to your <strong>Intelligence modifier</strong> (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a <strong>long rest</strong>.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": "When you hit a creature with a magic weapon attack or your steel defender hits a target"
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.battle-smith.arcane-jolt-damage",
+          "force"
+        ],
+        [
+          "@scale.battle-smith.arcane-jolt-damage",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!8rNajBhqFI9BxZkz"
+}

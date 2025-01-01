@@ -1,0 +1,196 @@
+{
+  "_id": "LHB9lIXTP1LvKcYr",
+  "name": "Arcane Archer",
+  "type": "subclass",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Item.Msx7osBp6ubnL44O"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>An Arcane Archer studies a unique elven method of archery that weaves magic into attacks to produce supernatural effects. Arcane Archers are some of their most elite warriors among the elves. They stand watch over the fringes of elven domains, keeping a keen eye out for trespassers and using magic-infused arrows to defeat monsters and invaders before they can reach elven settlements. Over the centuries, the methods of these elf archers have been learned by members of other races who can also balance arcane aptitude with archery.</p>\n<h3>Arcane Archer Features</h3>\n<p>3rd Level: @Compendium[5e-complete.5e-class-features.1vcEjkqvsDDaFEI4]{Arcane Archer Lore}, @Compendium[5e-complete.5e-class-features.kr1hu1dniUOl96yO]{Arcane Shot} (2 options)</p>\n<p>7th Level: @Compendium[5e-complete.5e-class-features.OrWhW1cN4h8Vl0sW]{Curving Shot}, @Compendium[5e-complete.5e-class-features.T48DiA8kcQ63Kl6Q]{Magic Arrow}, @Compendium[5e-complete.5e-class-features.kr1hu1dniUOl96yO]{Arcane Shot} (3 options)</p>\n<p>10th Level: @Compendium[5e-complete.5e-class-features.kr1hu1dniUOl96yO]{Arcane Shot} (4 options)</p>\n<p>15th Level: @Compendium[5e-complete.5e-class-features.OlNhQd3ajg8VUZZI]{Ever-Ready Shot}, <span style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\">@Compendium[5e-complete.5e-class-features.kr1hu1dniUOl96yO]{Arcane Shot} </span><span style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\">(5 options)</span></p>\n<p>18th Level: @Compendium[5e-complete.5e-class-features.kr1hu1dniUOl96yO]{Arcane Shot} (6 options, improved shots)</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "identifier": "arcane-archer",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "502wegkncea4vyu4",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "7": {
+              "value": 3
+            },
+            "10": {
+              "value": 4
+            },
+            "15": {
+              "value": 5
+            },
+            "18": {
+              "value": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "Arcane Shot Options",
+        "icon": ""
+      },
+      {
+        "_id": "ghzjy590sdb5dvxr",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.1vcEjkqvsDDaFEI4",
+            "Compendium.5e-complete.5e-class-features.kr1hu1dniUOl96yO"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Arcane Archer Feature",
+        "icon": ""
+      },
+      {
+        "_id": "jyfmbuwhkcjtlyj8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.OrWhW1cN4h8Vl0sW",
+            "Compendium.5e-complete.5e-class-features.T48DiA8kcQ63Kl6Q"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 7,
+        "title": "Arcane Archer Features",
+        "icon": ""
+      },
+      {
+        "_id": "4l3nk5fbzbqr0mp0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.OlNhQd3ajg8VUZZI"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 15,
+        "title": "Arcane Archer Feature",
+        "icon": ""
+      },
+      {
+        "_id": "unn2r2o7ldftk7ma",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "18": {
+              "n": 2,
+              "die": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "Banishing Arrow",
+        "icon": ""
+      },
+      {
+        "_id": "tncixehqeqlrbjpq",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "n": 2,
+              "die": 6
+            },
+            "18": {
+              "n": 4,
+              "die": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "Arcane Arrow",
+        "icon": ""
+      },
+      {
+        "_id": "djeb473hoco5eg8c",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "n": 1,
+              "die": 6
+            },
+            "18": {
+              "n": 2,
+              "die": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "Piercing Arrow",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "_key": "!items!LHB9lIXTP1LvKcYr"
+}

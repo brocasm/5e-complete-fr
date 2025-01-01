@@ -1,0 +1,129 @@
+{
+  "name": "Sapping Sting",
+  "type": "spell",
+  "img": "icons/creatures/invertebrates/wasp-swarm-attack.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "EGW",
+      "hash": "sapping%20sting_egw",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.Dbw7Jpk7X0qHj4mN"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take [[/r 1d4]] necrotic damage and fall <strong>prone</strong>.</p><h3>At Higher Levels</h3><p>This spell's damage increases by [[/r 1d4]] when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p><p><strong>Spell Lists.</strong> Wizard (Dunamancy)</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "EGW",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d4",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 0,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "cantrip",
+      "formula": "1d4"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650641754,
+    "modifiedTime": 1666577688393,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.Dbw7Jpk7X0qHj4mN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "oEYBsrsY372r8cew",
+  "_key": "!items!oEYBsrsY372r8cew"
+}

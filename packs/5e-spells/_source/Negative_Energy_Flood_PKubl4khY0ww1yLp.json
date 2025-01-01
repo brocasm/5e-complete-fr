@@ -1,0 +1,129 @@
+{
+  "name": "Negative Energy Flood",
+  "type": "spell",
+  "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "negative%20energy%20flood_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.PzVb7GiCTKStUhSU"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You send ribbons of negative energy at one creature you can see within range. Unless the target is <strong>undead</strong>, it must make a Constitution saving throw, taking [[/r 5d12]] necrotic damage on a failed save, or half as much damage on a successful one. A target killed by this damage rises up as a @UUID[Compendium.5e-complete.5e-creatures.sRIPtGT74hmxcPZ0]{Zombie} at the start of your next turn. The zombie pursues whatever creature it can see that is closest to it. Statistics for the zombie are in the Monster Manual. If you target an undead with this spell, the target doesn’t make a saving throw. Instead, roll [[/r 5d12]]. The target gains half the total as temporary hit points.</p><p><strong>Spell Lists.</strong> Warlock, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "5d12",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": false,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A broken bone and a square of black silk",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650375770,
+    "modifiedTime": 1666552639023,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.PzVb7GiCTKStUhSU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "PKubl4khY0ww1yLp",
+  "_key": "!items!PKubl4khY0ww1yLp"
+}

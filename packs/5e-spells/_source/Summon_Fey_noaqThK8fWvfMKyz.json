@@ -1,0 +1,183 @@
+{
+  "name": "Summon Fey",
+  "type": "spell",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [],
+        "altValue": [],
+        "context": []
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.4vjwSVNuo9WtUtEz"
+    }
+  },
+  "_id": "noaqThK8fWvfMKyz",
+  "system": {
+    "description": {
+      "value": "<p>You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood. Fuming, Mirthful, or Tricksy. The creature resembles a fey creature of your choice marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p><p>The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p><h3>At Higher Levels</h3><p>When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p><p><strong>Spell Lists.</strong> Druid, Ranger, Warlock, Wizard</p><table border=\"1\"><thead><tr><td><strong>Fey Spirit</strong></td></tr></thead><tbody><tr><td><em>Small fey</em></td></tr><tr><td><strong>Armor Class: </strong>12 + the level of the spell (natural armor)</td></tr><tr><td><strong>Hit Points: </strong>30 + 10 for each spell level above 3rd</td></tr><tr><td><strong>Speed: </strong>40 ft.</td></tr></tbody></table><table border=\"1\"><thead><tr><td><strong>STR</strong></td><td><strong>DEX</strong></td><td><strong>CON</strong></td><td><strong>INT</strong></td><td><strong>WIS</strong></td><td><strong>CHA</strong></td></tr></thead><tbody><tr><td>13 (+1)</td><td>16 (+3)</td><td>14 (+2)</td><td>14 (+2)</td><td>11 (+0)</td><td>16 (+3)</td></tr></tbody></table><table style=\"width:98.5222%;height:80px\" border=\"1\"><tbody><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Condition Immunities:</strong> charmed</td></tr><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10</td></tr><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Languages:</strong> Sylvan, understands the languages you speak</td></tr><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Challenge:</strong> —</td></tr><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Proficiency Bonus:</strong> equals your bonus</td></tr></tbody></table><table style=\"width:98.5222%;height:48px\" border=\"1\"><thead><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><strong>Actions</strong></td></tr></thead><tbody><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><em><strong>Multiattack.</strong></em> The Fey makes a number of attacks equal to half this spell’s level (rounded down).</td></tr><tr style=\"height:16px\"><td style=\"width:99%;height:16px\"><em><strong>Shortsword.</strong></em> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d6 + 3 + the spell’s level piercing damage + 1d6 force damage.</td></tr></tbody></table><table border=\"1\"><thead><tr><td><strong>Bonus Actions</strong></td></tr></thead><tbody><tr><td><em><strong>Fey Step.</strong></em> The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey’s chosen mood.</td></tr><tr><td><em><strong>Fuming.</strong></em> The fey has advantage on the next attack roll it makes before the end of this turn.</td></tr><tr><td><em><strong>Mirthful.</strong></em> The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any damage.</td></tr><tr><td><em><strong>Tricksy.</strong></em> The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn.</td></tr></tbody></table>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 90,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "abj",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A gilded flower worth at least 300 gp",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664782548079,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.4vjwSVNuo9WtUtEz",
+    "duplicateSource": null
+  },
+  "_key": "!items!noaqThK8fWvfMKyz"
+}

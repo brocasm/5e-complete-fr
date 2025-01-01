@@ -1,0 +1,120 @@
+{
+  "_id": "I0pr0WP873mZBnpk",
+  "name": "Magical Tinkering",
+  "type": "feat",
+  "img": "icons/magic/symbols/cog-shield-white-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.Z9NNOBEssVqgWuCY"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you've learned how to invest a spark of magic into mundane objects. To use this ability, you must have @Compendium[5e-complete.5e-items.HWphIyqLmXJ56fRh]{Thieves' Tools} or @Compendium[5e-complete.5e-journals.ak9Gz7zi41IOXlIQ]{Artisan's Tools} in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:</p>\n<ul>\n<li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li>\n<li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li>\n<li>The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.</li>\n<li>A static visual effect appears on one of the object's surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.</li>\n</ul>\n<p>The chosen property lasts <strong>indefinitely</strong>. As an action, you can touch the object and end the property early.</p>\n<p>You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to your <strong>Intelligence modifier</strong> (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "perm"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "object"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "max(1,@abilities.int.mod)",
+      "per": "charges",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Artificer 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1669095056307,
+    "lastModifiedBy": "H5CKsdfMwRoT9f9L",
+    "compendiumSource": "Item.Z9NNOBEssVqgWuCY",
+    "duplicateSource": null
+  },
+  "_key": "!items!I0pr0WP873mZBnpk"
+}

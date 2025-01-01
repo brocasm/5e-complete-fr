@@ -1,0 +1,207 @@
+{
+  "name": "Song of Defense",
+  "type": "feat",
+  "img": "icons/magic/water/pseudopod-swirl-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [],
+        "altValue": [],
+        "context": []
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.ZcwsfPUcEoh46rpZ"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Song of Defense",
+        "type": "script",
+        "scope": "global",
+        "command": "// SONG OF DEFENSE\n// required modules: itemacro\n\nconst style = `\n<style>\n.song-of-defense .dialog-buttons {\n  flex-direction: column;\n  gap: 5px;\n}\n</style>`;\n\n// Roll current item\nconst roll = await item.roll();\nif(!roll) return;\n\nconst spells = foundry.utils.duplicate(actor.system.spells);\n\n// levels with unspent spell slots.\nconst availableSlots = Object.entries(spells).filter(([key, { value, max }]) => {\n  return (value > 0 && max > 0);\n});\nif (!availableSlots.length) {\n  ui.notifications.warn(\"You have no spell slots remaining.\");\n  return;\n}\n\nconst buttons = availableSlots.reduce((acc, [key]) => {\n  const level = key === \"pact\" ? spells[key].level : key.at(-1);\n  const label = key === \"pact\" ? \"Pact Slot\" : CONFIG.DND5E.spellLevels[level];\n  const callback = async () => spendSlot(key, level);\n  acc[key] = { label, callback };\n  return acc;\n}, {});\nconst content = `<p>Select a spell slot to spend.</p>`;\nnew Dialog({ title: \"Song of Defense\", buttons, content: style + content }, { classes: [\"song-of-defense\", \"dialog\"] }).render(true);\n\n// spend spell slot to reduce by 5 * level\nasync function spendSlot(key, level) {\n  spells[key].value--;\n  await actor.update({ system: { spells } });\n  return ChatMessage.create({\n    content: `${actor.name} reduced the incoming damage by up to ${Number(level) * 5}.`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_id": "8VDnMk72yTvSlum0",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 10th level, you can direct your magic to absorb damage while your @UUID[Compendium.5e-complete.5e-class-features.aitU2h6kQU80LHcl]{Bladesong} is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot's level.</p><section id=\"secret-oHJTpO1qB2PLRXOW\" class=\"secret\"><p><em>Note: The Item Macro module is required to automate this feature.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "When you take damage"
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Bladesinging 10",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1668853053427,
+    "lastModifiedBy": "9DrM9sBIPMUTBZIH",
+    "compendiumSource": "Item.ZcwsfPUcEoh46rpZ",
+    "duplicateSource": null
+  },
+  "_key": "!items!8VDnMk72yTvSlum0"
+}

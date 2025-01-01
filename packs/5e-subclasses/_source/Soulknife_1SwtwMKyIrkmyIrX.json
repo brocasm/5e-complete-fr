@@ -1,0 +1,146 @@
+{
+  "_id": "1SwtwMKyIrkmyIrX",
+  "name": "Soulknife",
+  "type": "subclass",
+  "img": "icons/weapons/daggers/dagger-ritual-crooked-crystal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Item.aZRIKcPglMSUgwdq"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Most assassins strike with physical weapons, and many burglars and spies use thieves' tools to infiltrate secure locations. In contrast, a Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.</p><p>Amid the trees of ancient forests on the Material Plane and in the Feywild, some wood elves walk the path of the Soulknife, serving as silent, lethal guardians of their woods. In the endless war among the gith, a githzerai is encouraged to become a Soulknife when stealth is required against the githyanki foe.</p><p>As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your power.</p><h3>Soulknife Features</h3><p>3rd Level:  @Compendium[5e-complete.5e-class-features.FTcL5YLveFIdpJaW]{Psionic Power}, @Compendium[5e-complete.5e-class-features.mVKtOzsuLaKbRJts]{Psionic Energy}, @Compendium[5e-complete.5e-class-features.Q7cPixi3D29NShOL]{Psi-Bolstered Knack}, @Compendium[5e-complete.5e-class-features.bhlZZTSBXJNCqNSx]{Psychic Whispers}, @Compendium[5e-complete.5e-items.LAP5fsi5LeoWHhmT]{Psychic Blades}</p><p>9th Level: @Compendium[5e-complete.5e-class-features.Hv3gL4A2AzLMFwpn]{Homing Strikes}, @Compendium[5e-complete.5e-class-features.fOONIWzvcbmkP9tH]{Psychic Teleportation}</p><p>13th Level: @Compendium[5e-complete.5e-class-features.Yvyyq6zozgcAGxqk]{Psychic Veil}</p><p>17th Level: @Compendium[5e-complete.5e-class-features.pvokJnkppHEG4u4r]{Rend Mind}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "identifier": "soulknife",
+    "classIdentifier": "rogue",
+    "advancement": [
+      {
+        "_id": "kx3mellk3wmdpcq1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "n": 1,
+              "die": 6
+            },
+            "5": {
+              "n": 1,
+              "die": 8
+            },
+            "11": {
+              "n": 1,
+              "die": 10
+            },
+            "17": {
+              "n": 1,
+              "die": 12
+            }
+          }
+        },
+        "value": {},
+        "title": "psionic energy die",
+        "icon": ""
+      },
+      {
+        "_id": "j6gjua4v9l66twuj",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.Q7cPixi3D29NShOL",
+            "Compendium.5e-complete.5e-class-features.bhlZZTSBXJNCqNSx",
+            "Compendium.5e-complete.5e-items.LAP5fsi5LeoWHhmT",
+            "Compendium.5e-complete.5e-class-features.mVKtOzsuLaKbRJts",
+            "Compendium.5e-complete.5e-class-features.FTcL5YLveFIdpJaW"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 3,
+        "title": "Soul Knife Features",
+        "icon": ""
+      },
+      {
+        "_id": "6wv3oruwdz49acgl",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.Hv3gL4A2AzLMFwpn",
+            "Compendium.5e-complete.5e-class-features.fOONIWzvcbmkP9tH"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 9,
+        "title": "Soul Knife Features",
+        "icon": ""
+      },
+      {
+        "_id": "t2v7dsrqhij4iru2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.Yvyyq6zozgcAGxqk"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 13,
+        "title": "Soul Knife Feature",
+        "icon": ""
+      },
+      {
+        "_id": "r2tef72v2nk0e1kl",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete.5e-class-features.pvokJnkppHEG4u4r"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 17,
+        "title": "Soul Knife Feature",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665124363509,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.aZRIKcPglMSUgwdq",
+    "duplicateSource": null
+  },
+  "_key": "!items!1SwtwMKyIrkmyIrX"
+}

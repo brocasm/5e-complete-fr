@@ -1,0 +1,223 @@
+{
+  "name": "Mind Leech",
+  "type": "spell",
+  "img": "icons/creatures/mammals/bat-giant-tattered-purple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [
+          true
+        ],
+        "altValue": [
+          true
+        ],
+        "context": {
+          "0": ""
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.FlqKuazuebMZuQQL"
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "1d6",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "1d12",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_id": "CGd57MBGs2SBcWKa",
+  "system": {
+    "description": {
+      "value": "<p>You assault the mind of a target you can see within range, rending and devouring its psionic energy. The target must succeed a Charisma saving throw or take [[/r 1d6]] psychic damage. If the target is <strong>frightened</strong>, <strong>charmed</strong>, <strong>stunned</strong>, <strong>restrained</strong>, <strong>grappled</strong>, or <strong>paralyzed</strong>, the psychic damage becomes [[/r 1d12]] instead. On a failed save, you gain a psionic charge of consumed power until the end of your next turn. You can expend this charge when you deal damage to deal additional damage equal to your Intelligence modifier, or consume this charge at the end of your turn to gain temporary hit points equal to your Intelligence modifier. You can spend only charge at a time.</p><p>You can target the corpse of a recently perished creature with this power, as long as the target has died within the last minute and not been previously leached by this power.</p><h3>Rending (1+ psi points)</h3><p>The target takes an additional die of damage ([[/r 1d6]] or [[/r 1d12]] as applicable if they under the effect of a listed condition) per psi point spent.</p><h3>Shredding (1 psi point)</h3><p>You leave the targets mind and soul shredded, reducing their next saving throw before the end of your next turn by 1d4.</p><h3>Nourishing (1 psi points)</h3><p>On a failed saving throw, you gain an additional psionic charge.</p><h3>Devouring (2 psi points)</h3><p>The range of Mind Leech becomes a radius of 5 feet, centered on you.</p><h3>Stunning (3 psi points)</h3><p>On a failed saving throw, the target becomes stunned until the start of your next turn. If the power effects multiple targets, select one target for this effect</p><p><strong>Thieving (1 psi point)</strong>: On a failed saving throw, you can draw from the target's mind a 5th level or lower spell it can cast (from a Spellcasting or Psionics feature). You must be aware that it can cast that spell; the target retains the ability to cast the spell, but you gain the ability to cast the spell using your Psionics feature by spending psi points equal to the level of the spell (restricted by your psi point limit; you cannot use psionic mastery to cast this spell).</p><p>You can know one spell in this manner at a time, and retain the ability to cast the spell for 1 minute or until cast. If the spell is one that restores hit points, you reduce your own hit points by the amount healed by the spell.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "KCCC",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6",
+          "psychic"
+        ],
+        [
+          "1d12",
+          "psychic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "cha",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "div",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1666553254476,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.FlqKuazuebMZuQQL",
+    "duplicateSource": null
+  },
+  "_key": "!items!CGd57MBGs2SBcWKa"
+}

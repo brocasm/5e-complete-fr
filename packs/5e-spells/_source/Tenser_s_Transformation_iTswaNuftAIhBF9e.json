@@ -1,0 +1,151 @@
+{
+  "name": "Tenser's Transformation",
+  "type": "spell",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "tenser's%20transformation_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.A3jrUyTLyyl0obdc"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Temp HP",
+            "parts": [
+              1
+            ]
+          },
+          {
+            "label": "Hit",
+            "parts": [
+              0
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can’t cast spells, and you gain the following benefits:</p><ul><li><p>You gain [[/r 50]] temporary hit points. If any of these remain when the spell ends, they are lost.</p></li><li><p>You have <strong>advantage</strong> on attack rolls that you make with simple and martial weapons.</p></li><li><p>When you hit a target with a weapon attack, that target takes an extra [[/r 2d12]] force damage.</p></li><li><p>You have proficiency with all armor, shields, simple weapons, and martial weapons.</p></li><li><p>You have proficiency in Strength and Constitution saving throws.</p></li><li><p>You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like @UUID[Compendium.5e-complete.5e-class-features.emc1sH5Qjp54shjz]{Extra Attack}, that gives you extra attacks.</p></li></ul><p>Immediately after the spell ends, you must succeed on a DC 15 Constitution saving throw or suffer one level of <strong>exhaustion</strong>.</p><p><strong>Spell Lists.</strong> Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d12",
+          "force"
+        ],
+        [
+          "50",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 6,
+    "school": "trs",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A few hairs from a bull",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650980054,
+    "modifiedTime": 1667345837985,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.A3jrUyTLyyl0obdc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "iTswaNuftAIhBF9e",
+  "_key": "!items!iTswaNuftAIhBF9e"
+}

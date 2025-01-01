@@ -1,0 +1,31 @@
+{
+  "_id": "couCfqHU2tDB1RBn",
+  "name": "Lay on Hands",
+  "type": "script",
+  "author": "EHpONhziSoZpUpN3",
+  "img": "icons/magic/light/orbs-hand-gray.webp",
+  "scope": "global",
+  "command": "// LAY ON HANDS\n// required modules: itemacro\n\nconst { value } = item.system.uses;\nif ( value < 1 ) {\n    ui.notifications.warn(`${item.name} has no uses left.`);\n    return;\n}\nconst content = `\n<p>Lay on Hands has ${value} uses left.</p>\n<form>\n    <div class=\"form-group\">\n        <label for=\"num\">Hit points to restore:</label>\n        <div class=\"form-fields\">\n            <input id=\"num\" type=\"number\" value=\"1\"></input>\n        </div>\n    </div>\n</form>`;\n\nconst buttons = {\n    heal: {\n        icon: \"<i class='fa-solid fa-hand-holding-heart'></i>\",\n        label: \"Heal!\",\n        callback: async (html) => {\n            const number = Number(html[0].querySelector(\"#num\").value);\n            if ( number < 1 || number > value ) {\n                ui.notifications.warn(\"Invalid number.\");\n                return;\n            }\n            await new Roll(`${number}`).toMessage({\n                speaker: ChatMessage.getSpeaker({ actor }),\n                flavor: item.name\n            });\n            return item.update({ \"system.uses.value\": value - number });\n        }\n    }\n}\nif ( value >= 5 ) {\n    buttons.cure = {\n        icon: \"<i class='fa-solid fa-virus'></i>\",\n        label: \"Cure!\",\n        callback: async (html) => {\n            await ChatMessage.create({\n                content: `${actor.name} cures a disease or poison.`,\n                speaker: ChatMessage.getSpeaker({ actor })\n            });\n            return item.update({ \"system.uses.value\": value - 5 });\n        }\n    }\n}\n\nnew Dialog({ title: \"Lay on Hands\", content, buttons }).render(true);",
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.FyepIdR9xjN16pHc"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665009343042,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Macro.FyepIdR9xjN16pHc",
+    "duplicateSource": null
+  },
+  "_key": "!macros!couCfqHU2tDB1RBn"
+}

@@ -1,0 +1,151 @@
+{
+  "name": "Holy Weapon",
+  "type": "spell",
+  "img": "icons/weapons/swords/sword-gold-holy.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "holy%20weapon_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.5oAzgrntv2VC5rdl"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Hit",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Burst",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra [[/r 2d8]] radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.</p><p>As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes [[/r 4d8]] radiant damage, and it is <strong>blinded</strong> for 1 minute. On a successful save, a creature takes half as much damage and isn't blinded. At the end of each of its turns, a blinded creature can make a Constitution saving throw, ending the effect on itself on a success.</p><p><strong>Spell Lists.</strong> Cleric, Paladin</p></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "object"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "radiant"
+        ],
+        [
+          "4d8",
+          "radiant"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665649763874,
+    "modifiedTime": 1666260274430,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.5oAzgrntv2VC5rdl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "C4gKAyBX1lc7k5rU",
+  "_key": "!items!C4gKAyBX1lc7k5rU"
+}

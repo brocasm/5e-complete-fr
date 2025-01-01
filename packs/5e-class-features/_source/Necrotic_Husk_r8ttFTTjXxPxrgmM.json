@@ -1,0 +1,119 @@
+{
+  "name": "Necrotic Husk",
+  "type": "feat",
+  "img": "icons/magic/death/undead-skeleton-lich-armor.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.ZyMfO9rQndkK2P0P"
+    }
+  },
+  "_id": "r8ttFTTjXxPxrgmM",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>At 10th level, Your connection to undeath and necrotic energy now saturates your body. You have <strong>resistance</strong> to necrotic damage. If you are transformed using your @Compendium[5e-complete.5e-class-features.e1orFuja4KP25lol]{Form of Dread}, you instead become <strong>immune </strong>to necrotic damage.</p>\n<p>In addition, when you are reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes <strong>necrotic damage</strong> equal to [[/r 2d10]] + your warlock level. You then gain 1 level of <strong>exhaustion</strong>. Once you use this reaction, you can’t do so again until you finish [[/r 1d4]] <strong>long rests</strong>.</p>\n<section class=\"secret\">\n<p><em>Note: You will have to manually replenish this feature's uses after the rolled number of long rests.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "VRGR",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "radius"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "1",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d10 + @classes.warlock.levels",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "The Undead 10",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!r8ttFTTjXxPxrgmM"
+}

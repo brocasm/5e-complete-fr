@@ -1,0 +1,127 @@
+{
+  "name": "Charlatan",
+  "type": "background",
+  "img": "icons/sundries/gaming/playing-cards.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous avez toujours eu un bon feeling avec les gens. Vous savez comment les accrocher, vous pouvez percevoir leurs plus profonds désirs après quelques minutes de conversations, et avec quelques questions précises vous pouvez lire en eux comme dans un livre ouvert. C'est un talent très utile, et vous savez exactement comment l'utiliser à votre avantage.</p><p>Vous savez ce que les gens veulent et vous le leur donnez, ou plutôt vous leur promettez de le leur donner. Le sens commun voudrait qu'une personne fuit une offre qui semble trop belle pour être vraie, mais le sens commun semble toujours être absent lorsque vous êtes dans les parages. Cette bouteille d'un liquide rosâtre va soigner à coups sûrs cette vilaine éruption cutanée, cet onguent (rien de plus qu'un peu de graisse saupoudrée de poussière d'argent) peut rendre jeunesse et vigueur, et il y a un pont en ville qui vient tout juste d'être mis en vente. Ces racontars semblent invraisemblables, mais vous parvenez toujours à leur faire prendre l'apparence de très bonnes affaires tout à fait plausibles.</p><hr /><p><strong>Compétences maîtrisées :</strong> <span style=\"font-family:Lato, Arial, sans-serif\">Escamotage, Tromperie</span></p><p><strong>Outils maîtrisées :</strong> <span style=\"font-family:Lato, Arial, sans-serif\">kit de contrefaçon, kit de déguisement</span></p><p><strong>Équipement:</strong> des vêtements fins, un kit de déguisement, des outils d'escroquerie de votre choix (10 bouteilles bouchonnées remplies d'un liquide coloré, dés truqués, cartes marquées, fausse chevalière de duc, ...) et une bourse contenant 15 po.</p><p><strong>Capacité:</strong> @Compendium[5e-complete-fr.5e-backgrounds.Item.LHhLGQqVk0d3Rd54]</p><hr /><p></p><h3>Personnalités proposées</h3><p>Les charlatans sont des personnages hauts en couleurs qui dissimulent leur véritable personnalité derrière des masques qu'ils façonnent. Ils s'adaptent à ce que les gens veulent voir, à ce qu'il veulent croire, et à leur façon de voir le monde. Mais leur véritable personnalité est parfois tourmentée par des cas de conscience, un vieil ennemi ou une magouille qui a mal tournée.</p><p></p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.GclLbZWbTFGWXcew]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.rSdx2slEoQbGrpkV]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.gouxL5wn0gJ8oxPU]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.s5CFrGfC9CYvcW0l]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.GBP8aESPANXbfnxd]</p>",
+      "chat": ""
+    },
+    "identifier": "charlatan",
+    "source": {
+      "revision": 1,
+      "rules": "2014",
+      "book": "Player's Handbook",
+      "page": "130",
+      "custom": "",
+      "license": ""
+    },
+    "startingEquipment": [
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.8RXjiddJ6VGyE7vB",
+        "requiresProficiency": false,
+        "_id": "6fd0lbWJPmxn0YcZ",
+        "group": "",
+        "sort": 0
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "aVpnPIVmGe8n4G6j",
+        "group": "",
+        "sort": 200000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.backgrounds.Item.dQaOdm9dbVN0RZYP",
+        "requiresProficiency": false,
+        "_id": "WK6nepAR18CP9zG6",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 300000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.cG3m4YlHfbQlLEOx",
+        "requiresProficiency": false,
+        "_id": "9bQO8v779vMZo9nv",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.5e-complete-fr.5e-backgrounds.Item.mk7uwA0icWeWB0Vo",
+        "requiresProficiency": false,
+        "_id": "ExbNKFt0uXijhJPR",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 450000
+      }
+    ],
+    "advancement": [
+      {
+        "_id": "3HKXj22m48zBFr0U",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-backgrounds.Item.LHhLGQqVk0d3Rd54",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Accorde la capacité",
+        "hint": ""
+      },
+      {
+        "_id": "pR0QbJX5zCvEIT1U",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:slt",
+            "skills:dec",
+            "tool:forg",
+            "tool:disg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "",
+        "hint": ""
+      }
+    ],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "q1BKxBTo6goDy95S": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.1.1",
+    "createdTime": 1731523683788,
+    "modifiedTime": 1731531565485,
+    "lastModifiedBy": "rPtcDj6wdz4NxyQl"
+  },
+  "_id": "T0V4oviv4pdpjsql",
+  "sort": 400000,
+  "_key": "!items!T0V4oviv4pdpjsql"
+}
