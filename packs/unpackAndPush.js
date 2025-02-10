@@ -37,6 +37,23 @@ async function unpackFolders() {
   }
 }
 
+async function packFolders() {
+  const rootDir = '.';
+  const folders = fs.readdirSync(rootDir, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory() && dirent.name !== '__source')
+    .map(dirent => dirent.name);
+
+  for (const folder of folders) {
+    const command = `fvtt package pack ${folder}`;
+    try {
+      await runCommand(command);
+      console.log(`Successfully packed ${folder}`);
+    } catch (error) {
+      console.error(`Failed to pack ${folder}: ${error}`);
+    }
+  }
+}
+
 // Fonction pour exécuter les commandes git
 async function runGitCommands() {
   try {
@@ -51,6 +68,7 @@ async function runGitCommands() {
 
 // Exécuter les fonctions
 (async () => {
-  await unpackFolders();
+  //await unpackFolders();
+  await packFolders();
   //await runGitCommands();
 })();
