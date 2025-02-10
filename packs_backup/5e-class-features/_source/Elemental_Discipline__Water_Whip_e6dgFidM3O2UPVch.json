@@ -1,0 +1,170 @@
+{
+  "_id": "e6dgFidM3O2UPVch",
+  "name": "Elemental Discipline: Water Whip",
+  "type": "feat",
+  "img": "icons/magic/water/water-jet-wave-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.VszM3EgdGFtrm7Y6"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Primary",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Bonus",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You can spend 2 @Compendium[5e-complete-fr.5e-class-features.imsZ2GYUPlwCQqqy]{ki points} as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes [[/r 3d10]] bludgeoning damage, plus an extra [[/r 1d10]] bludgeoning damage for each additional ki point you spend, and you can either knock it <strong>prone </strong>or pull it up to <strong>25 feet </strong>closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it prone.</p><section class=\"secret\" id=\"secret-vGhngvt6Q9MHNGgS\"><p><em>Note: After adding this feature to your character, set Resource Consumption to Item Uses: Ki: 2.</em></p><p><em>To roll additional damage, click the 1d10 button and deduct ki points manually.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": 2
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d10",
+          "bludgeoning"
+        ],
+        [
+          "1d10",
+          "bludgeoning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "wis"
+    },
+    "requirements": "Way of the Four Elements 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664961270082,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.VszM3EgdGFtrm7Y6",
+    "duplicateSource": null
+  },
+  "_key": "!items!e6dgFidM3O2UPVch"
+}

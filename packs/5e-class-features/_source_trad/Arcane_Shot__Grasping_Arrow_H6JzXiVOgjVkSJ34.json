@@ -1,0 +1,205 @@
+{
+  "_id": "H6JzXiVOgjVkSJ34",
+  "name": "Arcane Shot: Grasping Arrow",
+  "type": "feat",
+  "img": "icons/skills/ranged/arrow-flying-poisoned-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        },
+        "context": {
+          "0": ""
+        }
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": "Slashing"
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.pNkTLSZF8BmgvSi5"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Poison",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Slashing",
+          "formulaSet": [
+            1
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Quand cette flèche atteint sa cible, la magie de Conjuration crée des ronces empoisonnées et griffantes, qui s'enroulent autour de la cible. La créature touchée par la flèche subit un <strong>2d6 dégâts de poison</strong>, sa vitesse est réduite de 10 pieds, et elle subit <strong>2d6 dégâts tranchants</strong> la première fois à chaque tour où elle se déplace d'1 pied ou plus sans téléportation. La cible ou toute créature qui peut l'atteindre peut utiliser son action pour retirer les ronces avec une réussite de test de Force (<strong>Athletics</strong>) contre votre DC de sauvegarde de Arcane Shot. Sinon, les ronces durent 1 minute ou jusqu'à ce que vous utilisiez à nouveau cette option.</p>\n<p>Les dégâts de poison et les dégâts tranchants augmentent tous deux à <strong>4d6</strong> lorsque vous atteignez le niveau 18 dans cette classe.</p>\n<section class=\"secret\">\n<p><em>Note: Après avoir ajouté cette fonctionnalité à votre personnage, définissez la Consommation de Ressources sur Utilisations d'Objet : Arcane Shot.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "speed is reduced by 10 feet, 2d6 slashing damage the first time on each turn it moves 1 foot or more without teleporting",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.arcane-archer.arcane-arrow",
+          "poison"
+        ],
+        [
+          "@scale.arcane-archer.arcane-arrow",
+          "slashing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "str",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Arcane Archer 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!H6JzXiVOgjVkSJ34"
+}

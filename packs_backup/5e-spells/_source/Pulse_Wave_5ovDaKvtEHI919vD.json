@@ -1,0 +1,129 @@
+{
+  "name": "Pulse Wave",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-explosion-purple.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "EGW",
+      "hash": "pulse%20wave_egw",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.RDbGUphh8eXP28FG"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You create intense pressure, unleash it in a 30-foot cone, and decide whether the pressure pulls or pushes creatures and objects. Each creature in that cone must make a Constitution saving throw. A creature takes [[/r 6d6]] force damage on a failed save, or half as much damage on a successful one. And every creature that fails the save is either pulled 15 feet toward you or pushed 15 feet away from you, depending on the choice you made for the spell.</p><p>In addition, unsecured objects that are completely within the cone are likewise pulled or pushed 15 feet.</p><h3>At Higher Levels</h3><p>When you cast this spell using a spell slot of 4th level or higher, the damage increases by [[/r 1d6]] and the distance pulled or pushed increases by 5 feet for each slot level above 3rd.</p><p><strong>Spell Lists.</strong> Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "EGW",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "cone"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "6d6",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650504852,
+    "modifiedTime": 1666575991230,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.RDbGUphh8eXP28FG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "5ovDaKvtEHI919vD",
+  "_key": "!items!5ovDaKvtEHI919vD"
+}

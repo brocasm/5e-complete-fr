@@ -1,0 +1,130 @@
+{
+  "name": "Convergent Future",
+  "type": "feat",
+  "img": "icons/magic/control/buff-flight-wings-runes-purple-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 14th level, you can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).</p><p>When you use this feature, you gain one level of <strong>exhaustion</strong>. Only by finishing a <strong>long rest</strong> can you remove a level of exhaustion gained in this way.</p><section id=\"secret-f8MWY1GH7ai7IbBi\" class=\"secret\"><p><em>Note: This feature requires the Item macro module for automation. Rolling this feature will automatically increase your exhaustion level.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "EGtW",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw"
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Chronurgy Magic 14",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "flags": {
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Convergent Future",
+        "type": "script",
+        "scope": "global",
+        "command": "// Roll current item\nconst roll = await item.roll();\nif(!roll) return;\n\n// Increase exhaustion level\nlet exhaustion = actor.system.attributes.exhaustion;\nexhaustion = Math.min(exhaustion + 1, 6);\nawait actor.update({\"system.attributes.exhaustion\": exhaustion});\nawait ChatMessage.create({\n    speaker: ChatMessage.getSpeaker(),\n    content: `${actor.name} now has an exhaustion level of ${exhaustion}`\n});",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.Eo6tkTn2vbmoXL57"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665636411795,
+    "modifiedTime": 1665638416845,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.Eo6tkTn2vbmoXL57",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "kCVi153BzbTfmjH2",
+  "_key": "!items!kCVi153BzbTfmjH2"
+}

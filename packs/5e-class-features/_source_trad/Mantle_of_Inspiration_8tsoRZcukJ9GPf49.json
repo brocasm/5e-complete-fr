@@ -1,0 +1,149 @@
+{
+  "_id": "8tsoRZcukJ9GPf49",
+  "name": "Mantle of Inspiration",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.PcTxrWcZqVlLFPWc"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous obtenez une apparence merveilleuse, accordant des points de vie temporaires à vos alliés.</p>\n<details>\n<summary style=\"padding-bottom:8px\"><strong>Full Description</strong></summary>\n<blockquote style=\"font-style:normal\">\n<p>Lorsque vous rejoignez le Collège de Glamour au niveau 3, vous obtenez la capacité de tisser une chanson de magie féerique qui imbu vos alliés de vigueur et de vitesse.</p>\n<p>En tant qu'action bonus, vous pouvez dépenser une utilisation de votre @Compendium[5e-complete-fr.5e-class-features.7Q7X8BnKOsk2SXSt]{Bardic Inspiration} pour vous accorder une apparence merveilleuse. Lorsque vous faites cela, choisissez un nombre de créatures que vous pouvez voir et qui peuvent vous voir à 60 pieds de vous, jusqu'à un nombre égal à votre <strong>modificateur de Charisme</strong> (minimum d'un). Chacune d'elles gagne <strong>5 points de vie temporaires</strong>. Lorsqu'une créature gagne ces points de vie temporaires, elle peut immédiatement utiliser sa réaction pour se déplacer jusqu'à sa vitesse, sans provoquer <strong>d'attaques d'opportunité</strong>.</p>\n<p>Le nombre de points de vie temporaires augmente lorsque vous atteignez certains niveaux dans cette classe, augmentant à 8 au niveau 5, 11 au niveau 10, et 14 au niveau 15.</p>\n</blockquote>\n</details>\n<section class=\"secret\">\n<p><em>Note: Lorsque vous ajoutez cette fonctionnalité à votre personnage, définissez Resource Consumption sur Item Uses: Bardic Inspiration.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.college-of-glamour.mantle-of-inspiration",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "College of Glamour 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!8tsoRZcukJ9GPf49"
+}

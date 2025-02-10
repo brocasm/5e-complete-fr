@@ -1,0 +1,129 @@
+{
+  "name": "Gravity Sinkhole",
+  "type": "spell",
+  "img": "icons/magic/water/beam-ice-impact.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "EGW",
+      "hash": "gravity%20sinkhole_egw",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.WoR5Xy6mAtOgLJLX"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>A 20-foot-radius sphere of crushing force forms at a point you can see within range and tugs at the creatures there. Each creature in the sphere must make a Constitution saving throw. On a failed save, the creature takes [[/r 5d10]] force damage and is pulled in a straight line toward the center of the sphere, ending in an unoccupied space as close to the center as possible (even if that space is in the air). On a successful save, the creature takes half as much damage and isn't pulled.</p></div><div class=\"rd__b  rd__b--3\"><div class=\"rd__b  rd__b--3\"><h3><span class=\"entry-title-inner\">At Higher Levels</span></h3><p>When you cast this spell using a spell slot of 5th level or higher, the damage increases by [[/r 1d10]] for each slot level above 4th.</p><div class=\"rd__spc-inline-post\"><p><strong>Spell Lists.</strong> Wizard</p></div></div><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "EGW",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 40,
+      "width": null,
+      "units": "ft",
+      "type": "sphere"
+    },
+    "range": {
+      "value": 120,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "5d10",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A black marble",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d10"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665649713043,
+    "modifiedTime": 1666257902179,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.WoR5Xy6mAtOgLJLX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "sv7pQnJcRIIa2AVQ",
+  "_key": "!items!sv7pQnJcRIIa2AVQ"
+}

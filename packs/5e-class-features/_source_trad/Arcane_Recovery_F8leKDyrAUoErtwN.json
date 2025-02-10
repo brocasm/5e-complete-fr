@@ -1,0 +1,167 @@
+{
+  "_id": "F8leKDyrAUoErtwN",
+  "name": "Arcane Recovery",
+  "type": "feat",
+  "img": "icons/magic/earth/explosion-lava-stone-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "critRange": {
+        "value": null
+      },
+      "critDamage": {
+        "value": ""
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.e0uTcFPpgxjIyUW9"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Arcane Recovery",
+          "type": "script",
+          "author": "EHpONhziSoZpUpN3",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "/*\n\tYou have learned to regain some of your magical energy by studying your spellbook.\n\tOnce per day when you finish a short rest, you can choose expended spell slots to recover.\n\tThe spell slots can have a combined level that is equal to or less than half your wizard level (rounded up),\n\tand none of the slots can be 6th level or higher.\n*/\n\nconst spells = duplicate(actor.getRollData().spells);\nconst wizLevel = actor.getRollData().classes.wizard.levels;\n\nconst lvl = [1, 2, 3, 4, 5, 6].filter(i => spells[`spell${i}`].max > 0);\nconst val = lvl.map(i => spells[`spell${i}`].value);\nconst max = lvl.map(i => spells[`spell${i}`].max);\n\nif(lvl.filter(i => spells[`spell${i}`].value !== spells[`spell${i}`].max).length < 1) return ui.notifications.error(\"You are not missing any valid spell slots.\");\nconst roll = await item.roll();\nif(!roll) return;\n\nconst maxVal = Math.ceil(wizLevel/2);\nlet spent = 0;\n\nfunction nth(n){return n + ([\"st\",\"nd\",\"rd\"][((n+90)%100-10)%10-1]||\"th\")}\n\nlet content = `<div name=\"header\"><p>Recovering spell slots: <strong>${spent}</strong> / ${maxVal}.</p></div><table>`;\nfor(let i = 0; i < lvl.length; i++){\n\tcontent += `<tr><td style=\"text-align: center\"><strong>${nth(i+1)}-level:</strong></td><td>`;\n\tfor(let j = 0; j < max[i]; j++) content += `<input type=\"checkbox\" value=\"${i+1}\" name=\"level${lvl[i]}\" ${j < val[i] ? 'checked disabled' : ''}/>`;\n\tcontent += `</td></tr>`;\n}\ncontent += `</table>`;\n\nconst dialog = new Dialog({\n\ttitle: \"Arcane Recovery\",\n\tcontent,\n\tbuttons: {\n\t\tok: {\n\t\t\ticon: `<i class=\"fas fa-check\"></i>`,\n\t\t\tlabel: \"Recover\",\n\t\t\tcallback: async (html) => {\n\t\t\t\tif(spent > maxVal || spent === 0){\n\t\t\t\t\tui.notifications.error(\"Invalid number of slots to recover.\");\n\t\t\t\t\tdialog.render(true);\n\t\t\t\t} else {\n\t\t\t\t\tfor(let i = 1; i <= 9; i++) spells[`spell${i}`].value = html[0].querySelectorAll(`input[name=level${i}]:checked`).length;\n\t\t\t\t\tawait actor.update({\"data.spells\": spells});\n\t\t\t\t\treturn ui.notifications.info(\"Spell slots recovered!\");\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\trender: (html) => {\n\t\thtml[0].querySelectorAll(\"input[type=checkbox]\").forEach(input => {\n\t\t\tinput.addEventListener('change', function(){\n\t\t\t\tspent = lvl.reduce((acc, e) => acc += Number(html[0].querySelectorAll(`input[name=level${e}]:checked:not(:disabled)`).length * e), 0);\n\t\t\t\tconsole.log(spent);\n\t\t\t\thtml[0].querySelector(\"div[name=header]\").innerHTML = `<p>Recovering spell slots: <strong>${spent}</strong> / ${maxVal}.</p>`;\n\t\t\t})\n\t\t})\n\t}\n});\n\ndialog.render(true);",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        }
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Pendant votre repos court, vous avez récupéré quelques emplacements de sorts.</p>\n<details>\n<summary style=\"padding-bottom:8px\"><strong>Description complète</strong></summary>\n<blockquote style=\"font-style:normal\">\n<p>Vous avez appris à regagner une partie de votre énergie magique en étudiant votre grimoire. Une fois par jour, lorsque vous terminez un <strong>repos court</strong>, vous pouvez choisir des emplacements de sorts dépensés à récupérer. Les emplacements de sorts peuvent avoir un niveau total égal ou inférieur à la moitié de votre niveau de magicien (arrondi à l'unité supérieure), et aucun des emplacements ne peut être de niveau 6 ou supérieur.</p>\n</blockquote>\n</details>\n<section class=\"secret\">\n<p><em>Note du MJ : Activer le crochet de la feuille de personnage dans les paramètres du module Macro Item.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "hour",
+      "cost": 1,
+      "condition": "When you finish a short rest"
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "day",
+      "type": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "Wizard 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!F8leKDyrAUoErtwN"
+}

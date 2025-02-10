@@ -1,0 +1,132 @@
+{
+  "_id": "lCOMbJDALDqUsdfw",
+  "name": "Overchannel",
+  "type": "feat",
+  "img": "icons/magic/fire/blast-jet-stream-embers-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.VUtSLeCzFubGXmGx"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "2d12",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "1d12",
+          "formulaSet": [
+            1
+          ]
+        }
+      ],
+      "migratedVersatile": true
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 1st through 5th level that deals damage, you can deal <strong>maximum damage</strong> with that spell.</p>\n<p>The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a <strong>long rest</strong>, you take <strong>2d12 necrotic damage</strong> for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by <strong>1d12</strong>. This damage ignores <strong>resistance </strong>and <strong>immunity</strong>.</p>\n<section class=\"secret\">\n<p><em>Note: This feature's limited use is to track the first, safe instance of Overchanneling. The damage formula is set to the base default of 2d12. The Versatile roll is set to 1d12 to add any additional damage.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "type": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d12",
+          "necrotic"
+        ],
+        [
+          "1d12",
+          "necrotic"
+        ]
+      ],
+      "versatile": "1d12"
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "School of Evocation 14",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!lCOMbJDALDqUsdfw"
+}

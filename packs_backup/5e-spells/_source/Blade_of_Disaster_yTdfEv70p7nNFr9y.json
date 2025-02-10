@@ -1,0 +1,147 @@
+{
+  "name": "Blade of Disaster",
+  "type": "spell",
+  "img": "icons/skills/melee/sword-stuck-glowing-pink.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "TCE",
+      "hash": "blade%20of%20disaster_tce",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.pYGILmuS3Luw3BsJ"
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Hit",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Crit",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>You create a blade-shaped planar rift about 3 feet long in an unoccupied space you can see within range. The blade lasts for the duration. When you cast this spell, you can make up to two melee spell attacks with the blade, each one against a creature, loose object, or structure within 5 feet of the blade. On a hit, the target takes [[/r 4d12]] force damage. This attack scores a critical hit if the number on the d20 is [[/r 18]] or higher. On a critical hit, the blade deals an extra [[/r 8d12]] force damage (for a total of [[/r 12d12]] force damage).</p><p>As a bonus action on your turn, you can move the blade up to 30 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.</p><p>The blade can harmlessly pass through any barrier, including a @UUID[Compendium.5e-complete-fr.5e-spells.5yIK1pP6TarIWxBo]{Wall of Force}.</p><p><strong>Spell Lists.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.NX28XQnco4pjOzF6]{Sorcerer}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.JsbrmCx9VF1Sizn8]{Warlock}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]{Wizard}</p></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "msak",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": 18,
+      "damage": "4d12"
+    },
+    "damage": {
+      "parts": [
+        [
+          "4d12",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 9,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665648766359,
+    "modifiedTime": 1667928349498,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.pYGILmuS3Luw3BsJ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "yTdfEv70p7nNFr9y",
+  "_key": "!items!yTdfEv70p7nNFr9y"
+}

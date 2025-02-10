@@ -1,0 +1,189 @@
+{
+  "_id": "oeIRtAny4OqMzJ9X",
+  "name": "Helm of Telepathy",
+  "type": "equipment",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-pink.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "magicitems": {
+      "enabled": true,
+      "equipped": true,
+      "attuned": true,
+      "charges": "1",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": true,
+      "recharge": "1",
+      "rechargeType": "t1",
+      "rechargeUnit": "r2",
+      "sorting": "l",
+      "spells": {
+        "0": {
+          "id": "ppWAAEul0QHtm4er",
+          "name": "Detect Thoughts",
+          "pack": "dnd5e.spells",
+          "img": "systems/dnd5e/icons/spells/light-eerie-2.jpg",
+          "baseLevel": "2",
+          "level": "2",
+          "consumption": "0",
+          "upcast": "2",
+          "upcastCost": "1",
+          "flatDc": true,
+          "dc": "13"
+        },
+        "1": {
+          "id": "zMAWdyc8UVb37BK4",
+          "name": "Suggestion",
+          "pack": "dnd5e.spells",
+          "img": "systems/dnd5e/icons/spells/air-burst-magenta-2.jpg",
+          "baseLevel": "2",
+          "level": "2",
+          "consumption": "1",
+          "upcast": "2",
+          "upcastCost": "1",
+          "flatDc": true,
+          "dc": "13"
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.magicitems.magicitems.hWHtehdckla2iZ6D"
+    },
+    "betterRolls5e": {
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "quantity": false,
+          "use": false
+        },
+        "altValue": {
+          "quantity": false,
+          "use": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>Wondrous item, (requires attunement)</em></p>\n<p>While wearing this helm, you can use an action to cast the @Compendium[dnd5e.spells.ppWAAEul0QHtm4er]{Detect Thoughts} spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply using a bonus action to do so while your focus on it continues.<br />While focusing on a creature with Detect Thoughts, you can use an action to cast the @Compendium[dnd5e.spells.zMAWdyc8UVb37BK4]{Suggestion} spell (save DC 13) from the helm on that creature. Once used, the Suggestion property can't be used again until the next dawn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 174",
+    "quantity": 1,
+    "weight": 2,
+    "price": 12000,
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 0,
+      "units": ""
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 30,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "day",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": null,
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": 13,
+      "scaling": "flat"
+    },
+    "armor": {
+      "value": 0,
+      "type": "clothing",
+      "dex": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "baseItem": "",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "stealth": false,
+    "proficient": false,
+    "attuned": false,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "e1GJldqKX2xtXEGs": 3,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665652594430,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.magicitems.magicitems.hWHtehdckla2iZ6D",
+    "duplicateSource": null
+  },
+  "_key": "!items!oeIRtAny4OqMzJ9X"
+}

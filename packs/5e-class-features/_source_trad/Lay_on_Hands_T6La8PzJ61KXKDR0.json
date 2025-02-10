@@ -1,0 +1,181 @@
+{
+  "_id": "T6La8PzJ61KXKDR0",
+  "name": "Lay on Hands",
+  "type": "feat",
+  "img": "icons/magic/light/orbs-hand-gray.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.OdrvL3afwLOPeuYZ"
+    },
+    "betterRolls5e": {
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Lay on Hands",
+          "type": "script",
+          "author": "EHpONhziSoZpUpN3",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "/*\n * Target desired recipient of healing\n * Select own token\n * Execute\n*/\n\n(async () => {\n\nconst layName = \"Lay on Hands\";\nlet confirmed = false;\nlet actorData = actor || canvas.tokens.controlled[0] || game.user.character;\nlet featData = actorData ? actorData.items.find(i => i.name===layName) : null;\n\nif(actorData == null || featData == null) \n    ui.notifications.warn(`Selected hero must have ${layName} feat.`);\nelse if (game.user.targets.size !== 1)\n    ui.notifications.warn(`Please target one token.`);\nelse\n{\n    let featUpdate = duplicate(featData);\n    let targetActor = game.user.targets.values().next().value.actor;\n    let maxHeal = Math.clamped(featUpdate.data.uses.value, 0, \n        targetActor.data.data.attributes.hp.max - targetActor.data.data.attributes.hp.value);\n\n    let content = `<p><em>${actorData.name} lays hands on ${targetActor.data.name}.</em></p>\n                    <p>How many HP do you want to restore to ${targetActor.data.name}?</p>\n                    <form>\n                        <div class=\"form-group\">\n                            <label for=\"num\">HP to Restore: (Max = ${maxHeal})</label>\n                            <input id=\"num\" name=\"num\" type=\"number\" min=\"0\" max=\"${maxHeal}\"></input>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"flavor\">Flavor:</label>\n                            <input id=\"flavor\" name=\"flavor\" value=\"${featUpdate.data.chatFlavor}\"></input>\n                        </div>\n                    </form>`;\n    new Dialog({\n        title: \"Lay on Hands Healing\",\n        content: content,      \n        buttons: {\n            heal: { label: \"Heal!\", callback: () => confirmed = true },\n            cancel: { label: \"Cancel\", callback: () => confirmed = false }\n        },\n        default: \"heal\",\n\n        close: html => {\n            (async () => {\n            if (confirmed) \n            {\n                let number = Math.floor(Number(html.find('#num')[0].value));\n                if (number < 1 || number > maxHeal)\n                    ui.notifications.warn(`Invalid number of charges entered = ${number}. Aborting action.`);\n                else\n                {\n                    let flavor = `<strong>${html.find('#flavor')[0].value}</strong><br>`;\n                    if (targetActor.permission !== CONST.ENTITY_PERMISSIONS.OWNER)\n                        // We need help applying the healing, so make a roll message for right-click convenience.\n                        await new Roll(`${number}`).toMessage({\n                            speaker: ChatMessage.getSpeaker(),\n                            flavor: `${actorData.name} lays hands on ${targetActor.data.name}.<br>${flavor}\n                            <p><em>Manually apply ${number} HP of healing to ${targetActor.data.name}</em></p>` });\n                    else {\n                        // We can apply healing automatically, so just show a normal chat message.\n                        ChatMessage.create({\n                            speaker: ChatMessage.getSpeaker(),\n                            content: `${actorData.name} lays hands on ${targetActor.data.name} for ${number} HP.<br>${flavor}`\n                        });\n                        await targetActor.update({\"data.attributes.hp.value\" : targetActor.data.data.attributes.hp.value + number});\n                    }\n                     \n                    //Update the value under \"Features\"\n                    featUpdate.data.uses.value = featUpdate.data.uses.value - number;\n                    await actorData.items.getName(layName).update({ \"data.uses.value\" : featUpdate.data.uses.value });\n\n                    //Update resource counter only if the \"Lay on Hands\" feature is set to consume it\n                    let resString = featUpdate.data.consume.target;\n                    if(resString.indexOf('resources') >= 0) {\n                       await actorData.update({\n                           data: { [featUpdate.data.consume.target] : featUpdate.data.uses.value }\n                       });\n                    }\n\n                    if (actorData.sheet.rendered) {\n                       // Update the actor sheet if it is currently open\n                       await actorData.render(true);\n                    }\n                };\n            }\n            })();\n        }\n    }).render(true);\n}\n})();",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        },
+        "name": "Lay on Hands",
+        "type": "script",
+        "scope": "global",
+        "command": "// LAY ON HANDS\n// required modules: itemacro\n\nconst { value } = item.system.uses;\nif ( value < 1 ) {\n    ui.notifications.warn(`${item.name} has no uses left.`);\n    return;\n}\nconst content = `\n<p>Lay on Hands has ${value} uses left.</p>\n<form>\n    <div class=\"form-group\">\n        <label for=\"num\">Hit points to restore:</label>\n        <div class=\"form-fields\">\n            <input id=\"num\" type=\"number\" value=\"1\"></input>\n        </div>\n    </div>\n</form>`;\n\nconst buttons = {\n    heal: {\n        icon: \"<i class='fa-solid fa-hand-holding-heart'></i>\",\n        label: \"Heal!\",\n        callback: async (html) => {\n            const number = Number(html[0].querySelector(\"#num\").value);\n            if ( number < 1 || number > value ) {\n                ui.notifications.warn(\"Invalid number.\");\n                return;\n            }\n            await new Roll(`${number}`).toMessage({\n                speaker: ChatMessage.getSpeaker({ actor }),\n                flavor: item.name\n            });\n            return item.update({ \"system.uses.value\": value - number });\n        }\n    }\n}\nif ( value >= 5 ) {\n    buttons.cure = {\n        icon: \"<i class='fa-solid fa-virus'></i>\",\n        label: \"Cure!\",\n        callback: async (html) => {\n            await ChatMessage.create({\n                content: `${actor.name} cures a disease or poison.`,\n                speaker: ChatMessage.getSpeaker({ actor })\n            });\n            return item.update({ \"system.uses.value\": value - 5 });\n        }\n    }\n}\n\nnew Dialog({ title: \"Lay on Hands\", content, buttons }).render(true);",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Votre toucher béni peut guérir des blessures. Vous avez un réservoir de pouvoir de guérison qui se régénère lorsque vous prenez un <strong>long rest</strong>. Avec ce réservoir, vous pouvez restaurer un nombre total de points de vie égal à votre <strong>Paladin level × 5</strong>.</p><p>En tant qu'action, vous pouvez toucher une créature et puiser dans le réservoir pour restaurer un nombre de points de vie à cette créature, jusqu'à la quantité maximale restante dans votre réservoir.</p><p>Alternativement, vous pouvez dépenser 5 points de vie de votre réservoir de guérison pour guérir la cible d'une <strong>disease</strong> ou neutraliser un <strong>poison</strong> l'affectant. Vous pouvez guérir plusieurs maladies et neutraliser plusieurs poisons avec une seule utilisation de Lay on Hands, en dépensant des points de vie séparément pour chacun.</p><p>Cette caractéristique n'a pas d'effet sur les <strong>undead</strong> et les <strong>constructs</strong>.</p><section class=\"secret\" id=\"secret-epXni6D3Qp5VVaY7\"><p><em>DM Note: Enable Character Sheet Hook in Item Macro's module settings. Alternatively, you can add the </em>@UUID[Compendium.5e-complete-fr.5e-macros.couCfqHU2tDB1RBn]{Lay on Hands}<em> macro to your hotbar.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Target cannot be Undead or a Construct."
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": 5,
+      "max": "5 * @classes.paladin.levels",
+      "per": "lr",
+      "recovery": "",
+      "type": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "Paladin 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1666649499432,
+    "lastModifiedBy": "9DrM9sBIPMUTBZIH",
+    "compendiumSource": "Compendium.world.class-features-expanded.OdrvL3afwLOPeuYZ",
+    "duplicateSource": null
+  },
+  "_key": "!items!T6La8PzJ61KXKDR0"
+}

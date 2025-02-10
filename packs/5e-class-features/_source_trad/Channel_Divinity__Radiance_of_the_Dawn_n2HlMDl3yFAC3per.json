@@ -1,0 +1,133 @@
+{
+  "_id": "n2HlMDl3yFAC3per",
+  "name": "Channel Divinity: Radiance of the Dawn",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-glow-spiral-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.JPLftHMpyySWi9sk"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À partir du 2e niveau, vous pouvez utiliser votre Channel Divinity pour canaliser la lumière du soleil, bannissant les ténèbres et infligeant des dégâts radiants à vos ennemis.</p>\n<p>En tant qu'<strong>action</strong>, vous présentez votre symbole sacré, et toute obscurité magique dans un rayon de 30 pieds autour de vous est dissipée. De plus, chaque créature hostile dans un rayon de 30 pieds autour de vous doit effectuer un <strong>jet de sauvegarde de Constitution</strong>. Une créature subit des dégâts radiants égaux à 2d10 + votre niveau de clerc en cas d'échec du jet de sauvegarde, et la moitié de ces dégâts en cas de réussite. Une créature ayant une couverture totale de votre part n'est pas affectée.</p>\n<section class=\"secret\">\n<p><em>Note: Lorsque vous ajoutez cette fonctionnalité à votre personnage, définissez la Consommation de Ressources sur Utilisations d'Objet: Channel Divinity.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "radius"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d10 + @classes.cleric.levels",
+          "radiant"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Light Domain 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!n2HlMDl3yFAC3per"
+}

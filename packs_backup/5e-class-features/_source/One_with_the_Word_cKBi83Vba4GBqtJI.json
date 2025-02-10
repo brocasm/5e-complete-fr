@@ -1,0 +1,130 @@
+{
+  "name": "One with the Word",
+  "type": "feat",
+  "img": "icons/sundries/documents/document-writing-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 14th level, your connection to your @UUID[Compendium.5e-complete-fr.5e-class-features.2jHeIzhtZdDFes9d]{Awakened Spellbook} has become so profound that your soul has become entwined with it. While the book is on your person, you have advantage on all Intelligence (Arcana) checks, as the spellbook helps you remember magical lore.</p><p>Moreover, if you take damage while your spellbook's mind is manifested, you can prevent all of that damage to you by using your reaction to dismiss the spectral mind, using its magic to save yourself. Then roll [[/r 3d6]]. The spellbook temporarily loses spells of your choice that have a combined spell level equal to that roll or higher. For example, if the roll's total is 9, spells vanish from the book that have a combined level of at least 9, which could mean one 9th-level spell, three 3rd-level spells, or some other combination. If there aren't enough spells in the book to cover this cost, you drop to 0 hit points.</p><p>Until you finish [[/r 1d6]] long rests, you are incapable of casting the lost spells, even if you find them on a scroll or in another spellbook. After you finish the required number of rests, the spells reappear in the spell book.</p><p>Once you use this reaction, you can't do so again until you finish a <strong>long rest</strong>.</p><section id=\"secret-DoK3Bk6PTGPCbklS\" class=\"secret\"><p><em>Note: Enabling the Item Macro module will allow this feature to automatically roll the 3d6 and 1d6. From there, it's recommended to mark your chosen spells with [Unavailable] in the spell name.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "spec"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "1",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Order of Scribes 14",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "flags": {
+    "itemacro": {
+      "macro": {
+        "name": "One with the Word",
+        "type": "script",
+        "scope": "global",
+        "command": "// Roll current item\nconst roll = await item.roll();\nif(!roll) return;\n\n// Create rolls and push to chat\nconst FirstRoll = await new Roll(\"3d6\").evaluate({ async: true });\nconst SecondRoll = await new Roll(\"1d6\").evaluate({ async: true });\nawait FirstRoll.toMessage({ flavor: `${actor.name} loses spells with combined levels equal to or greater than:` });\nawait SecondRoll.toMessage({ flavor: `${actor.name} can't cast the chosen spells until finishing this many long rests:`});",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.vXWk25upTFmEl1gW"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665646467896,
+    "modifiedTime": 1665647530562,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.vXWk25upTFmEl1gW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "cKBi83Vba4GBqtJI",
+  "_key": "!items!cKBi83Vba4GBqtJI"
+}

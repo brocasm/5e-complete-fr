@@ -1,0 +1,119 @@
+{
+  "name": "Hands of Harm",
+  "type": "feat",
+  "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.oUkrfpyhoyH66zRy"
+    }
+  },
+  "_id": "Ne76OeZFtqXC67ed",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 3ème niveau, vous utilisez votre ki pour infliger des blessures. Lorsque vous touchez une créature avec une frappe désarmée, vous pouvez dépenser 1 @Compendium[5e-complete-fr.5e-class-features.imsZ2GYUPlwCQqqy]{ki point} pour infliger des dégâts supplémentaires <strong>necrotic damage</strong> égaux à un lancer de votre dé @Compendium[5e-complete-fr.5e-class-features.TMeKDQLocSb3loVv]{Martial Arts} + votre modificateur de Sagesse. Vous ne pouvez utiliser cette fonctionnalité qu'une seule fois par tour.</p>\n<section class=\"secret\">\n<p><em>Note: Après avoir ajouté cette fonctionnalité à votre personnage, définissez la Consommation des Ressources sur Utilisations d'Objets : Ki</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": "When you hit a creature with an unarmed strike"
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "wis",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.monk.martial-arts + @mod",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Way of Mercy 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!Ne76OeZFtqXC67ed"
+}

@@ -1,0 +1,189 @@
+{
+  "_id": "7hAcETWHOVguR2ZF",
+  "name": "Font of Magic",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.LBKChJY5n02Afhnq"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Font of Magic",
+          "type": "script",
+          "author": "UjfixXuqstXNdypa",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "// FONT OF MAGIC.\n// required modules: itemacro.\n// setup: embed macro in item with limited uses acting as sorcery points.\n\n// number of points required to regain an nth level spell slot; {slot-level : point-cost}.\nconst conversion_map = {\"1\": 2, \"2\": 3, \"3\": 5, \"4\": 6, \"5\": 7}\n\nconst style = `<style>\n.dialog .dialog-buttons button {\n    background: rgba(0, 0, 0, 0.1);\n    border: 2px groove var(--color-border-light-highlight);\n    margin: 0 5px 5px 0;\n}\n</style>`;\n\nconst {value: spvalue, max: spmax} = item.data.data.uses;\nconst spells = duplicate(actor.data.data.spells);\n\n// array of spell levels for converting points to slots.\nconst valid_levels_with_spent_spell_slots = Object.entries(spells).filter(([key, {value, max}]) => {\n  const cost = conversion_map[key.at(-1)];\n  if(!cost || cost > spvalue) return false;\n  return (max > 0 && value < max);\n});\n// array of spell levels for converting slots to points.\nconst spell_levels_with_available_slots = Object.entries(spells).filter(([key, {value, max}]) => {\n  return (value > 0 && max > 0);\n});\n\nconst is_missing_points = spvalue < spmax;\nconst is_missing_slots = valid_levels_with_spent_spell_slots.length > 0;\n\n// has unspent spell slots.\nconst has_available_spell_slots = spell_levels_with_available_slots.length > 0;\n// has sp equal to or higher than the minimum required.\nconst has_available_sorcery_points = spvalue >= Math.min(...Object.values(conversion_map));\n\nconst can_convert_slot_to_points = has_available_spell_slots && is_missing_points;\nconst can_convert_points_to_slot = has_available_sorcery_points && is_missing_slots;\nif(!can_convert_points_to_slot && !can_convert_slot_to_points){\n  return ui.notifications.warn(\"You have no options available.\");\n}\n\n// set up available buttons.\nconst buttons = {};\nif(can_convert_slot_to_points) buttons[\"slot_to_point\"] = {\n  icon: `<i class=\"fas fa-arrow-left\"></i> <br>`,\n  label: \"Convert a spell slot to sorcery points\",\n  callback: async () => {await slot_to_points()}\n}\nif(can_convert_points_to_slot) buttons[\"point_to_slot\"] = {\n  icon: `<i class=\"fas fa-arrow-right\"></i> <br>`,\n  label: \"Convert sorcery points to a spell slot\",\n  callback: async () => {await points_to_slot()}\n}\nnew Dialog({title: \"Font of Magic\", buttons}).render(true);\n\n// Convert spell slot to sorcery points.\nasync function slot_to_points(){\n  const level = await new Promise(resolve => {\n    // build buttons for each level where value, max > 0.\n    const slot_to_points_buttons = Object.fromEntries(spell_levels_with_available_slots.map(([key, {value, max}]) => {\n      const spell_level = key.at(-1);\n      return [key, { callback: () => {resolve(spell_level)}, label: `\n        <div class=\"flexrow\">\n          <span>${CONFIG.DND5E.spellLevels[spell_level]} (${value}/${max})</span>\n          <span>(+${spell_level} points)</span>\n        </div>`}];\n    }));\n    \n    const stp_dialog = new Dialog({\n      title: \"Slot to Sorcery Points\",\n      buttons: slot_to_points_buttons,\n      content: style + `\n        <p>Pick a spell slot level to convert one spell slot to sorcery points (<strong>${spvalue}/${spmax}</strong>).\n        You regain a number of sorcery points equal to the level of the spell slot.</p>`,\n      render: (html) => {\n        html.css(\"height\", \"auto\");\n        stp_dialog.element[0].querySelector(\".dialog-buttons\").style.flexDirection = \"column\";\n      },\n      close: () => {resolve(0)}\n    }).render(true);\n  });\n  \n  if(Number(level) > 0){\n    spells[`spell${level}`].value--;\n    await actor.update({\"data.spells\": spells});\n    const new_points_value = Math.clamped(spvalue + Number(level), 0, spmax);\n    const points_gained = new_points_value - spvalue;\n    await item.update({\"data.uses.value\": new_points_value});\n    return ChatMessage.create({\n      speaker: ChatMessage.getSpeaker({actor}),\n      content: `${actor.name} regained ${points_gained} sorcery points.`\n    });\n  }\n}\n\n// Convert sorcery points to spell slot.\nasync function points_to_slot(){\n  const level = await new Promise(resolve => {\n    // build buttons for each level where max > 0, max > value, and conversion_map[level] <= spvalue.\n    const points_to_slot_buttons = Object.fromEntries(valid_levels_with_spent_spell_slots.map(([key, {value, max}]) => {\n      const spell_level = key.at(-1);\n      const cost = conversion_map[spell_level];\n      return [key, { callback: () => {resolve(spell_level)}, label: `\n        <div class=\"flexrow\">\n          <span>${CONFIG.DND5E.spellLevels[spell_level]} (${value}/${max})</span>\n          <span>(&minus;${cost} points)</span>\n        </div>`}];\n    }));\n    \n    const pts_dialog = new Dialog({\n      title: \"Sorcery Points to Slot\",\n      buttons: points_to_slot_buttons,\n      content: style + `<p>Pick a spell slot level to regain from sorcery points (<strong>${spvalue}/${spmax}</strong>).</p>`,\n      render: (html) => {\n        html.css(\"height\", \"auto\");\n        pts_dialog.element[0].querySelector(\".dialog-buttons\").style.flexDirection = \"column\";\n      },\n      close: () => {resolve(0)}\n    }).render(true);\n  });\n  \n  if(Number(level) > 0){\n    spells[`spell${level}`].value++;\n    await actor.update({\"data.spells\": spells});\n    await item.update({\"data.uses.value\": Math.clamped(spvalue - conversion_map[level], 0, spmax)});\n    return ChatMessage.create({\n      speaker: ChatMessage.getSpeaker({actor}),\n      content: `${actor.name} regained a ${CONFIG.DND5E.spellLevels[level]} spell slot.`\n    });\n  }\n}",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        },
+        "name": "Font of Magic",
+        "type": "script",
+        "scope": "global",
+        "command": "// FONT OF MAGIC.\n// required modules: itemacro\n// setup: embed macro in item with limited uses acting as sorcery points.\n\n// number of points required to regain an nth level spell slot; {slot-level : point-cost}.\nconst conversionMap = {\n  \"1\": 2,\n  \"2\": 3,\n  \"3\": 5,\n  \"4\": 6,\n  \"5\": 7\n}\n\nconst style = `\n<style>\n.font-of-magic .dialog-buttons {\n  flex-direction: column;\n  gap: 5px;\n}\n</style>`;\n\nconst { value: spvalue, max: spmax } = item.system.uses;\nconst spells = foundry.utils.duplicate(actor.system.spells);\n\n// array of spell levels for converting points to slots.\nconst validLevelsWithSpentSpellSlots = Object.entries(spells).filter(([key, entry]) => {\n  const k = key === \"pact\" ? entry.level : key.at(-1);\n  const cost = conversionMap[k];\n  if (!cost || cost > spvalue) return false;\n  return (entry.max > 0 && entry.value < entry.max);\n});\n// array of spell levels for converting slots to points.\nconst spellLevelsWithAvailableSlots = Object.entries(spells).filter(([key, entry]) => {\n  return (entry.value > 0 && entry.max > 0);\n});\n\nconst isMissingPoints = spvalue < spmax;\nconst isMissingSlots = validLevelsWithSpentSpellSlots.length > 0;\n\n// has unspent spell slots.\nconst hasAvailableSpellSlots = spellLevelsWithAvailableSlots.length > 0;\n// has sp equal to or higher than the minimum required.\nconst hasAvailableSorceryPoints = spvalue >= Math.min(...Object.values(conversionMap));\n\nconst canConvertSlotToPoints = hasAvailableSpellSlots && isMissingPoints;\nconst canConvertPointsToSlot = hasAvailableSorceryPoints && isMissingSlots;\nif (!canConvertPointsToSlot && !canConvertSlotToPoints) {\n  ui.notifications.warn(\"You have no options available.\");\n  return;\n}\n\n// set up available buttons.\nconst buttons = {};\nif (canConvertSlotToPoints) buttons[\"slotToPoint\"] = {\n  icon: \"<i class='fa-solid fa-arrow-left'></i> <br>\",\n  label: \"Convert a spell slot to sorcery points\",\n  callback: slotToPoints\n}\nif (canConvertPointsToSlot) buttons[\"pointToSlot\"] = {\n  icon: \"<i class='fa-solid fa-arrow-right'></i> <br>\",\n  label: \"Convert sorcery points to a spell slot\",\n  callback: pointsToSlot\n}\nnew Dialog({ title: \"Font of Magic\", buttons }).render(true);\n\n// Convert spell slot to sorcery points.\nasync function slotToPoints() {\n  const retKey = await new Promise(resolve => {\n    // build buttons for each level where value, max > 0.\n    const slotToPointsButtons = Object.fromEntries(spellLevelsWithAvailableSlots.map(([key, vals]) => {\n      const k = key === \"pact\" ? \"Pact Slot\" : CONFIG.DND5E.spellLevels[key.at(-1)];\n      return [key, {\n        callback: () => { resolve(key) }, label: `\n        <div class=\"flexrow\">\n          <span>${k} (${vals.value}/${vals.max})</span>\n          <span>(+${vals.level ?? key.at(-1)} points)</span>\n        </div>`}];\n    }));\n\n    new Dialog({\n      title: \"Slot to Sorcery Points\",\n      buttons: slotToPointsButtons,\n      content: style + `\n      <p>Pick a spell slot level to convert one\n      spell slot to sorcery points (<strong>${spvalue}/${spmax}</strong>).\n      You regain a number of sorcery points equal\n      to the level of the spell slot.</p>`,\n      close: () => { resolve(0) }\n    }, {\n      classes: [\"dialog\", \"font-of-magic\"]\n    }).render(true);\n  });\n\n  if (retKey !== 0) {\n    spells[retKey].value--;\n    await actor.update({ system: { spells } });\n    const level = retKey === \"pact\" ? spells[\"pact\"].level : retKey.at(-1);\n    const newPointsValue = Math.clamped(spvalue + Number(level), 0, spmax);\n    const pointsGained = newPointsValue - spvalue;\n    await item.update({ \"system.uses.value\": newPointsValue });\n    return ChatMessage.create({\n      speaker: ChatMessage.getSpeaker({ actor }),\n      content: `${actor.name} regained ${pointsGained} sorcery points.`\n    });\n  }\n}\n\n// Convert sorcery points to spell slot.\nasync function pointsToSlot() {\n  const retKey = await new Promise(resolve => {\n    // build buttons for each level where max > 0, max > value, and conversionMap[level] <= spvalue.\n    const pointsToSlotButtons = Object.fromEntries(validLevelsWithSpentSpellSlots.map(([key, vals]) => {\n      const k = key === \"pact\" ? \"Pact Slot\" : CONFIG.DND5E.spellLevels[key.at(-1)];\n      const cost = conversionMap[vals.level ?? key.at(-1)];\n      return [key, {\n        callback: () => { resolve(key) }, label: `\n        <div class=\"flexrow\">\n          <span>${k} (${vals.value}/${vals.max})</span>\n          <span>(&minus;${cost} points)</span>\n        </div>`}];\n    }));\n\n    new Dialog({\n      title: \"Sorcery Points to Slot\",\n      buttons: pointsToSlotButtons,\n      content: style + `<p>Pick a spell slot level to regain from sorcery points (<strong>${spvalue}/${spmax}</strong>).</p>`,\n      close: () => { resolve(0) }\n    }, {\n      classes: [\"dialog\", \"font-of-magic\"]\n    }).render(true);\n  });\n\n  if (retKey !== 0) {\n    spells[retKey].value++;\n    await actor.update({ system: { spells } });\n    const level = retKey === \"pact\" ? spells[\"pact\"].level : retKey.at(-1);\n    await item.update({ \"system.uses.value\": Math.clamped(spvalue - conversionMap[level], 0, spmax) });\n    const str = retKey === \"pact\" ? \"Pact Slot\" : `${CONFIG.DND5E.spellLevels[level]} spell slot`;\n    return ChatMessage.create({\n      speaker: ChatMessage.getSpeaker({ actor }),\n      content: `${actor.name} regained a ${str}.`\n    });\n  }\n}",
+        "author": "EHpONhziSoZpUpN3",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p><h3>Sorcery Points</h3><p>You have 2 sorcery points, and you gain more as you reach higher levels. Your sorcerer level equals the number of sorcery points you have, so a 4th level sorcerer has 4 sorcery points, a 16th level sorcerer has 16. You can never have more sorcery points than your level dictates. You regain all spent sorcery points when you finish a long rest.</p><h3>Flexible Casting</h3><p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p><h4><strong>Creating Spell Slots</strong></h4><p>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p><p>Any spell slot you create with this feature vanishes when you finish a <strong>long rest</strong>.</p><table border=\"1\"><thead><tr><td>Spell Slot Level</td><td>Sorcery Point Cost</td></tr></thead><tbody><tr><td>1st</td><td>2</td></tr><tr><td>2nd</td><td>3</td></tr><tr><td>3rd</td><td>5</td></tr><tr><td>4th</td><td>6</td></tr><tr><td>5th</td><td>7</td></tr></tbody></table><h4><strong>Converting a Spell Slot to Sorcery Points</strong></h4><p>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p><section class=\"secret\" id=\"secret-djUdDYCJyK2iYNYF\"><p><em>Note: Use this feature to track all the various uses of sorcery points for the sorcerer.</em></p><p><em>Rolling this feature will prompt conversion of spell slots and sorcery points.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "@classes.sorcerer.levels",
+      "per": "lr",
+      "recovery": "",
+      "type": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "Sorcerer 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1668401759406,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.class-features-expanded.LBKChJY5n02Afhnq",
+    "duplicateSource": null
+  },
+  "_key": "!items!7hAcETWHOVguR2ZF"
+}

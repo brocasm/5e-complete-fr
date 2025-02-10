@@ -1,0 +1,122 @@
+{
+  "name": "Hail of Thorns",
+  "type": "spell",
+  "img": "icons/skills/ranged/arrows-flying-salvo-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 5 feet of it must make a Dexterity saving throw. A creature takes [[/r 1d10]] piercing damage on a failed save, or half as much damage on a successful one.</p><h3>At Higher Levels</h3><p>If you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/r 1d10]] for each slot level above 1st (to a maximum of [[/r 6d10]]).</p><p><strong>Spell Lists.</strong> Ranger</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 5,
+      "width": null,
+      "units": "ft",
+      "type": "radius"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "spec"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "min(6,@item.level)d10",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Item.Pg0cB5zuRDPvzzV5"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665640350618,
+    "modifiedTime": 1666258526254,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.Pg0cB5zuRDPvzzV5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "h7ER6qF7Z0oEp9jk",
+  "_key": "!items!h7ER6qF7Z0oEp9jk"
+}

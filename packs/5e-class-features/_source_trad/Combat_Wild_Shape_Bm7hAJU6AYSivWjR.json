@@ -1,0 +1,149 @@
+{
+  "_id": "Bm7hAJU6AYSivWjR",
+  "name": "Combat Wild Shape",
+  "type": "feat",
+  "img": "icons/creatures/abilities/paw-glowing-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Item.jYzq0zycYQzASmA2"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Combat Wild Shape",
+          "type": "script",
+          "author": "EHpONhziSoZpUpN3",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "// Definitions\nlet maxSpellSlot = 10; //  Highest spell-slot level that may be used.\nconst spells = duplicate(actor.getRollData().spells);\nconst s_actor = canvas.tokens.controlled[0]?.actor || game.user.character;\nlet pactSlot = false;\n\nlet confirmed = false;\nif (hasAvailableSlot(s_actor)) {\n\n    // Get options for available slots\n    let optionsText = \"\";\n    let i = 1;\n    for (; i < maxSpellSlot; i++) {\n        const slots = getSpellSlots(s_actor, i, false);\n        if (slots.value > 0) {\n            const level = CONFIG.DND5E.spellLevels[i];\n            const label = game.i18n.format('DND5E.SpellLevelSlot', {level: level, n: slots.value});\n            optionsText += `<option value=\"${i}\">${label}</option>`;\n        }\n    }\n\n    // Check for Pact slot\n    const slots = getSpellSlots(s_actor, 0, true);\n    if(slots.value > 0) {\n        i++;\n        const level = CONFIG.DND5E.spellLevels[slots.level];\n        const label = 'Pact: ' + game.i18n.format('DND5E.SpellLevelSlot', {level: level, n: slots.value});\n        optionsText += `<option value=\"${i}\">${label}</option>`;\n    }\n\n    // Create a dialogue box to select spell slot level to use when smiting.\n    new Dialog({\n        title: \"Combat Wild Shape Healing\",\n        content: `\n        <form id=\"combat-wild-shape-use-form\">\n            <p>` + game.i18n.format(\"DND5E.AbilityUseHint\", {name: \"Combat Wild Shape\", type: \"feature\"}) + `</p>\n            <div class=\"form-group\">\n                <label>Spell Slot Level</label>\n                <div class=\"form-fields\">\n                    <select name=\"slot-level\">` + optionsText + `</select>\n                </div>\n            </div>\n\n        </form>\n        `,\n        buttons: {\n            one: {\n                icon: '<i class=\"fas fa-check\"></i>',\n                label: \"Heal!\",\n                callback: () => confirmed = true\n            },\n            two: {\n                icon: '<i class=\"fas fa-times\"></i>',\n                label: \"Cancel\",\n                callback: () => confirmed = false\n            }\n        },\n        default: \"Cancel\",\n        close: html => {\n            if (confirmed) {\n                let slotLevel = parseInt(html.find('[name=slot-level]')[0].value);\n                if(slotLevel > maxSpellSlot) {\n                    slotLevel = actor.data.data.spells.pact.level;\n                    pactSlot = true;\n                }\t\t\n                heal(s_actor, slotLevel, pactSlot);\n            }\n        }\n    }).render(true);\n\n} else {\n    return ui.notifications.error(`No spell slots available to use this feature.`);    \n}\n\n\n// Gives the spell slot information for a particular actor and spell slot level.\nfunction getSpellSlots(actor, level, isPact) {\n    if(isPact == false) {\n        return actor.data.data.spells[`spell${level}`];\n    }\n    else {\n        return actor.data.data.spells.pact;\n    }\n}\n\nfunction hasAvailableSlot(actor) {\n    for (let slot in actor.data.data.spells) {\n        if (actor.data.data.spells[slot].value > 0) {\n            return true;\n        }\n    }\n    return false;\n}\n\n/**\n * Use the controlled token to smite the targeted token.\n * @param {Actor5e} actor - the actor that is performing the action.\n * @param {integer} slotLevel - the spell slot level to use when smiting.\n * @param {boolean} isPact - whether the spell slot used is obtained through pact.\n */\nasync function heal(actor, slotLevel, isPact) {\n\n    let chosenSpellSlots = getSpellSlots(actor, slotLevel, isPact);\n\n    if (chosenSpellSlots.value < 1) {\n        ui.notifications.error(\"No spell slots of the required level available.\");\n        return;\n    }\n    \n    // Get roll and display in chat\n    let damageRoll = new Roll(`${slotLevel}d8`);\n    await damageRoll.toMessage({\n        speaker: ChatMessage.getSpeaker(),\n        flavor: `${actor.name} restores some hit points!<br>`\n    });\n    \n    actor.update({\"data.attributes.hp.value\" : actor.data.data.attributes.hp.value + damageRoll.total});\n\n    let objUpdate = new Object();\n    if(isPact == false) {\n        objUpdate['data.spells.spell' + slotLevel + '.value'] = chosenSpellSlots.value - 1;\n    }\n    else {\n        objUpdate['data.spells.pact.value'] = chosenSpellSlots.value - 1;\n    }\n    actor.update(objUpdate);\n}",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        }
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Quand vous choisissez ce cercle au niveau 2, vous gagnez la capacité d'utiliser @Compendium[5e-complete-fr.5e-class-features.jXMI4Iy8McDpVl5y]{Wild Shape} lors de votre tour comme une action bonus, au lieu d'une action.</p>\n<p>De plus, tant que vous êtes transformé par Wild Shape, vous pouvez utiliser une action bonus pour dépenser une emplacement de sort afin de récupérer <strong>1d8 </strong>points de vie par niveau de l'emplacement de sort dépensé.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Circle of the Moon 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!Bm7hAJU6AYSivWjR"
+}

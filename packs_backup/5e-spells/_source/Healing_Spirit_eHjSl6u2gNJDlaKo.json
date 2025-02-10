@@ -1,0 +1,157 @@
+{
+  "_id": "eHjSl6u2gNJDlaKo",
+  "name": "Healing Spirit",
+  "type": "spell",
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.w5oHkt0qDMAzrH7h"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent <strong>beast</strong> or <strong>fey</strong> (your choice).</p><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">Until the spell ends, whenever you or a creature you can see moves into the spirit’s space for the first time on a turn or starts its turn there, you can cause the spirit to restore [[/r 1d6]] hit points to that creature (no action required). The spirit can’t heal <strong>constructs</strong> or <strong>undead</strong>. The spirit can heal a number of times equal to 1 + your Spellcasting Ability modifier (minimum of twice). After Healing that number of times, the spirit disappears.</p><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">As a bonus action on your turn, you can move the spirit up to 30 feet to a space you can see.</p><h3>Higher Level</h3><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d6 for each slot level above 2nd.</p><p><strong>Spell Lists.</strong> Druid, Ranger</p><section class=\"secret\" id=\"secret-XcAEGoaVUH6wsmpZ\"><p><em>Note: Manually update the number of charges available for this spell.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 5,
+      "width": null,
+      "units": "ft",
+      "type": "cube"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "2",
+      "per": "charges",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 2,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1666260097912,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.w5oHkt0qDMAzrH7h",
+    "duplicateSource": null
+  },
+  "_key": "!items!eHjSl6u2gNJDlaKo"
+}

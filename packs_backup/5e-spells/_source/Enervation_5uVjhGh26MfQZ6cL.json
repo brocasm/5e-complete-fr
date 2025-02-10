@@ -1,0 +1,151 @@
+{
+  "name": "Enervation",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-life-soul-green.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "enervation_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.bY8RVpNCsIj29eTE"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Success",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Fail",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a successful save, the target takes [[/r 2d8]] necrotic damage, and the spell ends. On a failed save, the target takes [[/r 4d8]] necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal [[/r 4d8]] necrotic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.</p><p>Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes.</p><div class=\"rd__b  rd__b--3\"><div class=\"rd__spc-inline-post\"><h3>At Higher Levels</h3><p>When you cast this spell using a spell slot of 6th level or higher, the damage increases by [[/r 1d8]] for each slot level above 5th.</p><p><strong>Spell Lists.</strong> Sorcerer, Warlock, Wizard</p></div></div><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "necrotic"
+        ],
+        [
+          "4d8",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665649394442,
+    "modifiedTime": 1666241253182,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.bY8RVpNCsIj29eTE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "5uVjhGh26MfQZ6cL",
+  "_key": "!items!5uVjhGh26MfQZ6cL"
+}

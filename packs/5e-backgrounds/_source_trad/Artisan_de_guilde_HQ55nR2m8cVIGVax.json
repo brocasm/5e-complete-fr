@@ -1,0 +1,136 @@
+{
+  "name": "Artisan de guilde",
+  "type": "background",
+  "img": "icons/tools/hand/needle-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are a member of an artisan's guild, skilled in a particular field and in close relation with other artisans. You are well-versed in the world of markets, freed from the constraints of a feudal social order thanks to your talent and wealth. You learned your craft as an apprentice under a master artisan, under the aegis of your guild, until you became a master in your branch.</p><hr /><p><strong>Mastered Skills:</strong> Intuition, Persuasion</p><p><strong>Mastered Tools:</strong> <span style=\"font-family:Lato, Arial, sans-serif\">a type of artisan's tool</span></p><p><strong>Languages:</strong> one of your choice</p><p><strong>Equipment:</strong> <span style=\"font-family:Lato, Arial, sans-serif\">a set of artisan's tools (of your choice), a letter of recommendation from your guild, travel clothes, and a purse containing 15 gp.</span></p><p><strong>Feature:</strong> @Compendium[5e-complete-fr.5e-backgrounds.Item.y6XhCDzLfEJ9GorO]</p><hr /><p></p><h3>Suggested Personalities</h3><p>Charlatans are colorful characters who hide their true personality behind masks they create. They adapt to what people want to see, what they want to believe, and how they see the world. But their true personality is sometimes tormented by cases of conscience, an old enemy, or a scheme gone wrong.</p><p></p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.Yh5TnVBWpP4d7QXT]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.py3QtRqqtzT2FamU]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.AAL0FD1HCrVR8xQu]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.9x13CctfFPD9m6lY]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.tud6P71kvKGKh5QF]</p><p></p><hr /><h3>Variants</h3><p>Rather than a guild artisan, you might be a member of a guild of merchants, caravan masters, or traders. You do not make the items yourself but earn your living by buying and selling the work of others (or the raw materials needed by artisans). Your guild might be a large consortium of merchants (or a family) with interests across the region. You might transport goods from one place to another by boat, wagon, or caravan, or buy from traveling merchants and sell in your own shop. In a way, the life of a traveling merchant lends itself more to adventure than that of an artisan.</p><p>Instead of proficiency with a type of artisan's tools, you gain proficiency with navigator's tools or an additional language. And instead of having artisan's tools, you can start with a mule and a cart.</p>",
+      "chat": ""
+    },
+    "identifier": "artisan",
+    "source": {
+      "revision": 1,
+      "rules": "2014",
+      "book": "Player's Handbook",
+      "page": "130",
+      "custom": "",
+      "license": ""
+    },
+    "startingEquipment": [
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT",
+        "requiresProficiency": false,
+        "_id": "6fd0lbWJPmxn0YcZ",
+        "group": "",
+        "sort": 0
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "aVpnPIVmGe8n4G6j",
+        "group": "",
+        "sort": 200000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.backgrounds.Item.dQaOdm9dbVN0RZYP",
+        "requiresProficiency": false,
+        "_id": "WK6nepAR18CP9zG6",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 300000
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "QuDLI071xB1aDh8F",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.0d08g1i5WXnNrCNA",
+        "requiresProficiency": false,
+        "_id": "fkGyYX6KJYNxj4Zh",
+        "group": "QuDLI071xB1aDh8F",
+        "sort": 500000
+      }
+    ],
+    "advancement": [
+      {
+        "_id": "3HKXj22m48zBFr0U",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-backgrounds.Item.y6XhCDzLfEJ9GorO",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Accorde la capacité",
+        "hint": ""
+      },
+      {
+        "_id": "pR0QbJX5zCvEIT1U",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "tool:art"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "",
+        "hint": ""
+      }
+    ],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "rPtcDj6wdz4NxyQl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.1.1",
+    "createdTime": 1731527849299,
+    "modifiedTime": 1731530100326,
+    "lastModifiedBy": "rPtcDj6wdz4NxyQl"
+  },
+  "_id": "HQ55nR2m8cVIGVax",
+  "sort": 0,
+  "_key": "!items!HQ55nR2m8cVIGVax"
+}

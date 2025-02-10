@@ -1,0 +1,192 @@
+{
+  "_id": "eCZkP7lGRryyoaNJ",
+  "name": "Lien avec une arme",
+  "type": "feat",
+  "img": "icons/skills/melee/hand-grip-staff-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [],
+        "altValue": [],
+        "context": []
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.pzr6U9g10qlqtcHd"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "tidy5e-sheet": {
+      "section": "",
+      "actionSection": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.1.2",
+    "createdTime": null,
+    "modifiedTime": 1739219079608,
+    "lastModifiedBy": "q1BKxBTo6goDy95S",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p><span style=\"font-family:Lato, Arial, sans-serif\">Au niveau 3, vous apprenez un rituel qui crée un lien magique entre vous et une arme. Vous effectuez le rituel pendant 1 heure, ce qui peut être effectué pendant un repos court.</span></p><p><span style=\"font-family:Lato, Arial, sans-serif\">L'arme doit être à votre portée tout au long du rituel, à l'issue duquel vous touchez l'arme et forgez le lien. Une fois que vous vous êtes lié avec une arme, vous ne pouvez pas être désarmé de cette arme, sauf si vous êtes incapable d'agir.</span></p><p><span style=\"font-family:Lato, Arial, sans-serif\">Si l'arme se trouve sur le même plan d'existence que vous, vous pouvez invoquer cette arme par une action bonus à votre tour, l'amenant à se téléporter instantanément dans votre main.</span></p><p><span style=\"font-family:Lato, Arial, sans-serif\">Vous pouvez être lié à un maximum de deux armes, mais ne pouvez en invoquer qu'une seule à la fois avec votre action bonus. Si vous essayez de vous lier à une troisième arme, vous devez rompre le lien avec l'une des deux autres.</span></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": "On same plane of existence"
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Chevalier occulte 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "type": {
+      "value": "class"
+    },
+    "prerequisites": {
+      "level": 3
+    }
+  },
+  "_key": "!items!eCZkP7lGRryyoaNJ"
+}

@@ -1,0 +1,136 @@
+{
+  "name": "Artisan de guilde",
+  "type": "background",
+  "img": "icons/tools/hand/needle-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes le membre d'une guilde d'artisans, compétent dans un domaine particulier et en relation étroite avec d'autres artisans. Vous êtes au fait du monde des marchés, libéré des contraintes d'un ordre social féodal grâce à votre talent et à votre richesse. Vous avez appris votre savoir-faire en tant qu'apprenti auprès d'un maître artisan, sous l'égide de votre guilde, jusqu'à ce que vous deveniez à votre tour un maître dans votre branche.</p><hr /><p><strong>Compétences maîtrisées :</strong> Intuition, Persuasion</p><p><strong>Outils maîtrisées :</strong> <span style=\"font-family:Lato, Arial, sans-serif\"> un type d'outil d'artisan</span></p><p><strong>Langues :</strong> une de votre choix</p><p><strong>Équipement:</strong> <span style=\"font-family:Lato, Arial, sans-serif\">un jeu d'outil d'artisan (de votre choix), une lettre de recommandation de votre guilde, des vêtements de voyage et une bourse contenant 15 po.</span></p><p><strong>Capacité:</strong> @Compendium[5e-complete-fr.5e-backgrounds.Item.y6XhCDzLfEJ9GorO]</p><hr /><p></p><h3>Personnalités proposées</h3><p>Les charlatans sont des personnages hauts en couleurs qui dissimulent leur véritable personnalité derrière des masques qu'ils façonnent. Ils s'adaptent à ce que les gens veulent voir, à ce qu'il veulent croire, et à leur façon de voir le monde. Mais leur véritable personnalité est parfois tourmentée par des cas de conscience, un vieil ennemi ou une magouille qui a mal tournée.</p><p></p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.Yh5TnVBWpP4d7QXT]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.py3QtRqqtzT2FamU]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.AAL0FD1HCrVR8xQu]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.9x13CctfFPD9m6lY]</p><p>@Compendium[5e-complete-fr.5e-roll-tables.RollTable.tud6P71kvKGKh5QF]</p><p></p><hr /><h3>Variantes</h3><p>Plutôt qu'un artisan de guilde, vous pourriez être le membre d'une guilde de négociants, de maîtres caravaniers ou de commerçants. Vous ne fabriquez pas les objets vous-même mais gagnez votre vie en achetant et en revendant le travail d'autres personnes (ou les matières premières dont ont besoin les artisans). Votre guilde pourrait être un large consortium de marchands (ou une famille) ayant des intérêts aux quatre coins de la région. Vous transportez peut-être des biens d'un endroit à un autre, en bateau, en chariot ou en caravane, ou les achetez à des marchands ambulants et les revendez dans votre propre échoppe. D'une certaine manière, la vie d'un marchand ambulant se prête plus à l'aventure que celle d'un artisan.</p><p>Au lieu de la maîtrise d'un type d'outils d'artisan, vous obtenez la maîtrise des outils de navigateur ou une langue supplémentaire. Et plutôt que d'avoir des outils d'artisan, vous pouvez commencer avec une mule et une charrette.</p>",
+      "chat": ""
+    },
+    "identifier": "artisan",
+    "source": {
+      "revision": 1,
+      "rules": "2014",
+      "book": "Player's Handbook",
+      "page": "130",
+      "custom": "",
+      "license": ""
+    },
+    "startingEquipment": [
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT",
+        "requiresProficiency": false,
+        "_id": "6fd0lbWJPmxn0YcZ",
+        "group": "",
+        "sort": 0
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "aVpnPIVmGe8n4G6j",
+        "group": "",
+        "sort": 200000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.backgrounds.Item.dQaOdm9dbVN0RZYP",
+        "requiresProficiency": false,
+        "_id": "WK6nepAR18CP9zG6",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 300000
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "QuDLI071xB1aDh8F",
+        "group": "aVpnPIVmGe8n4G6j",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.items.Item.0d08g1i5WXnNrCNA",
+        "requiresProficiency": false,
+        "_id": "fkGyYX6KJYNxj4Zh",
+        "group": "QuDLI071xB1aDh8F",
+        "sort": 500000
+      }
+    ],
+    "advancement": [
+      {
+        "_id": "3HKXj22m48zBFr0U",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-backgrounds.Item.y6XhCDzLfEJ9GorO",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Accorde la capacité",
+        "hint": ""
+      },
+      {
+        "_id": "pR0QbJX5zCvEIT1U",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "tool:art"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "",
+        "hint": ""
+      }
+    ],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "rPtcDj6wdz4NxyQl": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.1.1",
+    "createdTime": 1731527849299,
+    "modifiedTime": 1731530100326,
+    "lastModifiedBy": "rPtcDj6wdz4NxyQl"
+  },
+  "_id": "HQ55nR2m8cVIGVax",
+  "sort": 0,
+  "_key": "!items!HQ55nR2m8cVIGVax"
+}

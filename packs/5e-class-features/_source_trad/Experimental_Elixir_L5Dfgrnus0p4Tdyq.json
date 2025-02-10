@@ -1,0 +1,152 @@
+{
+  "_id": "L5Dfgrnus0p4Tdyq",
+  "name": "Experimental Elixir",
+  "type": "feat",
+  "img": "icons/consumables/potions/bottle-round-ring-teal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": true,
+      "equipped": true,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c2",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l",
+      "spells": {
+        "0": {
+          "id": "Y99xP7zdplswDc8A",
+          "name": "Experimental Elixir",
+          "pack": "world",
+          "img": "icons/consumables/potions/bottle-round-ring-teal.webp",
+          "baseLevel": "1",
+          "level": "1",
+          "consumption": "1",
+          "upcast": "5",
+          "upcastCost": "1",
+          "flatDc": false
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.Y6179jbfx2PItNmT"
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Experimental Elixir",
+          "type": "script",
+          "author": "EHpONhziSoZpUpN3",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "const roll = await item.roll();\nif(!roll) return;\n\ntable = await game.packs.get(\"5e-complete-fr.5e-roll-tables\").getDocument(\"o8SOpnWHSGBIqPUU\");\ntable.draw();",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À la fin de votre repos long, vous créez un élixir expérimental.</p>\n<details>\n<summary style=\"padding-bottom:8px\"><strong>Full Description</strong></summary>\n<blockquote style=\"font-style:normal\">\n<p>À partir du 3ème niveau, chaque fois que vous terminez un <strong>long rest</strong>, vous pouvez magiquement produire un élixir expérimental dans un @Compendium[5e-complete-fr.5e-items.sedFXUqDJaYL9vMf]{Flask} vide que vous touchez. Lancez sur le @Compendium[5e-complete-fr.5e-roll-tables.o8SOpnWHSGBIqPUU]{Experimental Elixir} table pour l'effet de l'élixir, qui est déclenché lorsque quelqu'un boit l'élixir. Comme une action, une créature peut boire l'élixir ou l'administrer à une créature incapacitée.</p>\n<p>Vous pouvez créer des <strong>élixirs expérimentaux supplémentaires</strong> en dépensant une <strong>spell slot</strong> de 1er niveau ou supérieur pour chacun. Lorsque vous le faites, vous utilisez votre action pour créer l'élixir dans un flacon vide que vous touchez, et vous choisissez l'effet de l'élixir à partir de la table Experimental Elixir.</p>\n<p>La création d'un élixir expérimental nécessite que vous ayez des fournitures d'alchimiste sur vous, et tout élixir que vous créez avec cette fonctionnalité dure jusqu'à ce qu'il soit bu ou jusqu'à la fin de votre prochain long rest.</p>\n<p>Lorsque vous atteignez certains niveaux dans cette classe, vous pouvez faire plus d'élixirs à la fin d'un long rest : deux au 6ème niveau et trois au 15ème niveau. Lancez pour l'effet de chaque élixir séparément. Chaque élixir nécessite son propre flacon.</p>\n</blockquote>\n</details><details>\n<summary style=\"padding-bottom:8px\"><strong>Experimental Elixirs Table</strong></summary>\n<blockquote>\n<table border=\"1\">\n<thead>\n<tr>\n<td style=\"width:5.01065%\">d6</td>\n<td style=\"width:94.9893%\">Effect</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"width:5.01065%\">1</td>\n<td style=\"width:94.9893%\"><strong>Healing.</strong> The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier</td>\n</tr>\n<tr>\n<td style=\"width:5.01065%\">2</td>\n<td style=\"width:94.9893%\"><strong>Swiftness.</strong> The drinker's walking speed increases by 10 feet for 1 hour.</td>\n</tr>\n<tr>\n<td style=\"width:5.01065%\">3</td>\n<td style=\"width:94.9893%\"><strong>Resilience.</strong> The drinker gains a +1 bonus to AC for 10 minutes.</td>\n</tr>\n<tr>\n<td style=\"width:5.01065%\">4</td>\n<td style=\"width:94.9893%\"><strong>Boldness.</strong> The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.</td>\n</tr>\n<tr>\n<td style=\"width:5.01065%\">5</td>\n<td style=\"width:94.9893%\"><strong>Flight.</strong> The drinker gains a flying speed of 10 feet for 10 minutes.</td>\n</tr>\n<tr>\n<td style=\"width:5.01065%\">6</td>\n<td style=\"width:94.9893%\"><strong>Transformation.</strong> The drinker's body is transformed as if by the @Compendium[5e-complete-fr.5e-spells.bgewf7NDcfis2gbt]{Alter Self} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</td>\n</tr>\n</tbody>\n</table>\n</blockquote>\n</details>\n<section class=\"secret\">\n<p>Note: Use the @Compendium[5e-complete-fr.5e-spells.oB0iHZMRS3kpLgHZ]{Additional Elixirs} spell to consume spell slots to create your extra elixirs.</p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "day"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "object"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "@scale.alchemist.experimental-elixir",
+      "per": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "int",
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d6 + @mod",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Alchemist 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!L5Dfgrnus0p4Tdyq"
+}

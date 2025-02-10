@@ -1,0 +1,266 @@
+{
+  "_id": "WeUsXbNan6DrTNXM",
+  "name": "Ki: Empty Body",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "effects": [
+    {
+      "_id": "4dvYtqvbQGDsVi51",
+      "flags": {},
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "value": "fire",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "cold",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "acid",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "bludgeoning",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "lightning",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "necrotic",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "piercing",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "psychic",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "radiant",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "slashing",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "thunder",
+          "mode": 2,
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "poison",
+          "mode": 2,
+          "priority": null
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "rounds": 10,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Item.xqRleciuHDZlYCl6",
+      "tint": "#ffffff",
+      "transfer": true,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "name": "Ki: Empty Body",
+      "img": "systems/dnd5e/icons/skills/shadow_17.jpg",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!WeUsXbNan6DrTNXM.4dvYtqvbQGDsVi51"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Item.C2lYHOGH2UpEifk7"
+    },
+    "exportSource": {
+      "world": "kobold-cauldron",
+      "system": "dnd5e",
+      "coreVersion": "0.7.7",
+      "systemVersion": "1.1.1"
+    },
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À partir du 18e niveau, vous pouvez utiliser votre action pour dépenser 4 points de ki pour devenir invisible pendant 1 minute. Pendant ce temps, vous avez également une résistance à tous les dégâts sauf les dégâts de force.</p>\n<p>De plus, vous pouvez dépenser 8 points de ki pour lancer le sort @Compendium[5e-complete-fr.5e-spells.yUllaouQx6ZNoLsR]{Astral Projection}, sans avoir besoin de composants matériels. Lorsque vous faites cela, vous ne pouvez emmener aucune autre créature avec vous.</p>\n<section class=\"secret\">\n<p><em>Note: Après avoir ajouté cette fonctionnalité à votre personnage, définissez la Consommation de Ressources sur Utilisations d'Objet : Ki : 4.</em></p>\n<p><em>Après avoir ajouté Astral Projection à votre personnage, définissez le Mode de Préparation sur Innate et la Consommation de Ressources sur Utilisations d'Objet : Ki : 8.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Also requires 4 ki points (or 8 for Astral Projection)."
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "type": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": 4
+    },
+    "ability": "",
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "Monk 18",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": {
+      "amm": false,
+      "fin": false,
+      "fir": false,
+      "foc": false,
+      "hvy": false,
+      "lgt": false,
+      "lod": false,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "ver": false
+    }
+  },
+  "_key": "!items!WeUsXbNan6DrTNXM"
+}

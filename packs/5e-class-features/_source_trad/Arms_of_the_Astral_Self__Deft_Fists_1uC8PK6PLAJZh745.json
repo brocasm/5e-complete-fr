@@ -1,0 +1,132 @@
+{
+  "name": "Arms of the Astral Self: Deft Fists",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": "Strength Check",
+          "1": "Strength Saving Throw"
+        },
+        "value": {
+          "0": true,
+          "1": true
+        },
+        "altValue": {
+          "0": true,
+          "1": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.DHIUdEHvqVvJlTRK"
+    }
+  },
+  "_id": "1uC8PK6PLAJZh745",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez utiliser votre <strong style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\">Wisdom modifier</strong><span style=\"color:#191813;font-size:13px\"> à la place de votre Strength modifier lors des vérifications de Force et des jets de sauvegarde de Force.</span></p>\n<section class=\"secret\">\n<p><em>Note: This feature will roll 1d20 + Wisdom mod + any benefits you'd normally get for a Strength check or Strength saving throw, like if you used a Feat to gain proficiency in Strength saving throws.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "abil",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d20 + @abilities.wis.mod + @abilities.str.checkBonus",
+          ""
+        ],
+        [
+          "1d20 + @abilities.wis.mod + (@abilities.str.proficient * @prof) + @abilities.str.saveBonus",
+          ""
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!1uC8PK6PLAJZh745"
+}

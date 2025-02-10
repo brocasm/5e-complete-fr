@@ -1,0 +1,142 @@
+{
+  "_id": "OrYmg92iw2Um2i6w",
+  "name": "Channel Divinity: Preserve Life",
+  "type": "feat",
+  "img": "icons/magic/light/hand-sparks-smoke-teal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.hEymt45rICi4f9eL"
+    },
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À partir du 2e niveau, vous pouvez utiliser votre Canalisation de la Divinité pour soigner les gravement blessés.</p>\n<p>En tant qu'<strong>action</strong>, vous présentez votre symbole sacré et invoquez une énergie de guérison qui peut restaurer un nombre de points de vie égal à cinq fois votre niveau de clerc.</p>\n<p>Choisissez n'importe quelles créatures à 30 pieds de vous, et répartissez ces points de vie entre elles. Cette fonctionnalité ne peut restaurer une créature qu'à la moitié maximum de ses points de vie. Vous ne pouvez pas utiliser cette fonctionnalité sur un mort-vivant ou une construction.</p>\n<section class=\"secret\">\n<p><em>Note: Lorsque vous ajoutez cette fonctionnalité à votre personnage, définissez la Consommation de Ressource sur Utilisations d'Objet: Canalisation de la Divinité.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 60",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "The target cannot be Undead or a Construct"
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "type": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "5 * @classes.cleric.levels",
+          "healing"
+        ]
+      ],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "Life Domain 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!OrYmg92iw2Um2i6w"
+}

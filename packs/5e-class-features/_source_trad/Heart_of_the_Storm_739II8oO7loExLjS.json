@@ -1,0 +1,119 @@
+{
+  "name": "Heart of the Storm",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-explosion-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.dK1LR4VTYBffyTAp"
+    }
+  },
+  "_id": "739II8oO7loExLjS",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "RoD9QmAeldkRTqNP": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 6e niveau, vous obtenez une résistance aux dégâts de <strong>lightning</strong> et <strong>thunder damage</strong>. De plus, chaque fois que vous commencez à lancer un sort de 1er niveau ou supérieur qui inflige des dégâts de lightning ou thunder, une magie orageuse jaillit de vous. Cette éruption fait subir des dégâts de lightning ou thunder (choisissez chaque fois que cette capacité est activée) égaux à la moitié de votre niveau de sorcier aux créatures de votre choix que vous pouvez voir dans un rayon de 10 pieds autour de vous.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "SCAG",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "When you start casting a spell of 1st level or higher that deals lightning or thunder damage"
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "any",
+      "type": "creature"
+    },
+    "range": {
+      "value": 10,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "floor(@classes.sorcerer.levels/2)",
+          "lightning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Storm Sorcery 6",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!739II8oO7loExLjS"
+}

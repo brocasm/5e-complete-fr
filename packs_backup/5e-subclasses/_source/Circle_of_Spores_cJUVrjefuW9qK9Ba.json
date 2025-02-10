@@ -1,0 +1,317 @@
+{
+  "_id": "cJUVrjefuW9qK9Ba",
+  "name": "Circle of Spores",
+  "type": "subclass",
+  "img": "icons/magic/nature/mushroom-glow-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Item.tXzXodEoXq7V5sHc"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life. These druids believe that life and death are parts of a grand cycle, with one leading to the other and then back again. Death isn't the end of life, but instead a change of state that sees life shift into a new form.</p>\n<p>Druids of this circle have a complex relationship with the undead. They see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.</p>\n<h3>Circle of Spores Features</h3>\n<p>2nd Level: @Compendium[5e-complete-fr.5e-class-features.5YD2zOlWx0jPnLuZ]{Circle Spells}, @Compendium[5e-complete-fr.5e-class-features.M4NyFLYE0VwNP320]{Halo of Spores}, @Compendium[5e-complete-fr.5e-class-features.zNUgBxiY3j3C8vef]{Symbiotic Entity}</p>\n<p>6th Level: @Compendium[5e-complete-fr.5e-class-features.ia4s9PpX75I8ovue]{Fungal Infestation}</p>\n<p>10th Level: @Compendium[5e-complete-fr.5e-class-features.nzvn7ZKpmA7nJnmS]{Spreading Spores}</p>\n<p>14th Level: @Compendium[5e-complete-fr.5e-class-features.6Nu1yEB2c9UktVB5]{Fungal Body}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "identifier": "circle-of-spores",
+    "classIdentifier": "druid",
+    "advancement": [
+      {
+        "_id": "sq905p0y1mc721h8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-class-features.ia4s9PpX75I8ovue"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 6,
+        "title": "Circle of Spores Feature",
+        "icon": ""
+      },
+      {
+        "_id": "xt8b9sigvxx52e66",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-class-features.nzvn7ZKpmA7nJnmS"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 10,
+        "title": "Circle of Spores Feature",
+        "icon": ""
+      },
+      {
+        "_id": "ut956fjzwghjsl4c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-class-features.5YD2zOlWx0jPnLuZ",
+            "Compendium.5e-complete-fr.5e-class-features.M4NyFLYE0VwNP320",
+            "Compendium.5e-complete-fr.5e-class-features.zNUgBxiY3j3C8vef",
+            "Compendium.5e-complete-fr.5e-spells.1zoeUSHxHQN34G8N"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Circle of Spores Features and Spell",
+        "icon": ""
+      },
+      {
+        "_id": "vh20x0u604gxzied",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "n": 1,
+              "die": 4
+            },
+            "6": {
+              "n": 1,
+              "die": 6
+            },
+            "10": {
+              "n": 1,
+              "die": 8
+            },
+            "14": {
+              "n": 1,
+              "die": 10
+            }
+          }
+        },
+        "value": {},
+        "title": "Halo of Spores Die",
+        "icon": ""
+      },
+      {
+        "_id": "w2ekqlvazolb7nmh",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-class-features.6Nu1yEB2c9UktVB5"
+          ],
+          "optional": false
+        },
+        "value": {},
+        "level": 14,
+        "title": "Circle of Spores Feature",
+        "icon": ""
+      },
+      {
+        "_id": "h978eqh3qk64cptj",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": "8"
+            },
+            "3": {
+              "value": "12"
+            },
+            "4": {
+              "value": "16"
+            },
+            "5": {
+              "value": "20"
+            },
+            "6": {
+              "value": "24"
+            },
+            "7": {
+              "value": "28"
+            },
+            "8": {
+              "value": "32"
+            },
+            "9": {
+              "value": "36"
+            },
+            "10": {
+              "value": "40"
+            },
+            "11": {
+              "value": "44"
+            },
+            "12": {
+              "value": "48"
+            },
+            "13": {
+              "value": "52"
+            },
+            "14": {
+              "value": "56"
+            },
+            "15": {
+              "value": "60"
+            },
+            "16": {
+              "value": "64"
+            },
+            "17": {
+              "value": "68"
+            },
+            "18": {
+              "value": "72"
+            },
+            "19": {
+              "value": "76"
+            },
+            "20": {
+              "value": "80"
+            }
+          }
+        },
+        "value": {},
+        "title": "Symbiotic Entity Health",
+        "icon": ""
+      },
+      {
+        "_id": "ppqnj7vqmkkmtx1g",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-spells.GF3MCaxFoFwiSh8F",
+            "Compendium.5e-complete-fr.5e-spells.ueK5tTbZxquUhopA"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Circle of Spores Spells",
+        "icon": ""
+      },
+      {
+        "_id": "3bvjmn6xlebe40ej",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-spells.YYvm2Ax4pNUkuIB3",
+            "Compendium.5e-complete-fr.5e-spells.z63Web95PUpDmIOB"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 5,
+        "title": "Circle of Spores Spells",
+        "icon": ""
+      },
+      {
+        "_id": "8ip2yw9qb3pq579y",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-spells.5T6YkH0115J3oAsg",
+            "Compendium.5e-complete-fr.5e-spells.WoAsZ4WeFEbWZCdf"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 7,
+        "title": "Circle of Spores Spells",
+        "icon": ""
+      },
+      {
+        "_id": "8e44yiy1a2e3alb9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.5e-complete-fr.5e-spells.pgfEb63k38KiSHoh",
+            "Compendium.5e-complete-fr.5e-spells.7tit8B9S1sUwJ5Vo"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 9,
+        "title": "Circle of Spores Spells",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664691596255,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.tXzXodEoXq7V5sHc",
+    "duplicateSource": null
+  },
+  "_key": "!items!cJUVrjefuW9qK9Ba"
+}

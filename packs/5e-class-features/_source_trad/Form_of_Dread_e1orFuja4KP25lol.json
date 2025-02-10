@@ -1,0 +1,119 @@
+{
+  "name": "Form of Dread",
+  "type": "feat",
+  "img": "icons/magic/death/undead-skeleton-rags-fire-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.piAmMFpRsICJoyvV"
+    }
+  },
+  "_id": "e1orFuja4KP25lol",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 1st level, vous manifestez un aspect de la terrible puissance de votre patron. En tant qu'action bonus, vous vous transformez pendant 1 minute. Vous obtenez les avantages suivants pendant la transformation :</p>\n<p>Vous gagnez des points de vie temporaires égaux à 1d10 + votre niveau de warlock.</p>\n<p>Une fois pendant chacun de vos tours, lorsque vous touchez une créature avec une attaque, vous pouvez l'obliger à effectuer un jet de sauvegarde de Sagesse, et si le jet de sauvegarde échoue, la cible est <strong>effrayée</strong> de vous jusqu'à la fin de votre prochain tour.</p>\n<ul>\n<li>Vous êtes <strong>immunisé</strong> contre l'état effrayé.</li>\n<li>Vous pouvez vous transformer un nombre de fois égal à votre bonus de maîtrise, et vous récupérez toutes les utilisations épuisées lorsque vous terminez un <strong>long repos</strong>.</li>\n</ul>\n<p>L'apparence de votre Form of Dread reflète un aspect de votre patron. Par exemple, votre forme pourrait être un linceul d'ombres formant la couronne et les robes de votre patron liche, ou votre corps pourrait briller de glyphes provenant de rites funéraires anciens et être entouré de vents du désert, suggérant votre patron momie.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "VRGR",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "@prof",
+      "per": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d10 + @classes.warlock.levels",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "The Undead 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!e1orFuja4KP25lol"
+}

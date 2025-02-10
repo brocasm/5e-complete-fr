@@ -1,0 +1,34 @@
+{
+  "_id": "rP81zDVfNTzqnRhf",
+  "name": "Toggle Rage",
+  "type": "script",
+  "author": "EHpONhziSoZpUpN3",
+  "img": "icons/skills/wounds/injury-body-pain-gray.webp",
+  "scope": "actor",
+  "command": "// Define names of effects to toggle\nconst effectNames = [\"Rage\", \"Spirit of the Elk\"];\n\nconst filter = token.actor.effects.filter(i => effectNames.includes(i.data.label));\nconst updates = filter.map(i => ({_id: i.id, disabled: !i.data.disabled}));\nawait token.actor.updateEmbeddedDocuments(\"ActiveEffect\", updates);",
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "effectMacro": true
+    },
+    "core": {
+      "sourceId": "Macro.MXOslJDsChyqBfS0"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665008296106,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Macro.MXOslJDsChyqBfS0",
+    "duplicateSource": null
+  },
+  "_key": "!macros!rP81zDVfNTzqnRhf"
+}
