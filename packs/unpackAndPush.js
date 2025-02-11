@@ -73,12 +73,15 @@ async function packFolders() {
     .map(dirent => dirent.name);
 
   for (const folder of folders) {
-    const command = `fvtt package pack ${folder}`;
-    try {
-      await runCommand(command);
-      console.log(`Successfully packed ${folder}`);
-    } catch (error) {
-      console.error(`Failed to pack ${folder}: ${error}`);
+    if (fs.existsSync(sourceDir)) {
+      const sourceDir = path.join(rootDir, folder, '_source');
+      const command = `fvtt package pack ${folder}`;
+      try {
+        await runCommand(command);
+        console.log(`Successfully packed ${folder}`);
+      } catch (error) {
+        console.error(`Failed to pack ${folder}: ${error}`);
+      }
     }
   }
 }
