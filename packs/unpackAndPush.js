@@ -73,8 +73,8 @@ async function packFolders() {
     .map(dirent => dirent.name);
 
   for (const folder of folders) {
-    if (fs.existsSync(sourceDir)) {
-      const sourceDir = path.join(rootDir, folder, '_source');
+    const sourceDir = path.join(rootDir, folder, '_source');
+    if (fs.existsSync(sourceDir)) {      
       const command = `fvtt package pack ${folder}`;
       try {
         await runCommand(command);
