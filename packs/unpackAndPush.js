@@ -99,9 +99,9 @@ async function init_workon_fvtt(){
   const command = `fvtt package workon 5e-complete-fr`;
     try {
       await runCommand(command);
-      console.log(`Successfully workon ${folder}`);
+      console.log(`Successfully workon `);
     } catch (error) {
-      console.error(`Failed to workon ${folder}: ${error}`);
+      console.error(`Failed to workon: ${error}`);
     }
 }
 
