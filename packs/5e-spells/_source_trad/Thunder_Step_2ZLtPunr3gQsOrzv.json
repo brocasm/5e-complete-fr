@@ -1,0 +1,194 @@
+{
+  "name": "Thunder Step",
+  "type": "spell",
+  "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [
+          true
+        ],
+        "altValue": [
+          true
+        ],
+        "context": {
+          "0": ""
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.BkomI9rqKjB0F0X0"
+    }
+  },
+  "_id": "2ZLtPunr3gQsOrzv",
+  "system": {
+    "description": {
+      "value": "<p>Vous vous téléportez vers un espace inoccupé que vous pouvez voir dans la portée. Immédiatement après votre disparition, un grondement tonitruant retentit, et chaque créature à 10 pieds de l'espace que vous avez quitté doit réussir un jet de sauvegarde de Constitution, subissant 3d10 dégâts de tonnerre en cas d'échec, ou la moitié des dégâts en cas de succès. Le tonnerre peut être entendu jusqu'à 300 pieds de distance.</p><p>Vous pouvez emporter des objets tant que leur poids ne dépasse pas ce que vous pouvez porter. Vous pouvez également téléporter une créature consentante de votre taille ou plus petite qui porte des équipements jusqu'à sa capacité de port. La créature doit être à 5 pieds de vous lorsque vous lancez ce sort, et il doit y avoir un espace inoccupé à 5 pieds de votre espace de destination pour que la créature puisse apparaître; sinon, la créature reste en arrière.</p><h3>At Higher Levels</h3><p>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.</p><p><strong>Spell lists.</strong> Sorcerer, Warlock, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 10,
+      "width": null,
+      "units": "ft",
+      "type": "radius"
+    },
+    "range": {
+      "value": 90,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d10",
+          "thunder"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664782021500,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.BkomI9rqKjB0F0X0",
+    "duplicateSource": null
+  },
+  "_key": "!items!2ZLtPunr3gQsOrzv"
+}

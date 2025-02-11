@@ -1,0 +1,211 @@
+{
+  "_id": "oKkCetAk9lUICCUg",
+  "name": "Absorb Elements",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-explosion-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        },
+        "context": {
+          "0": "Same as triggering damage type"
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.tXvcLLNaaKsXtUpW"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Le sort capture une partie de l'énergie entrante, réduisant son effet sur vous et la stockant pour votre prochaine attaque au corps à corps. Vous avez <strong>résistance</strong> au type de dégâts déclencheur jusqu'au début de votre prochain tour. De plus, la première fois que vous touchez avec une attaque au corps à corps lors de votre prochain tour, la cible subit des dégâts supplémentaires [[/r 1d6]] du type déclencheur, et le sort prend fin.</p><h3>À des Niveaux Supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une emplacement de sort de 2e niveau ou supérieur, les dégâts supplémentaires augmentent de 1d6 pour chaque niveau d'emplacement au-dessus du 1er.</p><p><strong>Listes de Sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.3wFSjqwXndAQ8P2i]{Artificer}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.1IHQ3bZ4aCi15dlH]{Druid}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.e9xuvCZ8ZjUNZnwN]{Ranger}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.NX28XQnco4pjOzF6]{Sorcerer}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]{Wizard}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "When you take acid, cold, fire, lightning, or thunder damage"
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6",
+          ""
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "abj",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667710614670,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.tXvcLLNaaKsXtUpW",
+    "duplicateSource": null
+  },
+  "_key": "!items!oKkCetAk9lUICCUg"
+}

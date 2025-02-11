@@ -1,0 +1,116 @@
+{
+  "name": "Mass Cure Wounds",
+  "type": "spell",
+  "img": "icons/magic/life/cross-worn-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.Pyzmm8R7rVsNAPsd"
+    }
+  },
+  "_id": "dbZeeLOESusVXxMJ",
+  "system": {
+    "description": {
+      "value": "<p>Une vague d'Énergie de Guérison se répand depuis un point de votre choix dans la portée. Choisissez jusqu'à six créatures dans une Sphère de 30 pieds de rayon centrée sur ce point. Chaque cible récupère des Points de Vie égaux à 3d8 + votre modificateur de compétence de Lanceur de sorts. Ce sort n'a aucun effet sur les Morts-vivants ou les constructions.</p><p><h3>À des Niveaux Supérieurs</h3> Lorsque vous lancez ce sort en utilisant une emplacement de sort de 6e niveau ou supérieur, la Guérison augmente de 1d8 pour chaque niveau d'emplacement au-dessus du 5e.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 258",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "sphere"
+    },
+    "range": {
+      "value": 60,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d8 + @mod",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "level": 5,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664779434313,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.world.spells-expanded.Pyzmm8R7rVsNAPsd",
+    "duplicateSource": null
+  },
+  "_key": "!items!dbZeeLOESusVXxMJ"
+}

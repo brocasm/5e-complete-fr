@@ -1,0 +1,179 @@
+{
+  "_id": "dLtoJSxcnS7FC0BE",
+  "name": "Alchemist's Fire",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-corked-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.FvNOwWbh5FXyX4xe"
+    },
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "quantity": false,
+          "use": true
+        },
+        "altValue": {
+          "quantity": false,
+          "use": true
+        }
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Ce fluide collant et adhésif s'enflamme lorsqu'il est exposé à l'air. En tant qu'action, vous pouvez lancer cette fiole jusqu'à 20 pieds, la brisant à l'impact. Faites une attaque à distance contre une créature ou un objet, en traitant l'alchemist's fire comme une arme improvisée. En cas de touche, la cible subit <strong>1d4 fire damage</strong> au début de chacun de ses tours. Une créature peut mettre fin à ces dégâts en utilisant son action pour effectuer un <strong>DC 10 Dexterity check</strong> pour éteindre les flammes.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "quantity": 1,
+    "weight": 1,
+    "price": "50",
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 0,
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 20,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "autoDestroy": true,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "dex",
+    "actionType": "rwak",
+    "attackBonus": "0",
+    "chatFlavor": "improvised weapon",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d4",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 10,
+      "scaling": "flat"
+    },
+    "consumableType": "potion",
+    "attributes": {
+      "spelldc": 10
+    },
+    "charges": {
+      "max": 1,
+      "value": 1
+    }
+  },
+  "_key": "!items!dLtoJSxcnS7FC0BE"
+}

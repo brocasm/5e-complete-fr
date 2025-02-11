@@ -1,0 +1,129 @@
+{
+  "name": "Wither and Bloom",
+  "type": "spell",
+  "img": "icons/magic/unholy/hand-fire-skeleton-pink.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "SCC",
+      "hash": "wither%20and%20bloom_scc",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.rx2GsZ8VtqccDB8W"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous invoquez à la fois la mort et la vie sur une sphère de 10 pieds de rayon centrée sur un point à portée. Chaque créature de votre choix dans cette zone doit effectuer un jet de sauvegarde de Constitution, subissant [[/r 2d6]] dégâts nécrotiques en cas d'échec, ou la moitié de ces dégâts en cas de réussite. La végétation non magique dans cette zone se flétrit.</p><p>En outre, une créature de votre choix dans cette zone peut dépenser et lancer l'un de ses dés de vie non utilisés et récupérer un nombre de points de vie égal au résultat du lancer plus votre modificateur de capacité de lancement de sorts.</p><h3>À des niveaux supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une emplacement de sort de 3e niveau ou supérieur, les dégâts augmentent de 1d6 pour chaque emplacement au-dessus du 2e, et le nombre de dés de vie qui peuvent être dépensés et ajoutés au lancer de soin augmente d'un pour chaque emplacement au-dessus du 2e.</p><p><strong>Listes de sorts.</strong> Druide, Sorcier, Magicien</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "SCoC",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 10,
+      "width": null,
+      "units": "ft",
+      "type": "radius"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d6",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 2,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A withered vine twisted into a loop",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665648503134,
+    "modifiedTime": 1667359045980,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.rx2GsZ8VtqccDB8W",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "ah9DCblTE5DuMqlt",
+  "_key": "!items!ah9DCblTE5DuMqlt"
+}

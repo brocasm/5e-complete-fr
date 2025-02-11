@@ -1,0 +1,207 @@
+{
+  "name": "Portent",
+  "type": "feat",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [],
+        "altValue": [],
+        "context": []
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.5R0qGFr7QDu7PwjO"
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Portent",
+        "type": "script",
+        "scope": "global",
+        "command": "const portentDice = actor.system.scale[\"school-of-divination\"].portent;\nlet portents = item.getFlag(\"world\", \"portents\");\nif(!portents) return reRoll();\nlet myButtons = await getButtons();\nnew Dialog({\n    title: \"Portent\",\n    content: \"How will you alter fate?\",\n    buttons: myButtons\n}, {\n    classes: [\"dialog\", `portent-dialog-${portents.length}`]\n}).render(true);\n\nasync function getButtons() {\n    let myButtons = portents.reduce((buttons, roll) => {\n        buttons[roll] = {\n            icon: `<i class=\"fas fa-dice-d20\"></i>`,\n            label: `${roll}`,\n            callback: async () => {\n                const rollToChat = await new Roll(\"1d20\").evaluate();\n                rollToChat._total = roll; // Convert flag to die result\n                rollToChat.terms[0].results[0].result = roll; // Convert flag to die result\n                rollToChat.toMessage({flavor: \"I foresaw this event and choose to roll:\"});\n                portents.splice(portents.indexOf(roll), 1);\n                await item.setFlag(\"world\", \"portents\", portents);\n            }\n        };\n        return buttons;\n    }, {});\n    myButtons.reset = {\n        icon: `<i class=\"fas fa-rotate-right\"></i>`,\n        label: `Roll New Portents`,\n        callback: async () => {\n            return reRoll();\n        }\n    };\n    return myButtons;\n}\n\nasync function reRoll() {\n    const use = await item.use(); // Roll item\n    const rolls = await Promise.all(Array.fromRange(portentDice).map(n => {\n        return new Roll(\"1d20\").evaluate({async: true});\n    }));\n    const rollOutput = rolls.reduce((acc, roll) => {\n      return acc + `\n      <div class=\"dice-roll dice-roll-columns-${portentDice}\">\n        <div class=\"dice-result\">\n          <div class=\"dice-formula\">1d20</div>\n          <div class=\"dice-tooltip\">\n            <section class=\"tooltip-part\">\n              <div class=\"dice\">\n                <header class=\"part-header flexrow\">\n                  <span class=\"part-formula\">1d20</span>\n                  <span class=\"part-total\">${roll.total}</span>\n                </header>\n                <ol class=\"dice-rolls\">\n                  <li class=\"roll die d20\">${roll.total}</li>\n                </ol>\n              </div>\n            </section>\n          </div>\n          <h4 class=\"dice-total\">${roll.total}</h4>\n        </div>\n      </div>`;\n    }, \"\");\n    const chatData = {\n        speaker: ChatMessage.getSpeaker(),\n        flavor: \"Will there be fortune or calamity today?\",\n        content: rollOutput\n    };\n    ChatMessage.applyRollMode(chatData, game.settings.get(\"core\", \"rollMode\"));\n    await ChatMessage.create(chatData);\n    rolls.map(r => game.dice3d?.showForRoll(r, game.user, true));\n    rolls.sort(function(a,b){a-b});\n    await item.setFlag(\"world\", \"portents\", rolls.map(r => r.total));\n}",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_id": "3VNBDYF9rx1LtV6H",
+  "system": {
+    "description": {
+      "value": "<p>À partir du 2ème niveau, lorsque vous choisissez cette école, des aperçus du futur commencent à s'imposer à votre conscience. Lorsque vous terminez un <strong>long rest</strong>, lancez [[/r 2d20]] et enregistrez les nombres obtenus. Vous pouvez remplacer n'importe quel jet d'attaque, jet de sauvegarde ou test de compétence effectué par vous ou une créature que vous pouvez voir par l'un de ces jets de prescience. Vous devez choisir de le faire avant le jet, et vous ne pouvez remplacer un jet de cette manière qu'une seule fois par tour.</p><p>Chaque jet de prescience ne peut être utilisé qu'une seule fois. Lorsque vous terminez un <strong>long rest</strong>, vous perdez tous les jets de prescience non utilisés.</p><section class=\"blue-note\"><p>Note: Cette fonctionnalité nécessite le module macro Item pour l'automatisation. Ne fonctionnera pas si vous n'êtes pas un Divination Wizard.</p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "@scale.school-of-divination.portent",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "School of Divination 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1666222540708,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.5R0qGFr7QDu7PwjO",
+    "duplicateSource": null
+  },
+  "_key": "!items!3VNBDYF9rx1LtV6H"
+}

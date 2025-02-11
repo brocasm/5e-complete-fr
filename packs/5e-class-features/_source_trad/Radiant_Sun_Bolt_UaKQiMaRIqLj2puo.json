@@ -1,0 +1,165 @@
+{
+  "_id": "UaKQiMaRIqLj2puo",
+  "name": "Radiant Sun Bolt",
+  "type": "feat",
+  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Item.lDRhDwlNREjGph0z"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Débutant lorsque vous choisissez cette tradition au niveau 3, vous pouvez lancer des traits de radiance magique brûlante.</p><p>Vous obtenez une nouvelle option d'attaque que vous pouvez utiliser avec l'action <strong>Attack</strong>. Cette attaque spéciale est une attaque de sort à distance avec une portée de 30 pieds. Vous êtes compétent avec elle, et vous ajoutez votre modificateur de Dexterity à ses jets d'attaque et de dégâts. Ses dégâts sont <strong>radiant</strong>, et son dé de dégâts est un <strong>d4</strong>. Ce dé change lorsque vous gagnez des niveaux de moine, comme le montre la colonne Martial Arts du tableau Monk.</p><p>Lorsque vous prenez l'action Attack pendant votre tour et que vous utilisez cette attaque spéciale dans le cadre de celle-ci, vous pouvez dépenser 1 point de ki pour faire l'attaque spéciale deux fois comme action bonus.</p><p>Lorsque vous obtenez la fonctionnalité Extra Attack, cette attaque spéciale peut être utilisée pour l'une des attaques que vous faites dans le cadre de l'action Attack.</p><section class=\"secret\" id=\"secret-2eRccS19InqtLF3W\"><p><em>Note: Vous devrez mettre à jour manuellement le dé de dégâts de cette fonctionnalité aux niveaux de moine plus élevés.</em></p><p><em>Vous pouvez déduire manuellement un point de ki lors de la réalisation d'attaques bonus, ou utiliser</em> @Compendium[5e-complete-fr.5e-class-features.nDupigAtTVJsOVXS]{Flurry of Blows} <em>puisque le principe est le même.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "SCAG, XGE",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "dex",
+    "actionType": "rsak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d4",
+          "radiant"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Way of the Sun Soul 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667169575747,
+    "lastModifiedBy": "9DrM9sBIPMUTBZIH",
+    "compendiumSource": "Item.lDRhDwlNREjGph0z",
+    "duplicateSource": null
+  },
+  "_key": "!items!UaKQiMaRIqLj2puo"
+}

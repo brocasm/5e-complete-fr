@@ -1,0 +1,191 @@
+{
+  "_id": "QmtYeWDrJ3Gs2arE",
+  "name": "Staff of Defense",
+  "type": "weapon",
+  "img": "icons/weapons/staves/staff-animal-bull.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Secondary",
+          "formulaSet": [
+            1
+          ]
+        }
+      ],
+      "autoRollundefined": true
+    },
+    "magicitems": {
+      "enabled": true,
+      "equipped": true,
+      "attuned": true,
+      "charges": "10",
+      "chargeType": "c1",
+      "destroy": true,
+      "destroyFlavorText": "reaches 0 charges: the staff shatters and is destroyed.",
+      "rechargeable": true,
+      "recharge": "1d6+4",
+      "rechargeType": "t2",
+      "rechargeUnit": "r2",
+      "sorting": "l",
+      "spells": {
+        "0": {
+          "id": "ZttvQx25TMC1Unxx",
+          "name": "Mage Armor",
+          "pack": "5e-complete-fr.5e-spells",
+          "img": "systems/dnd5e/icons/spells/protect-blue-1.jpg",
+          "baseLevel": "1",
+          "level": "1",
+          "consumption": "1",
+          "upcast": "1",
+          "upcastCost": "1",
+          "flatDc": false
+        },
+        "1": {
+          "id": "gFW5CNtbklkcYxen",
+          "name": "Shield",
+          "pack": "5e-complete-fr.5e-spells",
+          "img": "systems/dnd5e/icons/spells/protect-magenta-1.jpg",
+          "baseLevel": "1",
+          "level": "1",
+          "consumption": "2",
+          "upcast": "1",
+          "upcastCost": "1",
+          "flatDc": false
+        }
+      },
+      "destroyCheck": "d2",
+      "destroyType": "dt1"
+    },
+    "core": {
+      "sourceId": "Item.x6S3ZCiLBQ9XX1v4"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>(nécessite l'accord)</p>\n<p> </p>\n<p>Ce bâton fin et creux est en verre mais aussi solide que du chêne. Il pèse 3 livres. Vous devez être en accord avec le bâton pour en tirer profit et lancer ses sorts.</p>\n<p>Tant que vous tenez le bâton, vous avez un bonus de +1 à votre Classe d'Armure.</p>\n<p>Le bâton possède 10 charges, qui servent à alimenter les sorts qu'il contient. Avec le bâton en main, vous pouvez utiliser votre action pour lancer l'un des sorts suivants à partir du bâton si le sort figure sur la liste des sorts de votre classe : Armure de Mage (1 charge) ou Bouclier (2 charges). Aucun composant n'est requis.</p>\n<p>Le bâton récupère 1d6 + 4 charges utilisées chaque jour à l'aube. Si vous utilisez la dernière charge du bâton, lancez un d20. En cas de 1, le bâton se brise et est détruit.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "LMoP",
+    "quantity": 1,
+    "weight": 3,
+    "price": "0",
+    "attunement": 1,
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "mwak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6 + @mod",
+          "bludgeoning"
+        ],
+        [
+          "1d8 + @mod",
+          "bludgeoning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "simpleM",
+    "baseItem": "quarterstaff",
+    "properties": {
+      "ada": false,
+      "amm": false,
+      "fin": false,
+      "fir": false,
+      "foc": false,
+      "hvy": false,
+      "lgt": false,
+      "lod": false,
+      "mgc": false,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "sil": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "ver": true
+    },
+    "proficient": false
+  },
+  "_key": "!items!QmtYeWDrJ3Gs2arE"
+}

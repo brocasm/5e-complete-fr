@@ -1,0 +1,124 @@
+{
+  "name": "Temple of the Gods",
+  "type": "spell",
+  "img": "icons/environment/settlement/columned-forum.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "temple%20of%20the%20gods_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.x9WGOpcq7BsCUZiw"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous faites apparaître un temple scintillant au sol que vous pouvez voir à portée. Le temple doit tenir dans un cube d'espace inoccupé, jusqu'à 120 pieds de chaque côté. Le temple reste jusqu'à la fin du sort. Il est dédié à la divinité, au panthéon ou à la philosophie représentée par le symbole sacré utilisé lors du lancement.</p><p>Vous prenez toutes les décisions concernant l'apparence du temple. L'intérieur est fermé par un sol, des murs et un toit, avec une porte donnant accès à l'intérieur et autant de fenêtres que vous le souhaitez. Seules vous et les créatures que vous désignez lors du lancement du sort peuvent ouvrir ou fermer la porte.</p><p>L'intérieur du temple est un espace ouvert avec une idole ou un autel à une extrémité. Vous décidez si le temple est éclairé et si cet éclairage est une lumière vive ou une lumière tamisée. L'odeur d'encens brûlant remplit l'air à l'intérieur, et la température est douce.</p><p>Le temple s'oppose aux types de créatures que vous choisissez lors du lancement de ce sort. Choisissez un ou plusieurs des suivants : <strong>celestials</strong>, <strong>elementals</strong>, <strong>fey</strong>, <strong>fiends</strong>, or <strong>undead</strong>. Si une créature du type choisi tente d'entrer dans le temple, cette créature doit réussir un jet de sauvegarde de Charisme. En cas d'échec, elle ne peut pas entrer dans le temple pendant 24 heures. Même si la créature peut entrer dans le temple, la magie qui y règne la gêne ; chaque fois qu'elle fait un jet d'attaque, une épreuve de compétence ou un jet de sauvegarde à l'intérieur du temple, elle doit lancer un [[/r d4]] et soustraire le nombre obtenu du jet de d20.</p><p>De plus, les capteurs créés par les sorts de divination ne peuvent pas apparaître à l'intérieur du temple, et les créatures à l'intérieur ne peuvent pas être ciblées par des sorts de <strong>divination</strong>.</p><p>Enfin, chaque fois qu'une créature dans le temple récupère des points de vie grâce à un sort de 1er niveau ou supérieur, la créature récupère des points de vie supplémentaires égaux à votre modificateur de Sagesse (minimum 1 point de vie).</p><p>Le temple est fait de force magique opaque qui s'étend dans le Plan Éthéré, bloquant ainsi le voyage éthéré à l'intérieur du temple. Rien ne peut physiquement passer à travers l'extérieur du temple. Il ne peut pas être dissipé par @UUID[Compendium.5e-complete-fr.5e-spells.vWLRarMk4QaoZjNv]{Dispel Magic}, et @UUID[Compendium.5e-complete-fr.5e-spells.kYIxodu5ec0W3yzC]{Antimagic Field} n'a aucun effet sur lui. Un sort de @UUID[Compendium.5e-complete-fr.5e-spells.e88Y4uaWvBBGBDyq]{Disintegrate} détruit le temple instantanément.</p><p>Lancer ce sort au même endroit chaque jour pendant un an rend cet effet permanent.</p><p><strong>Liste des sorts.</strong> Clerc</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "hour",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "target": {
+      "value": 120,
+      "width": null,
+      "units": "ft",
+      "type": "cube"
+    },
+    "range": {
+      "value": 120,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "cha",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 7,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A holy symbol worth at least 5 gp",
+      "consumed": false,
+      "cost": 5,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650950078,
+    "modifiedTime": 1667345471177,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.x9WGOpcq7BsCUZiw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "21gcnAgnje1zi4L8",
+  "_key": "!items!21gcnAgnje1zi4L8"
+}

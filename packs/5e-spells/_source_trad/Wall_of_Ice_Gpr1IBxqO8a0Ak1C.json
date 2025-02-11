@@ -1,0 +1,115 @@
+{
+  "name": "Wall of Ice",
+  "type": "spell",
+  "img": "icons/magic/water/snowflake-ice-purple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.fzZnVKLmBMo2f5up"
+    }
+  },
+  "_id": "Gpr1IBxqO8a0Ak1C",
+  "system": {
+    "description": {
+      "value": "<p>Vous créez un mur de glace sur une surface solide à portée. Vous pouvez le former en dôme hémisphérique ou en sphère avec un rayon allant jusqu'à 10 pieds, ou vous pouvez façonner une surface plate composée de dix panneaux de 10 pieds carrés. Chaque panneau doit être contigu à un autre panneau. Sous quelque forme que ce soit, le mur a une épaisseur de 1 pied et dure pendant la Durée.</p><p>Si le mur coupe l'espace d'une créature lorsqu'il apparaît, la créature dans son aire est poussée d'un côté du mur et doit faire un jet de sauvegarde de Dexterity. En cas d'échec, la créature subit 10d6 dégâts de froid, ou la moitié des dégâts en cas de réussite.</p><p>Le mur est un objet qui peut être endommagé et donc percé. Il a une CA de 12 et 30 points de vie par section de 10 pieds, et il est vulnérable aux dégâts de feu. Réduire une section de 10 pieds du mur à 0 points de vie le détruit et laisse derrière une feuille d'air glacial dans l'espace que le mur occupait. Une créature traversant la feuille d'air glacial pour la première fois sur un tour doit faire un jet de sauvegarde de Constitution. Cette créature subit 5d6 dégâts de froid en cas d'échec, ou la moitié des dégâts en cas de réussite.</p><p>À des Niveaux Supérieurs. Lorsque vous lancez ce sort en utilisant une emprise de sort de 7e niveau ou supérieur, les dégâts infligés par le mur lorsqu'il apparaît augmentent de 2d6, et les dégâts provenant du passage à travers la feuille d'air glacial augmentent de 1d6, pour chaque niveau d'emprise au-dessus du 6e.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": 100,
+      "width": null,
+      "units": "ft",
+      "type": "wall"
+    },
+    "range": {
+      "value": 120,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "10d6",
+          "cold"
+        ]
+      ],
+      "versatile": "5d6"
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 6,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A small piece of quartz",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "2d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664780326492,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Compendium.world.spells-expanded.fzZnVKLmBMo2f5up",
+    "duplicateSource": null
+  },
+  "_key": "!items!Gpr1IBxqO8a0Ak1C"
+}

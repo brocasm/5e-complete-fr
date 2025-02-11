@@ -1,0 +1,127 @@
+{
+  "_id": "9Rnc6X6Fdu9ilrtu",
+  "name": "Create Undead",
+  "type": "spell",
+  "img": "icons/magic/death/undead-zombie-grave-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.E4NXux0RHvME1XgP"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez lancer ce sort uniquement la nuit. Choisissez jusqu'à trois cadavres d'humanoïdes de taille Moyenne ou Petite à portée. Chaque cadavre devient un @UUID[Compendium.5e-complete-fr.5e-creatures.2kme2Hg4zItv3Ocj]{Ghoul} sous votre contrôle.</p><p>En tant qu'action bonus à chacun de vos tours, vous pouvez mentalement commander toute créature que vous avez animée avec ce sort si la créature est à 120 pieds de vous (si vous contrôlez plusieurs créatures, vous pouvez en commander une ou plusieurs à la fois, en leur donnant le même ordre). Vous décidez de l'action que la créature entreprendra et de l'endroit où elle se déplacera lors de son prochain tour, ou vous pouvez donner un ordre général, tel que de garder une chambre ou un couloir particulier. Si vous ne donnez aucun ordre, la créature ne se défend que contre les créatures hostiles. Une fois un ordre donné, la créature continue de le suivre jusqu'à ce que sa tâche soit terminée.</p><p>La créature est sous votre contrôle pendant 24 heures, après quoi elle cesse d'obéir à tout ordre que vous lui avez donné. Pour maintenir le contrôle de la créature pendant 24 heures supplémentaires, vous devez lancer ce sort sur la créature avant la fin de la période de 24 heures en cours. Cette utilisation du sort réaffirme votre contrôle sur jusqu'à trois créatures que vous avez animées avec ce sort, plutôt que d'en animer de nouvelles.</p><h3>Niveaux Supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une fente de sort de 7e niveau, vous pouvez animer ou réaffirmer le contrôle sur quatre ghouls. Lorsque vous lancez ce sort en utilisant une fente de sort de 8e niveau, vous pouvez animer ou réaffirmer le contrôle sur cinq ghouls ou deux @UUID[Compendium.5e-complete-fr.5e-creatures.F3POY8QYZbk3V9j0]{Ghasts} ou @UUID[Compendium.5e-complete-fr.5e-creatures.iBsF7gB5fhmaY0mf]{Wights}. Lorsque vous lancez ce sort en utilisant une fente de sort de 9e niveau, vous pouvez animer ou réaffirmer le contrôle sur six ghouls, trois ghasts ou wights, ou deux @UUID[Compendium.5e-complete-fr.5e-creatures.86yEmmcekZHU1mny]{Mummies}.<br /><strong>Listes de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.G7cm1ctzhtxEOvxS]{Cleric}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.JsbrmCx9VF1Sizn8]{Warlock}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]{Wizard}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "minute",
+      "cost": 1,
+      "condition": "You can cast this spell only at night."
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 3,
+      "width": null,
+      "units": "spec",
+      "type": "creature"
+    },
+    "range": {
+      "value": 10,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "level": 6,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse.",
+      "consumed": false,
+      "cost": 150,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1668190967429,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.spells-expanded.E4NXux0RHvME1XgP",
+    "duplicateSource": null
+  },
+  "_key": "!items!9Rnc6X6Fdu9ilrtu"
+}

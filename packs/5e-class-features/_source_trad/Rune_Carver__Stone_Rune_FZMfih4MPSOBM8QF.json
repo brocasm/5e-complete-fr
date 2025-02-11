@@ -1,0 +1,147 @@
+{
+  "_id": "FZMfih4MPSOBM8QF",
+  "name": "Rune Carver: Stone Rune",
+  "type": "feat",
+  "img": "icons/magic/earth/projectile-boulder-dust.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Item.SbhqS7hfCW0n2gA5"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Cette rune canalise la judiciousness associée aux géants de pierre. Tant que vous portez ou transportez un objet gravé de cette rune, vous avez <strong>advantage</strong> sur les tests de Sagesse (<strong>Insight</strong>), et vous avez <strong>darkvision</strong> jusqu'à une portée de 120 pieds.</p>\n<p>De plus, lorsqu'une créature que vous pouvez voir termine son tour à 30 pieds de vous, vous pouvez utiliser votre réaction pour invoquer la rune et forcer la créature à effectuer un <strong>Wisdom saving throw</strong>. A moins que l'épreuve réussisse, la créature est <strong>charmed</strong> par vous pendant 1 minute. Tant qu'elle est ainsi charmée, la créature a une vitesse de 0 et est <strong>incapacitated</strong>, sombrant dans une torpeur onirique. La créature répète l'épreuve de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet en cas de succès. Une fois que vous avez invoqué cette rune, vous ne pouvez pas le refaire jusqu'à ce que vous terminiez un <strong>short or long rest</strong>.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "con"
+    },
+    "requirements": "Rune Knight 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!FZMfih4MPSOBM8QF"
+}

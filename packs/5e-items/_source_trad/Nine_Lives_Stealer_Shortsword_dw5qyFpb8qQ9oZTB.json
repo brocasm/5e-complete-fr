@@ -1,0 +1,129 @@
+{
+  "name": "Nine Lives Stealer Shortsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-crystal-paired.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.2Lkub0qIwucWEfp3"
+    }
+  },
+  "_id": "dw5qyFpb8qQ9oZTB",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>(Requires attunement)</em></p>\n<p>Vous gagnez un bonus de +2 aux jets d'attaque et de dégâts effectués avec cette arme magique.</p>\n<p>L'épée possède 1d8 + 1 charges. Si vous obtenez un coup critique contre une créature ayant moins de 100 points de vie, celle-ci doit réussir un jet de sauvegarde de Constitution DC 15 ou être tuée instantanément alors que l'épée lui arrache sa force vitale (un construct ou un mort-vivant est immunisé). L'épée perd 1 charge si la créature est tuée. Lorsqu'il ne reste plus de charges à l'épée, elle perd cette propriété.</p>\n<p><em>Foundry note: the 9 charges reflect a fully charged blade. Please adjust accordingly as required.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 183",
+    "quantity": 1,
+    "weight": 2,
+    "price": 8000,
+    "attunement": 1,
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Critical hit on a creature of 100 hit points or less. Undead and constructs are immune."
+    },
+    "duration": {
+      "value": 0,
+      "units": ""
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 5,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 9,
+      "max": 9,
+      "per": "charges"
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "mwak",
+    "attackBonus": 2,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6 +@mod +2",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": 15,
+      "scaling": "flat"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "martialM",
+    "baseItem": "shortsword",
+    "properties": {
+      "amm": false,
+      "hvy": false,
+      "fin": true,
+      "fir": false,
+      "foc": false,
+      "lgt": true,
+      "lod": false,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "ver": false,
+      "mgc": true
+    },
+    "proficient": false,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "_key": "!items!dw5qyFpb8qQ9oZTB"
+}

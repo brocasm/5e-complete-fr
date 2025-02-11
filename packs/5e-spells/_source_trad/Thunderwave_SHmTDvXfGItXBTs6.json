@@ -1,0 +1,162 @@
+{
+  "_id": "SHmTDvXfGItXBTs6",
+  "name": "Thunderwave",
+  "type": "spell",
+  "img": "icons/magic/sonic/explosion-shock-sound-wave.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "critRange": {
+        "value": null
+      },
+      "critDamage": {
+        "value": ""
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.WTbOQBsarsL1LuXJ"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Une vague de force tonitruante se déploie à partir de vous. Chaque créature dans un cube de 15 pieds partant de vous doit effectuer un jet de sauvegarde de Constitution. En cas d'échec de la sauvegarde, une créature subit 2d8 dégâts de tonnerre et est repoussée de 10 pieds loin de vous. En cas de réussite de la sauvegarde, la créature subit la moitié des dégâts et n'est pas repoussée.</p>\n<p>De plus, les objets non fixés qui sont complètement à l'intérieur de la zone d'effet sont automatiquement repoussés de 10 pieds loin de vous par l'effet du sort, et le sort émet un grondement tonitruant audible jusqu'à 300 pieds.</p>\n<p><h3>At Higher Levels</h3> Lorsque vous lancez ce sort en utilisant une fente de sort de 2e niveau ou supérieur, les dégâts augmentent de 1d8 pour chaque niveau de fente au-dessus du 1er.</p>\n<p><strong>Spell Lists.</strong> Bard, Druid, Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 282",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 15,
+      "width": null,
+      "units": "ft",
+      "type": "cube"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "thunder"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "_key": "!items!SHmTDvXfGItXBTs6"
+}

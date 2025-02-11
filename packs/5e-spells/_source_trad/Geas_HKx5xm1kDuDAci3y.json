@@ -1,0 +1,126 @@
+{
+  "_id": "HKx5xm1kDuDAci3y",
+  "name": "Geas",
+  "type": "spell",
+  "img": "icons/skills/social/diplomacy-writing-letter.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.JQyigMNPiDnGI18b"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Tu places un ordre magique sur une créature que tu peux voir à portée, l'obligeant à accomplir un service ou à s'abstenir d'une action ou d'un cours d'activité selon ta décision. Si la créature peut te comprendre, elle doit réussir un jet de sauvegarde de Sagesse ou devenir Charmée par toi pour la Durée. Tant que la créature est charmée par toi, elle subit 5d10 dégâts psychiques chaque fois qu'elle agit de manière directement contraire à tes instructions, mais pas plus d'une fois par jour. Une créature qui ne peut pas te comprendre est insensible au sort.</p>\n<p>Tu peux donner n'importe quel ordre que tu choisis, à l'exception d'une activité qui entraînerait une mort certaine. Si tu donnes un ordre suicidaire, le sort prend fin.</p>\n<p>Tu peux mettre fin au sort prématurément en utilisant une action pour le dissiper. Un Remove Curse, Greater Restoration ou un sort wish le termine également.</p>\n<p><h3>At Higher Levels</h3> Lorsque tu lances ce sort en utilisant une emplacement de sort de 7e ou 8e niveau, la Durée est de 1 year. Lorsque tu lances ce sort en utilisant un emplacement de sort de 9e niveau, le sort dure jusqu'à ce qu'il soit terminé par l'un des sorts mentionnés ci-dessus.</p>\n<p><strong>Spell Lists.</strong> Bard, Cleric, Druid, Paladin, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 244",
+    "activation": {
+      "type": "minute",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 30,
+      "units": "day"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "5d10",
+          "psychic"
+        ]
+      ],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "enc",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664771175321,
+    "lastModifiedBy": "WaZ5phMRyaHwTSEz",
+    "compendiumSource": "Compendium.world.spells-expanded.JQyigMNPiDnGI18b",
+    "duplicateSource": null
+  },
+  "_key": "!items!HKx5xm1kDuDAci3y"
+}

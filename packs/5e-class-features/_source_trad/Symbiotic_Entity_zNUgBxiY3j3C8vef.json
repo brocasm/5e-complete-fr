@@ -1,0 +1,149 @@
+{
+  "_id": "zNUgBxiY3j3C8vef",
+  "name": "Symbiotic Entity",
+  "type": "feat",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.lyQ4C8xXsOCT6uOU"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 2nd niveau, vous obtenez la capacité de canaliser la magie dans vos spores. En tant qu'action, vous pouvez dépenser une utilisation de votre fonctionnalité Wild Shape pour éveiller ces spores, plutôt que de vous transformer en une forme de bête, et vous gagnez <strong>4 points de vie temporaires</strong> pour chaque niveau que vous avez dans cette classe. Tant que cette fonctionnalité est active, vous obtenez les avantages suivants:</p>\n<ul>\n<li>Lorsque vous infligez votre @Compendium[5e-complete-fr.5e-class-features.M4NyFLYE0VwNP320]{Halo of Spores} damage, relancez le dé de dégâts et ajoutez-le au total.</li>\n<li>Vos attaques avec des armes de mêlée infligent un extra <strong>1d6 dégâts nécrotiques</strong> à toute cible qu'elles atteignent.</li>\n</ul>\n<p>Ces avantages durent pendant 10 minutes, jusqu'à ce que vous perdiez tous ces points de vie temporaires ou jusqu'à ce que vous utilisiez votre Wild Shape à nouveau.</p>\n<section class=\"secret\">\n<p><em>Lorsque vous ajoutez cette fonctionnalité à votre classe, définissez Resource Consumption sur Item Uses: Wild Shape.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.circle-of-spores.symbiotic-entity-health",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Circle of Spores 2",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!zNUgBxiY3j3C8vef"
+}

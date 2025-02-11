@@ -1,0 +1,132 @@
+{
+  "_id": "ew9IEP8LerxzwP1G",
+  "name": "Blade Barrier",
+  "type": "spell",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.dLJhxDfeyOsc3zsY"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous créez un mur vertical de lames tourbillonnantes, tranchantes comme des rasoirs, faites d'énergie magique. Le mur apparaît dans la zone d'effet et dure pendant la durée. Vous pouvez créer un mur droit allant jusqu'à 100 pieds de long, 20 pieds de haut et 5 pieds d'épaisseur, ou un mur annulaire allant jusqu'à 60 pieds de diamètre, 20 pieds de haut et 5 pieds d'épaisseur. Le mur offre une couverture aux trois quarts aux créatures derrière lui, et son espace est un terrain difficile.</p><p>Lorsque une créature entre dans la zone du mur pour la première fois lors d'un tour ou commence son tour là, la créature doit faire un jet de sauvegarde de Dexterity. En cas d'échec, la créature subit [[/r 6d10]] dégâts tranchants. En cas de réussite, la créature subit la moitié des dégâts.</p><p> <strong>Spell Lists.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.G7cm1ctzhtxEOvxS]{Cleric}</p><p> </p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "BR",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": 100,
+      "width": null,
+      "units": "ft",
+      "type": "wall"
+    },
+    "range": {
+      "value": 90,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "6d10",
+          "slashing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 6,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667806032515,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.spells-expanded.dLJhxDfeyOsc3zsY",
+    "duplicateSource": null
+  },
+  "_key": "!items!ew9IEP8LerxzwP1G"
+}

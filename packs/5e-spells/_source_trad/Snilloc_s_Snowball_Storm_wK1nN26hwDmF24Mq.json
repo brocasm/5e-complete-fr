@@ -1,0 +1,131 @@
+{
+  "name": "Snilloc's Snowball Storm",
+  "type": "spell",
+  "img": "icons/magic/water/projectiles-ice-explosion.webp",
+  "effects": [],
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "core": {
+      "sourceId": "Actor.mWJpoly1IkHoKc40.Item.oL2pXXGqhEiNZZRH"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Une rafale de boules de neige magiques éclate d'un point de votre choix dans la portée. Chaque créature dans une sphère de 5 pieds de rayon centrée sur ce point doit faire un jet de sauvegarde de Dexterity. Une créature subit 3d6 dégâts de froid en cas d'échec, ou la moitié des dégâts en cas de réussite.</p><p><h3>At Higher Levels</h3> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p><p></p><p><strong>Spells List. </strong><em>Sorcerer, Wizard</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 5,
+      "width": null,
+      "units": "ft",
+      "type": "sphere"
+    },
+    "range": {
+      "value": 90,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d6",
+          "cold"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 2,
+    "school": "abj",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "orrYXc9uENI1ihfC": 3,
+    "WaZ5phMRyaHwTSEz": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665273518798,
+    "modifiedTime": 1667698637028,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Actor.mWJpoly1IkHoKc40.Item.oL2pXXGqhEiNZZRH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "wK1nN26hwDmF24Mq",
+  "_key": "!items!wK1nN26hwDmF24Mq"
+}

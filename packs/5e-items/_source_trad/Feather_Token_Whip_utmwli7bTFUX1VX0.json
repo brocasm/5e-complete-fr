@@ -1,0 +1,171 @@
+{
+  "_id": "utmwli7bTFUX1VX0",
+  "name": "Feather Token Whip",
+  "type": "consumable",
+  "img": "icons/commodities/materials/feather-colored-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.Fgkj11diTJJ7H3JC"
+    },
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "quantity": false,
+          "use": true
+        },
+        "altValue": {
+          "quantity": false,
+          "use": true
+        }
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>Objet merveilleux</em></p>\n<p>Cet objet minuscule ressemble à une plume. Différents types de jetons de plume existent, chacun avec un effet à usage unique. Le MD choisit le type de jeton ou le détermine aléatoirement.</p>\n<table>\n<thead>\n<tr>\n<th>d100</th>\n<th>Feather Token</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>01-20</td>\n<td>Anchor</td>\n</tr>\n<tr>\n<td>21-35</td>\n<td>Bird</td>\n</tr>\n<tr>\n<td>36-50</td>\n<td>Fan</td>\n</tr>\n<tr>\n<td>51-65</td>\n<td>Swan boat</td>\n</tr>\n<tr>\n<td>66-90</td>\n<td>Tree</td>\n</tr>\n<tr>\n<td>91-00</td>\n<td>Whip</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Whip.</strong> You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.</p>\n<p>As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG",
+    "quantity": 1,
+    "weight": 0,
+    "price": "250",
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "A bonus action is used to control the whip."
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "target": {
+      "value": 5,
+      "width": null,
+      "units": "ft",
+      "type": "space"
+    },
+    "range": {
+      "value": 10,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "autoDestroy": true,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "mwak",
+    "attackBonus": "9",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6 + 5",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "consumableType": "trinket",
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "_key": "!items!utmwli7bTFUX1VX0"
+}

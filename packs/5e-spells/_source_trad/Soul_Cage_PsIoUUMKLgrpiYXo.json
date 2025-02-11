@@ -1,0 +1,129 @@
+{
+  "name": "Soul Cage",
+  "type": "spell",
+  "img": "icons/magic/death/skull-flames-white-blue.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "soul%20cage_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.uy4d0KFKsSkakApn"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Ce sort arrache l'âme d'un humanoïde à sa mort et la piège à l'intérieur de la petite cage que vous utilisez pour le composant matériel. Une âme volée reste à l'intérieur de la cage jusqu'à la fin du sort ou jusqu'à ce que vous détruisiez la cage, ce qui met fin au sort. Tant que vous avez une âme à l'intérieur de la cage, vous pouvez l'exploiter de l'une des manières décrites ci-dessous. Vous pouvez utiliser une âme piégée jusqu'à six fois. Une fois que vous avez exploité une âme pour la sixième fois, elle est libérée et le sort prend fin. Tant qu'une âme est piégée, l'humanoïde mort dont elle provient ne peut pas être ranimé.</p>\n\n<h3>Steal Life</h3>\n<p>Vous pouvez utiliser une action bonus pour drainer la vigueur de l'âme et récupérer [[/r 2d8]] points de vie.</p>\n\n<h3>Query Soul</h3>\n<p>Vous posez une question à l'âme (aucune action requise) et recevez une brève réponse télépathique, que vous pouvez comprendre indépendamment de la langue utilisée. L'âme ne sait que ce qu'elle savait de son vivant, mais elle doit vous répondre avec vérité et de son mieux. La réponse ne dépasse pas une ou deux phrases et pourrait être cryptique.</p>\n\n<h3>Borrow Experience</h3>\n<p>Vous pouvez utiliser une action bonus pour vous renforcer avec l'expérience de vie de l'âme, en faisant votre prochain jet d'attaque, test de compétence ou jet de sauvegarde avec <strong>avantage</strong>. Si vous n'utilisez pas ce bénéfice avant le début de votre prochain tour, il est perdu.</p>\n\n<h3>Eyes of the Dead</h3>\n<p>Vous pouvez utiliser une action pour nommer un endroit que l'humanoïde a vu de son vivant, ce qui crée un capteur invisible quelque part dans cet endroit s'il est sur le plan d'existence sur lequel vous vous trouvez actuellement. Le capteur reste aussi longtemps que vous vous concentrez, jusqu'à 10 minutes (comme si vous vous concentriez sur un sort). Vous recevez des informations visuelles et auditives du capteur comme si vous étiez dans son espace en utilisant vos sens.</p>\n\n<p>Une créature qui peut voir le capteur (comme celle utilisant see invisibility ou truesight) voit une image translucide de l'humanoïde tourmenté dont vous avez capturé l'âme.</p>\n\n<p><strong>Spell Lists.</strong> Warlock, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "When a humanoid you can see within 60 feet of you dies"
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 6,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A tiny silver cage worth 100 gp",
+      "consumed": false,
+      "cost": 100,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650771010,
+    "modifiedTime": 1666578382284,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.uy4d0KFKsSkakApn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "PsIoUUMKLgrpiYXo",
+  "_key": "!items!PsIoUUMKLgrpiYXo"
+}

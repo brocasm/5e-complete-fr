@@ -1,15 +1,43 @@
 const fs = require('fs');
 const path = require('path');
 const { Mistral } = require('@mistralai/mistralai');
+const cliProgress = require('cli-progress');
 
 // Configuration
 const packsDir = path.join(__dirname, ''); // Dossier racine des packs
-const MISTRAL_API_KEY = 'jqIAeGgCFmNeXHfBc0JtIgjJNRTaxa1r';// ⚠️ À remplacer
+const MISTRAL_API_KEY = 'jqIAeGgCFmNeXHfBc0JtIgjJNRTaxa1r'; // ⚠️ À remplacer
 const REQUEST_DELAY = 500; // Délai entre les requêtes en ms
 const force_retrad = true; // ⚠️ Définir à `false` pour sauter les fichiers existants
 
 // Initialisation du client Mistral
 const client = new Mistral({ apiKey: MISTRAL_API_KEY });
+
+// Initialisation de la barre de progression
+const progressBar = new cliProgress.SingleBar({
+    format: '🚀 Progression | {bar} | {percentage}% | {value}/{total} fichiers | Temps écoulé: {duration_formatted}',
+    barCompleteChar: '\u2588',
+    barIncompleteChar: '\u2591',
+    hideCursor: true
+});
+
+// Redirection des logs vers un fichier
+const logStream = fs.createWriteStream('translation.log', { flags: 'a' }); // 'a' pour append (ajouter au fichier)
+
+// Sauvegarder les méthodes originales de console
+const originalConsoleLog = console.log;
+const originalConsoleWarn = console.warn;
+const originalConsoleError = console.error;
+
+// Rediriger console.log, console.warn, et console.error vers le fichier
+console.log = (...args) => {
+    logStream.write(`[LOG] ${args.join(' ')}\n`);
+};
+console.warn = (...args) => {
+    logStream.write(`[WARN] ${args.join(' ')}\n`);
+};
+console.error = (...args) => {
+    logStream.write(`[ERROR] ${args.join(' ')}\n`);
+};
 
 // Fonction de traduction principale
 async function translateText(text) {
@@ -83,6 +111,8 @@ async function processAllSourceDirs() {
         .filter(dirent => dirent.isDirectory())
         .map(dirent => dirent.name);
 
+    // Collecte de tous les fichiers
+    const allFiles = [];
     for (const subDir of subDirs) {
         const sourceDir = path.join(packsDir, subDir, '_source');
         const targetDir = path.join(packsDir, subDir, '_source_trad');
@@ -92,17 +122,28 @@ async function processAllSourceDirs() {
                 fs.mkdirSync(targetDir, { recursive: true });
             }
 
-            const files = fs.readdirSync(sourceDir);
-            console.log(`\n📁 Traitement de ${subDir} (${files.length} fichiers)...`);
+            const files = fs.readdirSync(sourceDir)
+                .filter(file => file.endsWith('.json'))
+                .map(file => ({
+                    sourcePath: path.join(sourceDir, file),
+                    targetDir
+                }));
 
-            for (const file of files) {
-                if (path.extname(file) === '.json') {
-                    const filePath = path.join(sourceDir, file);
-                    await processJsonFile(filePath, targetDir);
-                }
-            }
+            allFiles.push(...files);
         }
     }
+
+    // Démarrage de la barre de progression
+    progressBar.start(allFiles.length, 0);
+
+    // Traitement des fichiers
+    for (const file of allFiles) {
+        await processJsonFile(file.sourcePath, file.targetDir);
+        progressBar.increment(); // Mise à jour de la barre de progression
+    }
+
+    // Arrêt de la barre de progression
+    progressBar.stop();
 }
 
 // Démarrage du script
@@ -118,4 +159,7 @@ async function processAllSourceDirs() {
     }
     
     console.timeEnd('⏱️ Traduction terminée en');
+
+    // Fermer le flux de log
+    logStream.end();
 })();

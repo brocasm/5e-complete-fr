@@ -1,0 +1,143 @@
+{
+  "_id": "bsmm4jV1tMjyU00g",
+  "name": "Call Lightning",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-clouds-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.ehvmg9U9fcMEhE4z"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Versatile",
+          "formulaSet": [
+            1
+          ]
+        }
+      ],
+      "migratedVersatile": true
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Un nuage d'orage apparaît sous la forme d'un cylindre de 10 pieds de haut avec un rayon de 60 pieds, centré sur un point que vous pouvez voir à 100 pieds directement au-dessus de vous. Le sort échoue si vous ne pouvez pas voir un point dans l'air où le nuage d'orage pourrait apparaître (par exemple, si vous êtes dans une pièce qui ne peut pas accueillir le nuage).</p><p>Lorsque vous lancez le sort, choisissez un point que vous pouvez voir dans la portée. Un éclair de foudre jaillit du nuage vers ce point. Chaque créature à moins de 5 pieds de ce point doit effectuer un jet de sauvegarde de Dexterity. Une créature subit [[/r 3d10]] dégâts de foudre en cas d'échec de la sauvegarde, ou la moitié des dégâts en cas de réussite. À chacun de vos tours jusqu'à la fin du sort, vous pouvez utiliser votre action pour appeler la foudre de cette manière à nouveau, ciblant le même point ou un autre.</p><p>Si vous êtes à l'extérieur dans des conditions orageuses lorsque vous lancez ce sort, le sort vous donne le contrôle sur l'orage existant au lieu d'en créer un nouveau. Dans de telles conditions, les dégâts du sort augmentent de [[/r 1d10]].</p><h3>Niveaux Supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une emplacement de sort de niveau 4 ou supérieur, les dégâts augmentent de [[/r 1d10]] pour chaque niveau d'emplacement au-dessus du 3e.</p><p><strong>Listes de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.1IHQ3bZ4aCi15dlH]{Druid}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "BR",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": 60,
+      "width": null,
+      "units": "ft",
+      "type": "cylinder"
+    },
+    "range": {
+      "value": 120,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d10",
+          "lightning"
+        ],
+        [
+          "4d10",
+          "lightning"
+        ]
+      ],
+      "versatile": "4d10"
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d10"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667933872706,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.spells-expanded.ehvmg9U9fcMEhE4z",
+    "duplicateSource": null
+  },
+  "_key": "!items!bsmm4jV1tMjyU00g"
+}

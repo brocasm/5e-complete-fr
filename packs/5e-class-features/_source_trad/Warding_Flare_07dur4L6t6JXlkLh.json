@@ -1,0 +1,116 @@
+{
+  "name": "Warding Flare",
+  "type": "feat",
+  "img": "icons/magic/light/beam-explosion-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.3gJafD5OSfUp6yKM"
+    }
+  },
+  "_id": "07dur4L6t6JXlkLh",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 1er niveau également, vous pouvez interposer une lumière divine entre vous et un ennemi attaquant. Lorsqu'une créature à 9 mètres de vous ou moins vous attaque et que vous pouvez la voir, vous pouvez utiliser votre <strong>réaction</strong> pour imposer un <strong>désavantage</strong> au jet d'attaque, provoquant un éclair de lumière avant que l'attaquant ne frappe ou ne manque. Un attaquant qui ne peut être aveuglé est immunisé contre cette fonctionnalité.</p>\n<p>Vous pouvez utiliser cette fonctionnalité un nombre de fois égal à votre modificateur de Sagesse (un minimum d'une fois). Vous récupérez toutes les utilisations épuisées lorsque vous terminez un repos long.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "enemy"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "max(1,@abilities.wis.mod)",
+      "per": "lr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Light Domain 1",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!07dur4L6t6JXlkLh"
+}

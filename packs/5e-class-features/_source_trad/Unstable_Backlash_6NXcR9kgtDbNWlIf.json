@@ -1,0 +1,149 @@
+{
+  "_id": "6NXcR9kgtDbNWlIf",
+  "name": "Unstable Backlash",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Item.EPPIvsrTKdgheSrG"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "itemacro": {
+      "macro": {
+        "data": {
+          "_id": null,
+          "name": "Unstable Backlash",
+          "type": "script",
+          "author": "EHpONhziSoZpUpN3",
+          "img": "icons/svg/dice-target.svg",
+          "scope": "global",
+          "command": "const roll = await item.roll();\nif(!roll) return;\n\ntable = await game.packs.get(\"5e-complete-fr.5e-roll-tables\").getDocument(\"cQK9KtoGzceK5akR\");\ntable.draw();",
+          "folder": null,
+          "sort": 0,
+          "permission": {
+            "default": 0
+          },
+          "flags": {}
+        }
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>À 10e niveau, lorsque vous êtes en danger pendant votre rage, la magie en vous peut se déchaîner; immédiatement après avoir subi des dégâts ou échoué à un <strong>saving throw</strong> alors que vous êtes @Compendium[5e-complete-fr.5e-class-features.gaVd6MJT8Q6PLE9B]{Raging}, vous pouvez utiliser votre réaction pour lancer sur la table @Compendium[5e-complete-fr.5e-class-features.cXMCIMdGT5LHllIA]{Wild Surge} et produire immédiatement l'effet obtenu. Cet effet remplace votre effet actuel de Wild Magic.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "After taking damage or failing a saving throw while raging"
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Path of Wild Magic 10",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!6NXcR9kgtDbNWlIf"
+}

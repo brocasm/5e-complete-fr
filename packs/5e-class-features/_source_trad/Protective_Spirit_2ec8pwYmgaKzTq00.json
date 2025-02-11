@@ -1,0 +1,110 @@
+{
+  "name": "Protective Spirit",
+  "type": "feat",
+  "img": "icons/magic/life/heart-shadow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>À partir du 15e niveau, une présence sacrée soigne vos blessures en combat. Vous récupérez des points de vie égaux à [[/r 1d6]] + la moitié de votre niveau de paladin si vous terminez votre tour en combat avec moins de la moitié de vos points de vie restants et que vous n'êtes pas incapacité.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": "If you end your turn in combat with fewer than half of your hit points remaining and you aren’t incapacitated."
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6 + floor(@classes.paladin.levels / 2)",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Oath of Redemption 15",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "flags": {
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.e8ANNb9ZjKNrbcWP"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1664695167782,
+    "modifiedTime": 1664696039060,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.e8ANNb9ZjKNrbcWP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "2ec8pwYmgaKzTq00",
+  "_key": "!items!2ec8pwYmgaKzTq00"
+}

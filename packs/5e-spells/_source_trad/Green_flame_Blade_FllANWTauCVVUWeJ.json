@@ -1,0 +1,224 @@
+{
+  "_id": "FllANWTauCVVUWeJ",
+  "name": "Green-flame Blade",
+  "type": "spell",
+  "img": "icons/skills/melee/blade-tip-energy-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true,
+          "1": true
+        },
+        "altValue": {
+          "0": true,
+          "1": true
+        },
+        "context": {
+          "0": "Target",
+          "1": "Splash"
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.0hMUxnAWzoaURrG3"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "On Hit",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Secondary",
+          "formulaSet": [
+            1
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous brandissez l'arme utilisée dans le lancement du sort et effectuez une attaque au corps à corps avec elle contre une créature à moins de 5 pieds de vous. En cas de coup critique, la cible subit les effets normaux de l'attaque avec l'arme, et vous pouvez faire en sorte que des flammes vertes jaillissent de la cible vers une autre créature de votre choix que vous pouvez voir à moins de 5 pieds de la première. La seconde créature subit des dégâts de feu égaux à votre modificateur de capacité d'incantation.</p><h3>À des niveaux supérieurs</h3><p>À partir du 5e niveau, l'attaque au corps à corps inflige des dégâts de feu supplémentaires [[/r 1d8]] à la cible en cas de coup critique, et les dégâts de feu infligés à la seconde créature augmentent à [[/r 1d8]] + votre modificateur de capacité d'incantation. Les deux jets de dégâts augmentent de [[/r 1d8]] au 11e niveau ([[/r 2d8]] et [[/r 2d8]]) et au 17e niveau ([[/r 3d8]] et [[/r 3d8]]).</p><p><strong>Listes de sorts.</strong> Artificier, Sorcier, Warlock, Magicien</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "int",
+    "actionType": "other",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "0d8",
+          "fire"
+        ],
+        [
+          "floor(floor(@details.level+1)/6)d8 + @mod",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A melee weapon worth at least 1 sp",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "cantrip",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1668306365235,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.0hMUxnAWzoaURrG3",
+    "duplicateSource": null
+  },
+  "_key": "!items!FllANWTauCVVUWeJ"
+}

@@ -1,0 +1,180 @@
+{
+  "_id": "uLXgUtgVTI6Qiyyn",
+  "name": "Control Water",
+  "type": "spell",
+  "img": "icons/magic/water/water-hand.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "critRange": {
+        "value": null
+      },
+      "critDamage": {
+        "value": ""
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.7fFHlBk3UNX8gPKL"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Jusqu'à la fin du sort, vous contrôlez toute eau libre à l'intérieur d'une zone de votre choix qui est un cube jusqu'à 100 pieds de côté. Vous pouvez choisir parmi l'un des effets suivants lorsque vous lancez ce sort. En tant qu'action à votre tour, vous pouvez répéter le même effet ou en choisir un différent.</p><h3>Inondation</h3><p>Vous faites monter le niveau de l'eau de toute l'eau stagnante dans la zone de jusqu'à 20 pieds. Si la zone comprend une rive, l'eau d'inondation déborde sur la terre sèche, au lieu de cela créez une vague de 20 pieds de haut qui se déplace d'un côté de la zone à l'autre puis s'écrase. Tout véhicule de taille Géante ou inférieure dans le chemin de la vague est emporté avec elle de l'autre côté. Tout véhicule de taille Géante ou inférieure frappé par la vague a 25 pour cent de chances de chavirer.</p><p>Le niveau de l'eau reste élevé jusqu'à la fin du sort ou jusqu'à ce que vous choisissiez un effet différent. Si cet effet a produit une vague, la vague se répète au début de votre prochain tour tant que l'effet d'inondation dure.</p><h3>Part Water</h3><p>Vous faites en sorte que l'eau dans la zone s'écarte et crée une tranchée. La tranchée s'étend à travers la zone du sort, et l'eau séparée forme un mur de chaque côté. La tranchée reste jusqu'à la fin du sort ou jusqu'à ce que vous choisissiez un effet différent. L'eau remplit ensuite lentement la tranchée au cours du tour suivant jusqu'à ce que le niveau normal de l'eau soit restauré.</p><h3>Redirect Flow</h3><p>Vous faites en sorte que l'eau en mouvement dans la zone se déplace dans une direction de votre choix, même si l'eau doit passer par-dessus des obstacles, monter des murs ou dans d'autres directions improbables. L'eau dans la zone se déplace comme vous le dirigez, mais une fois qu'elle se déplace au-delà de la zone du sort, elle reprend son écoulement en fonction des conditions du terrain. L'eau continue de se déplacer dans la direction que vous avez choisie jusqu'à la fin du sort ou jusqu'à ce que vous choisissiez un effet différent.</p><h3>Tourbillon</h3><p>Cet effet nécessite un plan d'eau d'au moins 50 pieds de côté et 25 pieds de profondeur. Vous faites en sorte qu'un tourbillon se forme au centre de la zone. Le tourbillon forme un vortex qui est de 5 pieds de large à la base, jusqu'à 50 pieds de large au sommet, et de 25 pieds de haut. Toute créature ou objet dans l'eau et à moins de 25 pieds du vortex est attiré de 10 pieds vers lui. Une créature peut nager loin du vortex en réussissant un jet de force (<strong>Athletics</strong>) contre votre DC de sauvegarde de sort.</p><p>Lorsque une créature entre dans le vortex pour la première fois sur un tour ou commence son tour là, elle doit réussir un jet de force. En cas d'échec, la créature subit [[/r 2d8]] dégâts contondants et est prise dans le vortex jusqu'à la fin du sort. En cas de réussite, la créature subit la moitié des dégâts et n'est pas prise dans le vortex. Une créature prise dans le vortex peut utiliser son action pour essayer de nager loin du vortex comme décrit ci-dessus, mais a désavantage au jet de force (<strong>Athletics</strong>) pour le faire.</p><p>La première fois chaque tour qu'un objet entre dans le vortex, l'objet subit [[/r 2d8]] dégâts contondants ; ces dégâts se produisent chaque tour qu'il reste dans le vortex.</p><p><strong>Liste de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.G7cm1ctzhtxEOvxS]{Cleric}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.1IHQ3bZ4aCi15dlH]{Druid}, @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]{Wizard}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "target": {
+      "value": 100,
+      "width": null,
+      "units": "ft",
+      "type": "cube"
+    },
+    "range": {
+      "value": 300,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "bludgeoning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "str",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "trs",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A drop of water and a pinch of dust.",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1668160819750,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.spells-expanded.7fFHlBk3UNX8gPKL",
+    "duplicateSource": null
+  },
+  "_key": "!items!uLXgUtgVTI6Qiyyn"
+}

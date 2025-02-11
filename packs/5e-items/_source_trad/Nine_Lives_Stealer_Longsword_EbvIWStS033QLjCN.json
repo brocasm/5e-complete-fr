@@ -1,0 +1,129 @@
+{
+  "name": "Nine Lives Stealer Longsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-crystal-paired.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.BefbYlWbRYyy6R8s"
+    }
+  },
+  "_id": "EbvIWStS033QLjCN",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>(Nécessite un accord)</em></p>\n<p>Vous obtenez un bonus de +2 aux jets d'attaque et de dégâts effectués avec cette arme magique.</p>\n<p>L'épée possède 1d8 + 1 charges. Si vous obtenez un coup critique contre une créature ayant moins de 100 points de vie, celle-ci doit réussir un jet de sauvegarde de Constitution de DC 15 ou être tuée instantanément lorsque l'épée arrache sa force vitale de son corps (un construct ou un mort-vivant est immunisé). L'épée perd 1 charge si la créature est tuée. Lorsque l'épée n'a plus de charges, elle perd cette propriété.</p>\n<p><em>Note de Foundry : les 9 charges reflètent une lame entièrement chargée. Veuillez ajuster en conséquence si nécessaire.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 183",
+    "quantity": 1,
+    "weight": 3,
+    "price": 8000,
+    "attunement": 1,
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Critical hit on a creature of 100 hit points or less. Undead and constructs are immune."
+    },
+    "duration": {
+      "value": 0,
+      "units": ""
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 5,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 9,
+      "max": 9,
+      "per": "charges"
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "mwak",
+    "attackBonus": 2,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d8 +@mod +2",
+          "slashing"
+        ]
+      ],
+      "versatile": "1d10 +@mod +2"
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": 15,
+      "scaling": "flat"
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "weaponType": "martialM",
+    "baseItem": "longsword",
+    "properties": {
+      "amm": false,
+      "hvy": false,
+      "fin": false,
+      "fir": false,
+      "foc": false,
+      "lgt": false,
+      "lod": false,
+      "rch": false,
+      "rel": false,
+      "ret": false,
+      "spc": false,
+      "thr": false,
+      "two": false,
+      "ver": true,
+      "mgc": true
+    },
+    "proficient": false,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "_key": "!items!EbvIWStS033QLjCN"
+}

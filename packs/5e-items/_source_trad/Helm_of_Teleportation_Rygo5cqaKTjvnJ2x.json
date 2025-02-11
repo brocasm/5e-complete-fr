@@ -1,0 +1,142 @@
+{
+  "name": "Helm of Teleportation",
+  "type": "equipment",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-purple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "magicitems": {
+      "enabled": true,
+      "equipped": true,
+      "attuned": true,
+      "charges": "3",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": true,
+      "recharge": "1d3",
+      "rechargeType": "t2",
+      "rechargeUnit": "r2",
+      "sorting": "l",
+      "spells": {
+        "0": {
+          "id": "L4J89JXqbKs6puEV",
+          "name": "Teleport",
+          "pack": "dnd5e.spells",
+          "img": "systems/dnd5e/icons/spells/runes-magenta-3.jpg",
+          "baseLevel": "7",
+          "level": "7",
+          "consumption": "1",
+          "upcast": "7",
+          "upcastCost": "1",
+          "flatDc": false
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.magicitems.magicitems.1V4OZVa5ADkuluPi"
+    }
+  },
+  "_id": "Rygo5cqaKTjvnJ2x",
+  "system": {
+    "description": {
+      "value": "<p><em>Objet merveilleux, (nécessite l'accord)</em></p>\n<p>Ce heaume a 3 charges. En le portant, vous pouvez utiliser une action et dépenser 1 charge pour lancer le @Compendium[dnd5e.spells.L4J89JXqbKs6puEV]{Teleport} sort de lui. Le heaume récupère 1d3 charges dépensées quotidiennement à l'aube.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 174",
+    "quantity": 1,
+    "weight": 2,
+    "price": 64000,
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 10,
+      "long": 0,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 3,
+      "max": "3",
+      "per": "charges",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": null,
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "armor": {
+      "value": 0,
+      "type": "light",
+      "dex": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "baseItem": "",
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "stealth": false,
+    "proficient": false,
+    "attuned": false,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "e1GJldqKX2xtXEGs": 3,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665652575763,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.magicitems.magicitems.1V4OZVa5ADkuluPi",
+    "duplicateSource": null
+  },
+  "_key": "!items!Rygo5cqaKTjvnJ2x"
+}

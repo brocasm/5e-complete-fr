@@ -1,0 +1,130 @@
+{
+  "name": "One with the Word",
+  "type": "feat",
+  "img": "icons/sundries/documents/document-writing-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>À 14e niveau, votre connexion à votre @UUID[Compendium.5e-complete-fr.5e-class-features.2jHeIzhtZdDFes9d]{Awakened Spellbook} est devenue si profonde que votre âme est devenue entrelacée avec elle. Tant que le livre est sur vous, vous avez l'avantage sur tous les tests d'Intelligence (Arcana), car le grimoire vous aide à vous souvenir des connaissances magiques.</p><p>De plus, si vous subissez des dégâts pendant que l'esprit de votre grimoire est manifesté, vous pouvez empêcher tous ces dégâts en utilisant votre réaction pour renvoyer l'esprit spectral, en utilisant sa magie pour vous sauver. Ensuite, lancez [[/r 3d6]]. Le grimoire perd temporairement des sorts de votre choix dont le niveau total de sort est égal ou supérieur à ce lancer. Par exemple, si le total du lancer est 9, des sorts disparaissent du livre dont le niveau total est d'au moins 9, ce qui pourrait signifier un sort de 9e niveau, trois sorts de 3e niveau, ou une autre combinaison. Si le livre ne contient pas assez de sorts pour couvrir ce coût, vous tombez à 0 points de vie.</p><p>Jusqu'à ce que vous terminiez [[/r 1d6]] repos longs, vous êtes incapable de lancer les sorts perdus, même si vous les trouvez sur un parchemin ou dans un autre grimoire. Après avoir terminé le nombre requis de repos, les sorts réapparaissent dans le grimoire.</p><p>Une fois que vous avez utilisé cette réaction, vous ne pouvez pas le faire à nouveau jusqu'à ce que vous terminiez un <strong>repos long</strong>.</p><section id=\"secret-DoK3Bk6PTGPCbklS\" class=\"secret\"><p><em>Note: Activer le module Item Macro permettra à cette fonctionnalité de lancer automatiquement les 3d6 et 1d6. À partir de là, il est recommandé de marquer vos sorts choisis avec [Unavailable] dans le nom du sort.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "spec"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "self"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": "1",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Order of Scribes 14",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "flags": {
+    "itemacro": {
+      "macro": {
+        "name": "One with the Word",
+        "type": "script",
+        "scope": "global",
+        "command": "// Roll current item\nconst roll = await item.roll();\nif(!roll) return;\n\n// Create rolls and push to chat\nconst FirstRoll = await new Roll(\"3d6\").evaluate({ async: true });\nconst SecondRoll = await new Roll(\"1d6\").evaluate({ async: true });\nawait FirstRoll.toMessage({ flavor: `${actor.name} loses spells with combined levels equal to or greater than:` });\nawait SecondRoll.toMessage({ flavor: `${actor.name} can't cast the chosen spells until finishing this many long rests:`});",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.vXWk25upTFmEl1gW"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665646467896,
+    "modifiedTime": 1665647530562,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.vXWk25upTFmEl1gW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "cKBi83Vba4GBqtJI",
+  "_key": "!items!cKBi83Vba4GBqtJI"
+}

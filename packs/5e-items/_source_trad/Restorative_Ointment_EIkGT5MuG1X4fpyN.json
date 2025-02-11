@@ -1,0 +1,103 @@
+{
+  "name": "Restorative Ointment",
+  "type": "consumable",
+  "img": "icons/commodities/materials/liquid-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.VmcgAIsRCyrjBguC"
+    }
+  },
+  "_id": "EIkGT5MuG1X4fpyN",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>Objet merveilleux</em></p>\n<p>Ce pot en verre, de 3 pouces de diamètre, contient 1d4 + 1 doses d'un mélange épais qui sent faiblement l'aloès. Le pot et son contenu pèsent 1/2 livre.</p>\n<p>En tant qu'action, une dose de l'onguent peut être avalée ou appliquée sur la peau. La créature qui la reçoit récupère 2d8 + 2 points de vie, cesse d'être empoisonnée et est guérie de toute maladie.</p>\n<p><em>Note de la fonderie : les 5 charges reflètent le nombre maximum de doses possibles. </em><em>De même, le prix indicatif de 600 gp est calculé à 120 gp par dose. A</em><em>justez les deux selon les besoins.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 179",
+    "quantity": 1,
+    "weight": 0.5,
+    "price": 600,
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "The ointment needs to be swallowed or applied to the skin."
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": 5,
+      "max": 5,
+      "per": "charges",
+      "autoDestroy": true,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8 +2",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "consumableType": "potion",
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "_key": "!items!EIkGT5MuG1X4fpyN"
+}

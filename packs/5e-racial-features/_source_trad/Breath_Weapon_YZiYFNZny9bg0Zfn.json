@@ -1,0 +1,134 @@
+{
+  "_id": "YZiYFNZny9bg0Zfn",
+  "name": "Breath Weapon",
+  "type": "feat",
+  "img": "icons/magic/acid/projectile-smoke-glowing.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.races.KL7wx9Q8XNJQir0k"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous pouvez utiliser votre action pour exhaler de l'énergie destructrice. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de l'exhalation.</p>\n<p>Lorsque vous utilisez votre souffle, chaque créature dans la zone de l'exhalation doit effectuer un jet de sauvegarde, dont le type est déterminé par votre ascendance draconique. La DC pour ce jet de sauvegarde est égale à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d'échec du jet de sauvegarde, et la moitié de ces dégâts en cas de réussite. Les dégâts augmentent à 3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.</p>\n<p>Après avoir utilisé votre souffle, vous ne pouvez pas l'utiliser à nouveau avant d'avoir terminé un court ou un long repos.</p>\n<section class=\"secret\">\n<p><em>Note: Edit the Details for this feat, so that the damage type, saving throw, and area of effect match those of your Draconic Ancestry.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 15,
+      "width": null,
+      "units": "ft",
+      "type": "cone"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "con",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "((ceil((@details.level - 5)/5)) +2)d6",
+          "cold"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "con"
+    },
+    "requirements": "Dragonborn",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "featType": {
+      "value": "",
+      "_deprecated": true
+    },
+    "time": {
+      "value": "",
+      "_deprecated": true
+    },
+    "damageType": {
+      "value": "",
+      "_deprecated": true
+    },
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "_key": "!items!YZiYFNZny9bg0Zfn"
+}

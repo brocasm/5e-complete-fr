@@ -1,0 +1,151 @@
+{
+  "name": "Enervation",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-life-soul-green.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "enervation_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.bY8RVpNCsIj29eTE"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Success",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Fail",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--3\"><p>Un tentacule de ténèbres d'encre s'étend de vous, touchant une créature que vous pouvez voir à portée pour drainer sa vie. La cible doit réussir un jet de sauvegarde de Dexterity. En cas de succès, la cible subit [[/r 2d8]] dégâts nécrotiques, et le sort prend fin. En cas d'échec, la cible subit [[/r 4d8]] dégâts nécrotiques, et jusqu'à la fin du sort, vous pouvez utiliser votre action à chacun de vos tours pour infliger automatiquement [[/r 4d8]] dégâts nécrotiques à la cible. Le sort prend fin si vous utilisez votre action pour faire autre chose, si la cible est jamais en dehors de la portée du sort, ou si la cible a une couverture totale de vous.</p><p>Chaque fois que le sort inflige des dégâts à une cible, vous récupérez des points de vie égaux à la moitié de la quantité de dégâts nécrotiques subis par la cible.</p><div class=\"rd__b  rd__b--3\"><div class=\"rd__spc-inline-post\"><h3>At Higher Levels</h3><p>When you cast this spell using a spell slot of 6th level or higher, the damage increases by [[/r 1d8]] for each slot level above 5th.</p><p><strong>Spell Lists.</strong> Sorcerer, Warlock, Wizard</p></div></div><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8",
+          "necrotic"
+        ],
+        [
+          "4d8",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665649394442,
+    "modifiedTime": 1666241253182,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.bY8RVpNCsIj29eTE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "5uVjhGh26MfQZ6cL",
+  "_key": "!items!5uVjhGh26MfQZ6cL"
+}

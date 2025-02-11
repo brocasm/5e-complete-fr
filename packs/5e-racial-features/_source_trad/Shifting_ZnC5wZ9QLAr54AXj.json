@@ -1,0 +1,157 @@
+{
+  "_id": "ZnC5wZ9QLAr54AXj",
+  "name": "Shifting",
+  "type": "feat",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.SjgTclL17u8odaYV"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>En tant qu'action bonus, vous pouvez adopter une apparence plus bestiale. Cette transformation dure 1 minute, jusqu'à ce que vous mouriez, ou jusqu'à ce que vous reveniez à votre apparence normale en tant qu'action bonus. Lorsque vous vous transformez, vous gagnez des points de vie temporaires égaux à votre niveau + votre modificateur de Constitution (minimum de 1 point de vie temporaire). Vous obtenez également des avantages qui dépendent de votre sous-race de shifter.</p>\n<hr />\n<p>@Compendium[5e-complete-fr.5e-racial-features.zK4n1efpHwNnHjNr]{Beasthide}</p>\n<p>Chaque fois que vous vous transformez, vous gagnez 1d6 points de vie temporaires supplémentaires, et tant que vous êtes transformé, vous avez un bonus de +1 à votre CA.</p>\n<hr />\n<p>@Compendium[5e-complete-fr.5e-racial-features.9ZnnrFRUbEt1QDvD]{Longtooth}</p>\n<p>Tant que vous êtes transformé, vous pouvez utiliser vos crocs allongés pour faire une attaque à mains nues en tant qu'action bonus. Si vous touchez avec vos crocs, vous pouvez infliger des dégâts perforants égaux à 1d6 + votre modificateur de Force, au lieu des dégâts contondants normaux pour une attaque à mains nues.</p>\n<hr />\n<p>@Compendium[5e-complete-fr.5e-racial-features.A7y3VHcnh0PX4Ptq]{Swiftstride}</p>\n<p>Tant que vous êtes transformé, votre vitesse de déplacement à pied augmente de 5 pieds supplémentaires. De plus, vous pouvez vous déplacer jusqu'à 10 pieds en tant que réaction lorsqu'un ennemi termine son tour à 5 pieds de vous. Ce déplacement ne provoque pas d'attaques d'opportunité.</p>\n<hr />\n<p>@Compendium[5e-complete-fr.5e-racial-features.4dCFhbFdRyzMpLzM]{Wildhunt}</p>\n<p>Tant que vous êtes transformé, vous avez l'avantage sur les tests de Sagesse.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Eberron",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr"
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@abilities.con.value + @details.level",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Shifter",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!ZnC5wZ9QLAr54AXj"
+}

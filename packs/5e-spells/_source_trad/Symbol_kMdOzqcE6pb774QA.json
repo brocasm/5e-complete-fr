@@ -1,0 +1,117 @@
+{
+  "name": "Symbol",
+  "type": "spell",
+  "img": "icons/magic/symbols/rune-sigil-white-pink.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.B2kbmgbA2WQR00kx"
+    }
+  },
+  "_id": "kMdOzqcE6pb774QA",
+  "system": {
+    "description": {
+      "value": "<p>Lorsque vous lancez ce sort, vous inscrivez un glyphe nuisible soit sur une surface (comme une section de sol, un mur ou une table) soit à l'intérieur d'un objet qui peut être fermé pour cacher le glyphe (comme un livre, un parchemin ou un coffre au trésor). Si vous choisissez une surface, le glyphe peut couvrir une zone de la surface ne dépassant pas 10 pieds de diamètre. Si vous choisissez un objet, cet objet doit rester à sa place ; si l'objet est déplacé de plus de 10 pieds de l'endroit où vous avez lancé ce sort, le glyphe est brisé, et le sort se termine sans être déclenché.</p><p>Le glyphe est presque invisible, nécessitant un test d'Intelligence (Investigation) contre votre DC de sauvegarde de sort pour le trouver.</p><p>Vous décidez ce qui déclenche le glyphe lorsque vous lancez le sort. Pour les glyphes inscrits sur une surface, les déclencheurs les plus typiques incluent le fait de toucher ou de marcher sur le glyphe, d'enlever un autre objet le recouvrant, de s'approcher à une certaine distance de celui-ci, ou de manipuler l'objet qui le contient. Pour les glyphes inscrits à l'intérieur d'un objet, les déclencheurs les plus courants sont l'ouverture de l'objet, l'approche à une certaine distance de celui-ci, ou la vue ou la lecture du glyphe.</p><p>Vous pouvez affiner davantage le déclencheur pour que le sort ne soit activé que dans certaines circonstances ou selon les caractéristiques physiques d'une créature (comme la taille ou le poids), ou le type physique (par exemple, le sort pourrait être défini pour affecter les sorcières ou les changeurs de forme). Vous pouvez également spécifier les créatures qui ne déclenchent pas le glyphe, comme celles qui disent un certain mot de passe.</p><p>Lorsque vous inscrivez le glyphe, choisissez l'une des options ci-dessous pour son effet. Une fois déclenché, le glyphe brille, remplissant une sphère de 60 pieds de rayon de lumière faible pendant 10 minutes, après quoi le sort se termine. Chaque créature dans la sphère lorsque le glyphe est activé est ciblée par son effet, tout comme une créature qui entre dans la sphère pour la première fois à son tour ou y termine son tour.</p>\n<ul>\n<li><strong>Death.</strong> Chaque cible doit effectuer un jet de sauvegarde de Constitution, subissant 10d10 dégâts nécrotiques en cas d'échec, ou la moitié des dégâts en cas de réussite.</li>\n<li><strong>Discord.</strong> Chaque cible doit effectuer un jet de sauvegarde de Constitution. En cas d'échec, une cible se dispute et argue avec d'autres créatures pendant 1 minute. Pendant ce temps, elle est incapable de communication significative et a désavantage sur les jets d'attaque et les tests de caractéristiques.</li>\n<li><strong>Fear.</strong> Chaque cible doit effectuer un jet de sauvegarde de Sagesse et devient Effrayée pendant 1 minute en cas d'échec. Tant qu'elle est Effrayée, la cible laisse tomber ce qu'elle tient et doit se déplacer d'au moins 30 pieds du glyphe à chacun de ses tours, si possible.</li>\n<li><strong>Hopelessness.</strong> Chaque cible doit effectuer un jet de sauvegarde de Charisme. En cas d'échec, la cible est submergée de désespoir pendant 1 minute. Pendant ce temps, elle ne peut pas attaquer ou cibler une créature avec des capacités, sorts ou autres effets magiques nuisibles.</li>\n<li><strong>Insanity.</strong> Chaque cible doit effectuer un jet de sauvegarde d'Intelligence. En cas d'échec, la cible devient folle pendant 1 minute. Une créature folle ne peut pas effectuer d'Actions, ne peut pas comprendre ce que disent les autres créatures, ne peut pas lire et ne parle qu'en charabia. Le MJ contrôle son Mouvement, qui est erratique.</li>\n<li><strong>Pain.</strong> Chaque cible doit effectuer un jet de sauvegarde de Constitution et devient Incapacitée par une douleur excruciante pendant 1 minute en cas d'échec.</li>\n<li><strong>Sleep.</strong> Chaque cible doit effectuer un jet de sauvegarde de Sagesse et tombe Inconsciente pendant 10 minutes en cas d'échec. Une créature se réveille si elle subit des dégâts ou si quelqu'un utilise une action pour la secouer ou la gifler pour la réveiller.</li>\n<li><strong>Stunning.</strong> Chaque cible doit effectuer un jet de sauvegarde de Sagesse et devient Étourdie pendant 1 minute en cas d'échec.</li>\n</ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "minute",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "perm"
+    },
+    "target": {
+      "value": 0,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "10d10",
+          "necrotic"
+        ]
+      ],
+      "versatile": "",
+      "value": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": 0,
+      "scaling": "spell",
+      "value": ""
+    },
+    "level": 7,
+    "school": "abj",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "Mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes",
+      "consumed": true,
+      "cost": 1000,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664782377041,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Compendium.world.spells-expanded.B2kbmgbA2WQR00kx",
+    "duplicateSource": null
+  },
+  "_key": "!items!kMdOzqcE6pb774QA"
+}

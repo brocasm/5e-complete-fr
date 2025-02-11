@@ -1,0 +1,128 @@
+{
+  "_id": "CXkGJNOIUXU9z4i7",
+  "name": "Potion of Poison",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.qBSEGJyHxdKIlBfj"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>Cette mixture a l'apparence, l'odeur et le goût d'une potion de guérison ou d'une autre potion bénéfique.</em></p>\n<p>Cependant, il s'agit en réalité de poison masqué par de la magie d'illusion. Un sort d'identification révèle sa véritable nature.</p>\n<p>Si vous le buvez, vous subissez 3d6 dégâts de poison, et vous devez réussir un jet de sauvegarde de Constitution DC 13 pour ne pas être empoisonné. Au début de chacun de vos tours pendant que vous êtes empoisonné de cette manière, vous subissez 3d6 dégâts de poison. À la fin de chacun de vos tours, vous pouvez répéter le jet de sauvegarde. En cas de réussite, les dégâts de poison que vous subissez lors de vos tours suivants diminuent de 1d6. Le poison prend fin lorsque les dégâts diminuent à 0.</p>\n<p><em>Note de Foundry: pour appliquer la réduction des dégâts d'un jet de sauvegarde de Constitution réussi, veuillez utiliser la formule Autres (fixée à 1d6) comme requis.</em></p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 188",
+    "quantity": 1,
+    "weight": 0.1,
+    "price": 100,
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 0,
+      "units": "spec"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "touch"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "recovery": "",
+      "autoDestroy": true,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d6",
+          "poison"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "1d6",
+    "save": {
+      "ability": "con",
+      "dc": 13,
+      "scaling": "flat"
+    },
+    "consumableType": "poison",
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "4lCdaYwhvK1T68Lv": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667053161242,
+    "lastModifiedBy": "7VbuHmckfo5rIhG3",
+    "compendiumSource": "Compendium.dnd5e.items.qBSEGJyHxdKIlBfj",
+    "duplicateSource": null
+  },
+  "_key": "!items!CXkGJNOIUXU9z4i7"
+}
