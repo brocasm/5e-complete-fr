@@ -21,6 +21,7 @@ function runCommand(command) {
 
 // Fonction pour parcourir les dossiers et exécuter la commande fvtt package unpack
 async function unpackFolders() {
+  await init_workon_fvtt();
   const rootDir = '.';
   const folders = fs.readdirSync(rootDir, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory() && dirent.name !== '__source')
@@ -37,7 +38,35 @@ async function unpackFolders() {
   }
 }
 
+// Parcours des dossiers
+async function processAllSourceDirs(packsDir) {
+  const subDirs = fs.readdirSync(packsDir, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+  // Collecte de tous les fichiers
+  const allFiles = [];
+  for (const subDir of subDirs) {
+      const sourceDir = path.join(packsDir, subDir, '_source');
+      const targetDir = path.join(packsDir, subDir, '_source_trad');
+
+      if (fs.existsSync(sourceDir)) {
+          
+          if (fs.existsSync(targetDir)) {
+            fs.rmSync(sourceDir, { recursive: true });
+            console.log(`Supprimé le dossier __source : ${sourceDir}`);
+            fs.renameSync(targetDir, sourceDir);
+             
+          }
+
+         
+      }
+  }
+  
+}
+
 async function packFolders() {
+  await init_workon_fvtt();
   const rootDir = '.';
   const folders = fs.readdirSync(rootDir, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory() && dirent.name !== '__source')
@@ -66,9 +95,36 @@ async function runGitCommands() {
   }
 }
 
-// Exécuter les fonctions
+async function init_workon_fvtt(){
+  const command = `fvtt package workon 5e-complete-fr`;
+    try {
+      await runCommand(command);
+      console.log(`Successfully workon ${folder}`);
+    } catch (error) {
+      console.error(`Failed to workon ${folder}: ${error}`);
+    }
+}
+
+const action = process.argv[2];
+
+
+// Exécuter les fonctions en fonction du paramètre
 (async () => {
-  await unpackFolders();
-  //await packFolders();
-  //await runGitCommands();
+  switch (action) {
+    case 'unpack':
+      await unpackFolders();
+      break;
+    case 'pack':
+      await packFolders();
+      break;
+    case 'git':
+      await runGitCommands();
+      break;
+    case 'process':
+      await processAllSourceDirs(".");
+      break;
+    default:
+      console.log("Action non reconnue. Utilisez 'unpack', 'pack', 'process' ou 'git'.");
+      break;
+  }
 })();
