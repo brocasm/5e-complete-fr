@@ -111,7 +111,8 @@ async function packFolders() {
       try {
         await runCommand(command);
         console.log(`Successfully packed ${folder}`);
-        folder.rmSync({ recursive: true, force: true })
+        const rmDir = path.join(packsDir, folder);
+        fs.rmSync(rmDir, { recursive: true, force: true })
       } catch (error) {
         console.error(`Failed to pack ${folder}: ${error}`);
       }
