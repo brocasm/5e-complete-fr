@@ -5,9 +5,12 @@ const cliProgress = require('cli-progress');
 
 // Configuration
 const packsDir = path.join(__dirname, ''); // Dossier racine des packs
-const MISTRAL_API_KEY = 'jqIAeGgCFmNeXHfBc0JtIgjJNRTaxa1r'; // ⚠️ À remplacer
+const MISTRAL_API_KEY = 'hA2LVM7LDkRIm5bTlNJfvHNwSZAGTq8m'; // ⚠️ À remplacer
 const REQUEST_DELAY = 500; // Délai entre les requêtes en ms
 const force_retrad = true; // ⚠️ Définir à `false` pour sauter les fichiers existants
+
+
+const CIBLE_DIR = "_source_to_trad"; // "_source" ou "_source_to_trad"
 
 // Initialisation du client Mistral
 const client = new Mistral({ apiKey: MISTRAL_API_KEY });
@@ -38,6 +41,23 @@ console.warn = (...args) => {
 console.error = (...args) => {
     logStream.write(`[ERROR] ${args.join(' ')}\n`);
 };
+
+
+const errorLogFile = path.join(__dirname, 'error_log.json');
+let errorFiles = [];
+
+function logError(filePath, errorMessage) {
+    const errorEntry = {
+        filePath: filePath,
+        errorMessage: errorMessage,
+        timestamp: new Date().toISOString()
+    };
+
+    errorFiles.push(errorEntry);
+
+    // Écrire le tableau mis à jour dans le fichier JSON
+    fs.writeFileSync(errorLogFile, JSON.stringify(errorFiles, null, 2), 'utf8');
+}
 
 // Fonction de traduction principale
 async function translateText(text) {
@@ -94,9 +114,11 @@ async function processJsonFile(filePath, targetDir) {
             // Vérification basique du résultat
             if (originalText === json.system.description.value) {
                 console.warn(`⚠️ Avertissement: Pas de traduction pour ${path.basename(filePath)}`);
+                logError(filePath,"Pas de traduction effectuée")
             }
         } catch (error) {
             console.error(`❌ Erreur sur ${filePath}:`, error.message);
+            logError(filePath,error.message)
         }
     }
 
@@ -114,7 +136,7 @@ async function processAllSourceDirs() {
     // Collecte de tous les fichiers
     const allFiles = [];
     for (const subDir of subDirs) {
-        const sourceDir = path.join(packsDir, subDir, '_source');
+        const sourceDir = path.join(packsDir, subDir, CIBLE_DIR);
         const targetDir = path.join(packsDir, subDir, '_source_trad');
 
         if (fs.existsSync(sourceDir)) {

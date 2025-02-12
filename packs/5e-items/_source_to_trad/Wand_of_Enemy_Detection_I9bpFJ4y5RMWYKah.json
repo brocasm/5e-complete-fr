@@ -1,0 +1,157 @@
+{
+  "_id": "I9bpFJ4y5RMWYKah",
+  "name": "Wand of Enemy Detection",
+  "type": "consumable",
+  "img": "icons/weapons/wands/wand-carved-stone-shard.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "magicitems": {
+      "enabled": true,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": true,
+      "destroyCheck": "d2",
+      "destroyType": "dt1",
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": true,
+      "recharge": "1d6 + 1",
+      "rechargeType": "t1",
+      "rechargeUnit": "r2",
+      "sorting": "l",
+      "feats": {
+        "0": {
+          "id": "23sV3PDAsAmZTRbi",
+          "name": "Enemy Detection",
+          "pack": "5e-complete-fr.5e-items",
+          "img": "icons/tools/scribal/magnifying-glass.webp",
+          "effect": "e1",
+          "consumption": "1"
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.magicitems.magicitems.CJHG79Uo6Higmmvg"
+    },
+    "betterRolls5e": {
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "quantity": false,
+          "use": true
+        },
+        "altValue": {
+          "quantity": false,
+          "use": true
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\"><em style=\"box-sizing:border-box;user-select:text\">(Requires attunement)</em></p>\n<p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\">This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.</p>\n<p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\">The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG pg. 210",
+    "quantity": 1,
+    "weight": 1,
+    "price": 4000,
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": false,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Command word."
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 7,
+      "max": "7",
+      "per": "charges",
+      "recovery": "",
+      "autoDestroy": false,
+      "autoUse": true
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": null,
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "1d6 +1",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "flat"
+    },
+    "consumableType": "wand",
+    "attuned": false,
+    "attributes": {
+      "spelldc": 10
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "e1GJldqKX2xtXEGs": 3,
+    "EHpONhziSoZpUpN3": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1665651745604,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.magicitems.magicitems.CJHG79Uo6Higmmvg",
+    "duplicateSource": null
+  },
+  "_key": "!items!I9bpFJ4y5RMWYKah"
+}
