@@ -1,0 +1,217 @@
+{
+  "_id": "xujmMuByXQSax8cD",
+  "name": "Chevalier occulte",
+  "type": "subclass",
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Item.wInKYBoDoGKDimSM"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.1.2",
+    "createdTime": null,
+    "modifiedTime": 1739366674675,
+    "lastModifiedBy": "q1BKxBTo6goDy95S",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Le chevalier occulte typique combine la maîtrise martiale commune à tous les combattants avec une étude minutieuse de la magie. Les chevaliers occulte utilisent des Techniques magiques similaires à celles pratiquées par les magiciens. Ils concentrent leur étude sur deux des huit écoles de magie : Abjuration et Evocation. Les sorts d'Abjuration accordent à un chevalier occulte une Protection supplémentaire au combat, et les sorts d'Evocation infligent des dégâts à de nombreux ennemis à la fois, étendant la portée du combattant au combat. Ces chevaliers apprennent un nombre comparativement petit de sorts, les mémorisant au lieu de les garder dans un Grimoire.</p><h3>Caractéristiques du Chevalier occulte</h3><p>3e Niveau : @Compendium[5e-complete-fr.5e-class-features.GQkUiE7dqIvo2clh]{Lancement de sorts}, @Compendium[5e-complete-fr.5e-class-features.eCZkP7lGRryyoaNJ]{Lien avec l'arme}</p><p>7e Niveau : @Compendium[5e-complete-fr.5e-class-features.2UgbNDxMq4Zzr8lJ]{Magie de guerre}</p><p>10e Niveau : @Compendium[5e-complete-fr.5e-class-features.oLqO3qBAkdCcav6t]{Frappe occulte}</p><p>15e Niveau : @Compendium[5e-complete-fr.5e-class-features.2tqBnd8Nu9x0mfjU]{Charge Arcane}</p><p>18e Niveau : @Compendium[5e-complete-fr.5e-class-features.nE2A6QHFzUAIHe57]{Magie de guerre améliorée}</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "identifier": "eldritch-knight",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "4cifvbvtk6hlxvld",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.eCZkP7lGRryyoaNJ"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.GQkUiE7dqIvo2clh"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Compétence chevalier occulte",
+        "hint": ""
+      },
+      {
+        "_id": "8xdeiv1a4soz3d2k",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.2UgbNDxMq4Zzr8lJ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Eldritch Knight Feature"
+      },
+      {
+        "_id": "aznuuwcf50wsyi7r",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.oLqO3qBAkdCcav6t",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Eldritch Knight Feature"
+      },
+      {
+        "_id": "hce1a6b0zcsiymzo",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.2tqBnd8Nu9x0mfjU",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Eldritch Knight Feature"
+      },
+      {
+        "_id": "0mmn2m450vhfp2wm",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.5e-complete-fr.5e-class-features.nE2A6QHFzUAIHe57",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Eldritch Knight Feature"
+      },
+      {
+        "_id": "CwEtm9LrfSb3nbct",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "cantrips-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "10": {
+              "value": 3
+            }
+          }
+        },
+        "value": {},
+        "title": "Sorts mineurs connus",
+        "hint": ""
+      },
+      {
+        "_id": "PXyo39aTYLiqLBdd",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "spells-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "8": {
+              "value": 6
+            },
+            "10": {
+              "value": 7
+            },
+            "11": {
+              "value": 8
+            },
+            "13": {
+              "value": 9
+            },
+            "14": {
+              "value": 10
+            },
+            "16": {
+              "value": 11
+            },
+            "19": {
+              "value": 12
+            },
+            "20": {
+              "value": 13
+            }
+          }
+        },
+        "value": {},
+        "title": "Sorts connus",
+        "hint": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "third",
+      "ability": "int",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!xujmMuByXQSax8cD"
+}
