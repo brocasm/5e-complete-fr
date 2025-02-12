@@ -2,10 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 const cliProgress = require('cli-progress');
+const readline = require('readline');
 
 // Initialisation de la barre de progression
 const progressBar = new cliProgress.SingleBar({
-  format: '🚀 Progression | {bar} | {percentage}% | {value}/{total} fichiers | Temps écoulé: {duration_formatted}',
+  format: '🚀 Progression | {bar} | {percentage}% | {value}/{total} fichiers | Erreurs: {errorCount} | Temps écoulé: {duration_formatted}',
   barCompleteChar: '\u2588',
   barIncompleteChar: '\u2591',
   hideCursor: true
@@ -171,6 +172,20 @@ async function retrate_error_files(){
 
 }
 
+// Fonction pour poser une question à l'utilisateur
+function askQuestion(query) {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  return new Promise(resolve => rl.question(query, ans => {
+    rl.close();
+    resolve(ans);
+  }));
+}
+
+
 
 
 const action = process.argv[2];
@@ -190,6 +205,10 @@ const action = process.argv[2];
       break;
     case 'process':
       await processAllSourceDirs();
+      const answer = await askQuestion('Voulez-vous lancer pack directement ? (y/n) ');
+      if (answer.toLowerCase() === 'y') {
+        await packFolders();
+      }
       break;
     case 'retrate':
       await retrate_error_files();

@@ -17,6 +17,12 @@ const argv = yargs(hideBin(process.argv))
         type: 'boolean',
         default: false
     })
+    .option('verbose', {
+        alias: 'v',
+        description: 'Afficher des messages de débogage supplémentaires',
+        type: 'boolean',
+        default: false
+    })
     .help()
     .alias('help', 'h').argv;
 
@@ -26,6 +32,7 @@ const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY; // ⚠️ À remplacer
 const MISTRAL_MODEL = 'mistral-small-latest'
 const REQUEST_DELAY = 500; // Délai entre les requêtes en ms
 const force_retrad = argv.forceRetrad;
+const VERBOSE= argv.verbose
 
 
 
@@ -76,11 +83,14 @@ console.error = (...args) => {
 const errorLogFile = path.join(__dirname, 'error_log.json');
 let errorFiles = [];
 
-function logError(filePath, errorMessage) {
+function logError(filePath, errorMessage, originalText, resultText) {
     const errorEntry = {
         filePath: filePath,
         errorMessage: errorMessage,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        originalText: originalText,
+        resultText:resultText,
+        to_retrad:true
     };
 
     errorFiles.push(errorEntry);
@@ -94,14 +104,21 @@ async function translateText(text) {
     const prompt = [
         {
             role: 'system',
-            content: 'Tu es un traducteur professionnel. Traduis exactement de l\'anglais au français en préservant:' +
-                     '\n1. Les balises HTML et leur structure' +
-                     '\n2. Le style technique du texte original' +
-                     '\n3. Les termes spéciaux sans les traduire'
+            content: 'Tu es un traducteur technique spécialisé dans les jeux de rôle. Ta mission est :' +
+                     '\n- Traduire TOUT le texte anglais en français SAUF :' +
+                     '\n  1. Les balises HTML (<...>) et leurs attributs (href, src)' +
+                     '\n  2. Les termes entre {{...}} ou [[...]]' +                     
+                     '\n- Conserver EXACTEMENT la structure HTML originale' +
+                     '\n- Ne JAMAIS corriger les erreurs HTML éventuelles' +                     
+                     '\n- Formater le résultat pour garder l\'indentation originale'+
+                     '\n-Convertis les distances de pieds en mètres (1 pied = 0.3048 mètres).\n\n' +
+                    'Voici un exemple :\n' +
+                    'Texte original : "<p>The <strong>dragon</strong> breathes fire and is 10 feet tall.</p>"\n' +
+                    'Traduction attendue : "<p>Le <strong>dragon</strong> crache du feu et mesure 3.048 mètres.</p>"'
         },
         {
             role: 'user',
-            content: `Traduis ce texte de jeu de rôle sans ajouter de commentaires:\n\n${text}`
+            content: `Traduis ce texte de jeu de rôle sans ajouter de commentaires :\n\n${text}`
         }
     ];
 
@@ -111,8 +128,10 @@ async function translateText(text) {
             messages: prompt,
             temperature: 0.3, // Contrôle de la créativité
             max_tokens: 4000, // Limite de tokens
-        });        
-        console.debug(chatResponse.choices[0].message)
+        });      
+
+        if(VERBOSE) console.debug(chatResponse.choices[0].message);
+        
         return chatResponse.choices[0].message.content;
     } catch (error) {
         console.error('Erreur Mistral:', error.message);
@@ -144,11 +163,11 @@ async function processJsonFile(filePath, targetDir) {
             // Vérification basique du résultat
             if (originalText === json.system.description.value) {
                 console.warn(`⚠️ Avertissement: Pas de traduction pour ${path.basename(filePath)}`);
-                logError(filePath.replace('_source_to_trad', '_source'),"Pas de traduction effectuée");
+                logError(filePath.replace('_source_to_trad', '_source'),"Pas de traduction effectuée", originalText, json.system.description.value);
             }
         } catch (error) {
             console.error(`❌ Erreur sur ${filePath}:`, error.message);
-            logError(filePath,error.message)
+            logError(filePath,error.message, originalText, json.system.description.value)
         }
     }
 
