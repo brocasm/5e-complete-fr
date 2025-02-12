@@ -109,12 +109,13 @@ async function translateText(text) {
                      '\n  1. Les balises HTML (<...>) et leurs attributs (href, src)' +
                      '\n  2. Les termes entre {{...}} ou [[...]]' +                     
                      '\n- Conserver EXACTEMENT la structure HTML originale' +
-                     '\n- Ne JAMAIS corriger les erreurs HTML éventuelles' +                     
+                     '\n- Ne JAMAIS corriger les erreurs HTML éventuelles' +
+                     '\n- Supprime les données entre {{...}}, y compris les {{ }}'+                    
                      '\n- Formater le résultat pour garder l\'indentation originale'+
                      '\n-Convertis les distances de pieds en mètres (1 pied = 0.3048 mètres).\n\n' +
                     'Voici un exemple :\n' +
-                    'Texte original : "<p>The <strong>dragon</strong> breathes fire and is 10 feet tall.</p>"\n' +
-                    'Traduction attendue : "<p>Le <strong>dragon</strong> crache du feu et mesure 3.048 mètres.</p>"'
+                    'Texte original : "<p>The <strong>dragon</strong> breathes fire and is 10 feet tall.</p>@Compendium[5e-complete-fr.5e-class-features.B7FS4n7voDgL2KJg]{Déflecter les Missiles: Lancer}"\n' +
+                    'Traduction attendue : "<p>Le <strong>dragon</strong> crache du feu et mesure 3 mètres.</p>@Compendium[5e-complete-fr.5e-class-features.B7FS4n7voDgL2KJg]"'
         },
         {
             role: 'user',

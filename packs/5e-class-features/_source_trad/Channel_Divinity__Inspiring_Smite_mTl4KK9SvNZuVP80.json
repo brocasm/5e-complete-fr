@@ -1,0 +1,125 @@
+{
+  "name": "Channel Divinity: Inspiring Smite",
+  "type": "feat",
+  "img": "icons/magic/life/heart-area-circle-red-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.ktTmXoGz4Tjz3C53"
+    }
+  },
+  "_id": "mTl4KK9SvNZuVP80",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Immédiatement après avoir infligé des dégâts à une créature avec votre @Compendium[5e-complete-fr.5e-class-features.xDUcpIzgrtlqREJf] feature, vous pouvez utiliser votre @Compendium[5e-complete-fr.5e-class-features.BdhVFmTGhjLm1Ceo] comme une action bonus et distribuer <strong>points de vie temporaires</strong> à des créatures de votre choix à 9 mètres de vous, ce qui peut inclure vous-même. Le nombre total de points de vie temporaires est égal à <strong>2d8 + votre niveau</strong> dans cette classe, répartis parmi les créatures choisies comme vous le souhaitez.</p>\n<section class=\"secret\">\n<p><em>Note: When you add this feature to your character, set Resource Consumption to Item Uses: Channel Divinity.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "any",
+      "type": "ally"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d8 + @details.level",
+          "temphp"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Oath of Glory 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!mTl4KK9SvNZuVP80"
+}

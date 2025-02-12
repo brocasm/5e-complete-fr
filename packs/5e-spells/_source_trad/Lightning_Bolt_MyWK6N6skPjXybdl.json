@@ -1,0 +1,173 @@
+{
+  "_id": "MyWK6N6skPjXybdl",
+  "name": "Lightning Bolt",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "critRange": {
+        "value": null
+      },
+      "critDamage": {
+        "value": ""
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.IyikgTEOTv701jgQ"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Un éclair sous forme de ligne de 30 mètres de long et 2 mètres de large jaillit de vous dans une direction de votre choix. Chaque créature dans la ligne doit effectuer un jet de sauvegarde de Dexterity. Une créature subit 8d6 dégâts de foudre en cas d'échec du jet de sauvegarde, ou la moitié des dégâts en cas de réussite.</p>\n<p>La foudre enflamme les objets inflammables dans la zone qui ne sont ni portés ni portés.</p>\n<p><h3>At Higher Levels</h3> Lorsque vous lancez ce sort en utilisant une fente de sort de 4e niveau ou supérieur, les dégâts augmentent de 1d6 pour chaque niveau de fente de sort au-dessus du 3e.</p>\n<p><strong>Spell Lists.</strong> Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "m",
+      "type": "line"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "8d6",
+          "lightning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A bit of fur and a rod of amber, crystal, or glass",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664779040400,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.world.spells-expanded.IyikgTEOTv701jgQ",
+    "duplicateSource": null
+  },
+  "_key": "!items!MyWK6N6skPjXybdl"
+}

@@ -1,0 +1,137 @@
+{
+  "name": "Shove",
+  "type": "feat",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>En utilisant l'action d'attaque, vous pouvez effectuer une attaque au corps à corps spéciale pour pousser une créature, soit pour la mettre à terre, soit pour l'éloigner de vous. Si vous êtes en mesure de faire plusieurs attaques avec l'action d'attaque, cette attaque remplace l'une d'entre elles.</p><p>La cible ne doit pas être plus grande d'une taille que vous et doit être à portée. Au lieu de faire un jet d'attaque, vous faites un test de Force (<strong>Athletics</strong>) contesté par le test de Force (<strong>Athletics</strong>) ou de Dextérité (<strong>Acrobatics</strong>) de la cible (la cible choisit l'aptitude à utiliser). Si vous gagnez le contest, vous mettez la cible à terre ou la poussez à 2 mètres de vous.</p><section id=\"secret-W8KUClkBKMrETpOp\" class=\"secret\"><p><em>Note: Ciblez la créature que vous souhaitez pousser avant de lancer cette fonctionnalité pour déclencher le concours de compétences. La créature choisie lancera automatiquement sa compétence la plus élevée.</em></p><p><em>Requires: Advanced Macros, Item Macro, Monk's TokenBar.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "flags": {
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.pUPew0uVi22r3i2T"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Shove",
+        "type": "script",
+        "scope": "global",
+        "command": "const attacker = token; //selected token\nconst target = game.user.targets.first(); //targeted creature\n\nconst skilltoberolled = target.actor.system.skills.ath.total < target.actor.system.skills.acr.total ? \"acr\" : \"ath\";\n\nawait game.MonksTokenBar.requestContestedRoll({\n    token:attacker,\n    request: 'skill:ath'\n},{\n    token: target,\n    request:`skill:${skilltoberolled}`\n},{\n    silent:true, \n    fastForward:false,\n    flavor: `${attacker.name} tries to shove ${target.name}.`, \n});",
+        "author": "UjfixXuqstXNdypa",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "systemId": null,
+          "systemVersion": null,
+          "coreVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null
+        }
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1669191960019,
+    "modifiedTime": 1669258869169,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.pUPew0uVi22r3i2T",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "emwIPBKliC05fNTL",
+  "_key": "!items!emwIPBKliC05fNTL"
+}

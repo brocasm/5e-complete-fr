@@ -1,0 +1,157 @@
+{
+  "_id": "eHjSl6u2gNJDlaKo",
+  "name": "Healing Spirit",
+  "type": "spell",
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "value": {
+          "use": true
+        },
+        "altValue": {
+          "use": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.w5oHkt0qDMAzrH7h"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">Vous invoquez un esprit de la nature pour apaiser les blessés. L'esprit intangible apparaît dans un espace de 2 mètres de cube que vous pouvez voir à portée. L'esprit ressemble à une <strong>bête</strong> ou <strong>fée</strong> (à votre choix).</p><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">Jusqu'à la fin du sort, chaque fois que vous ou une créature que vous pouvez voir entre dans l'espace de l'esprit pour la première fois lors d'un tour ou commence son tour là, vous pouvez faire en sorte que l'esprit restaure points de vie à cette créature (aucune action nécessaire). L'esprit ne peut pas soigner les <strong>construits</strong> ou les <strong>mort-vivants</strong>. L'esprit peut soigner un nombre de fois égal à 1 + votre modificateur de capacité de Lanceur de sorts (minimum de deux fois). Après avoir soigné ce nombre de fois, l'esprit disparaît.</p><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">En tant qu'action bonus lors de votre tour, vous pouvez déplacer l'esprit jusqu'à 9 mètres vers un espace que vous pouvez voir.</p><h3>Niveau Supérieur</h3><p style=\"box-sizing:border-box;user-select:text;line-height:1.4;color:#191813;font-size:13px\">Lorsque vous lancez ce sort en utilisant une emplacement de sort de 3e niveau ou supérieur, les soins augmentent de 1d6 pour chaque niveau d'emplacement au-dessus du 2e.</p><p><strong>Listes de sorts.</strong> Druide, Ranger</p><section class=\"secret\" id=\"secret-XcAEGoaVUH6wsmpZ\"><p><em>Note: Mettez à jour manuellement le nombre de charges disponibles pour ce sort.</em></p></section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 2,
+      "width": null,
+      "units": "m",
+      "type": "cube"
+    },
+    "range": {
+      "value": 18,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "2",
+      "per": "charges",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "heal",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d6",
+          "healing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 2,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "rB1eq1YiygSNB2xV": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1666260097912,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.w5oHkt0qDMAzrH7h",
+    "duplicateSource": null
+  },
+  "_key": "!items!eHjSl6u2gNJDlaKo"
+}

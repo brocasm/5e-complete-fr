@@ -1,0 +1,145 @@
+{
+  "_id": "oW1kPHxJAAojOqMq",
+  "name": "Arcane Hand",
+  "type": "spell",
+  "img": "icons/commodities/biological/hand-clawed-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.a2KJHCIbY5Mi4Dmn"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Versatile",
+          "formulaSet": [
+            1
+          ]
+        }
+      ],
+      "migratedVersatile": true
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous créez une Main Large de force scintillante, translucide dans un espace inoccupé que vous pouvez voir à portée. La main dure pendant la Durée du sort, et elle se déplace à votre commande, mimant les mouvements de votre propre main.</p><p>La main est un objet qui a une CA de 20 et des Points de Vie égaux à votre maximum de Points de Vie. Si elle tombe à 0 Points de Vie, le sort se termine. Elle a une Force de 26 (+8) et une Dexterité de 10 (+0). La main ne remplit pas son espace.</p><p>Lorsque vous lancez le sort et comme une Action Bonus à vos tours suivants, vous pouvez déplacer la main jusqu'à 18 mètres et ensuite provoquer l'un des Effets suivants avec elle.</p><h3>Poing Serré</h3><p>La main frappe une créature ou un objet à 1,5 mètres d'elle. Faites une attaque de sort de mêlée pour la main en utilisant vos Statistiques de jeu. En cas de touche, la cible subit 4d8 dégâts de force.</p><h3>Main Forcive</h3><p>La main tente de pousser une créature à 1,5 mètres d'elle dans une direction de votre choix. Faites un test avec la Force de la main contesté par le test de Force (Athlétisme) de la cible. Si la cible est de taille Moyenne ou inférieure, vous avez l'avantage sur le test. Si vous réussissez, la main pousse la cible jusqu'à 1,5 mètres plus un nombre de mètres égal à cinq fois votre modificateur de capacité de Lancement de sorts. La main se déplace avec la cible pour rester à 1,5 mètres d'elle.</p><h3>Main Agrippante</h3><p>La main tente de saisir une créature de taille Gigantesque ou inférieure à 1,5 mètres d'elle. Vous utilisez la Force de la main pour résoudre la saisie. Si la cible est de taille Moyenne ou inférieure, vous avez l'avantage sur le test. Tant que la main saisit la cible, vous pouvez utiliser une Action Bonus pour que la main l'écrase. Lorsqu'elle le fait, la cible subit des dégâts contondants égaux à 2d6 + votre modificateur de capacité de Lancement de sorts.</p><h3>Main Interposée</h3><p>La main s'interpose entre vous et une créature de votre choix jusqu'à ce que vous donniez une autre commande à la main. La main se déplace pour rester entre vous et la cible, vous fournissant une demi-couverture contre la cible. La cible ne peut pas se déplacer à travers l'espace de la main si son score de Force est inférieur ou égal à celui de la main. Si son score de Force est supérieur à celui de la main, la cible peut se déplacer vers vous à travers l'espace de la main, mais cet espace est un terrain difficile pour la cible.</p><h3>À des Niveaux Supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une fente de sort de 6e niveau ou supérieure, les dégâts de l'option Poing Serré augmentent de 2d8 et les dégâts de la Main Agrippante augmentent de 2d6 pour chaque niveau de fente de sort au-dessus du 5e.</p><p><strong>Listes de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "BR",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "space"
+    },
+    "range": {
+      "value": 37,
+      "long": 0,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "rsak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "4d8",
+          "force"
+        ],
+        [
+          "2d6",
+          "force"
+        ]
+      ],
+      "versatile": "2d6",
+      "value": ""
+    },
+    "formula": "1d20+8",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "level": 5,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "An eggshell and a snakeskin glove",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "2d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667711748586,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Compendium.world.spells-expanded.a2KJHCIbY5Mi4Dmn",
+    "duplicateSource": null
+  },
+  "_key": "!items!oW1kPHxJAAojOqMq"
+}

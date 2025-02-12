@@ -1,0 +1,931 @@
+{
+  "name": "Wurm",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/GGR/Wurm.jpg",
+  "items": [
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "GGR",
+          "hash": "bite_wurm_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "uhkii9934amvy121",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+12]] (+12) to hit, reach 10 ft., one target. <i>Hit:</i> 24 ([[/r 5d6 + 7]]) piercing damage. If the target is a Medium or smaller creature, it must succeed on a DC <span class=\"rd__dc\">20</span> Dexterity saving throw or be swallowed by the wurm. A swallowed creature is @condition[blinded] and @condition[restrained], has total cover against attacks and other effects outside the wurm, and takes 17 ([[/r 5d6]]) acid damage at the start of each of the wurm's turns. If the wurm takes 30 damage or more on a single turn from a creature inside it, the wurm must succeed on a DC <span class=\"rd__dc\">21</span> Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall @condition[prone] in a space within 10 feet of the wurm. If the wurm dies, a swallowed creature is no longer @condition[restrained] by it and can escape from the corpse by using 20 feet of movement, exiting @condition[prone].</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 10,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "5d6  + @mod",
+              "piercing"
+            ],
+            [
+              "5d6",
+              "acid"
+            ],
+            [
+              "30",
+              ""
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "dex",
+          "dc": 20,
+          "scaling": "str"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!uYniOIB0VApZWgcc.uhkii9934amvy121"
+    },
+    {
+      "name": "Siege Monster",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "GGR",
+          "hash": "siege%20monster_wurm_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "8jvzi64zmhipopz4",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The wurm deals double damage to objects and structures.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!uYniOIB0VApZWgcc.8jvzi64zmhipopz4"
+    },
+    {
+      "name": "Earth Tremors",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "GGR",
+          "hash": "earth%20tremors_wurm_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "k99d78hfmt2nre0m",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The wurm creates earth tremors as it moves overland or underground. Any creature that comes within 30 feet of the moving wurm for the first time on a turn must succeed on a DC <span class=\"rd__dc\">20</span> Dexterity saving throw or take 10 ([[/r 3d6]]) bludgeoning damage and fall @condition[prone]. Any structure or object anchored to the ground that comes within 30 feet of the moving wurm for the first time on a turn takes 10 ([[/r 3d6]]) force damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "dex",
+          "dc": 20,
+          "scaling": "str"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!uYniOIB0VApZWgcc.k99d78hfmt2nre0m"
+    },
+    {
+      "name": "Tunneler",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/unholy/orb-glowing-yellow-purple.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "GGR",
+          "hash": "tunneler_wurm_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "z2fcf5k54lmh7tch",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The wurm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!uYniOIB0VApZWgcc.z2fcf5k54lmh7tch"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "GGR",
+      "hash": "wurm_ggr"
+    }
+  },
+  "_id": "uYniOIB0VApZWgcc",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 7
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 6
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": -4
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 1
+      },
+      "cha": {
+        "value": 4,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": -3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 18,
+        "calc": "natural",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 200,
+        "min": 0,
+        "max": 200,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "16d12 + 96"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 0,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": 30,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "walk": 50,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 60,
+        "tremorsense": 60,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "",
+      "prof": 5,
+      "spelldc": 8
+    },
+    "details": {
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Wurms are huge creatures that resemble limbless, wingless dragons. They burrow through the earth and eat virtually anything they come across, and their movement accounts for much of the destruction in the rubblebelt regions of Ravnica. A wurm burrows through loose earth by using deep sonic vibrations to liquefy the earth in front of it and swim through the area. The soil resolidifies and closes behind it. Moving through rock is slower and more difficult, and the wurm leaves a tunnel in its wake. The Gruul Clans appreciate the devastation wurms can create, and the clans sometimes lure them into civilized areas where the destruction can be vast.</p><div class=\"rd__spc-inline-post\"></div></div></div></div>",
+        "public": ""
+      },
+      "alignment": "unaligned",
+      "race": "",
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "",
+      "cr": 14,
+      "spellLevel": 0,
+      "xp": {
+        "value": 11500
+      },
+      "source": "GGR",
+      "class": {}
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-little-details": {
+        "bloodsplat-colour": "#ff1000"
+      },
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Wurm",
+    "width": 3,
+    "height": 3,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/GGR/Wurm.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 60,
+      "brightness": 1,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_key": "!actors!uYniOIB0VApZWgcc"
+}

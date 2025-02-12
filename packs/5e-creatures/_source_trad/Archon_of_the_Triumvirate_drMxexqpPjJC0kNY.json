@@ -1,0 +1,1945 @@
+{
+  "name": "Archon of the Triumvirate",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/GGR/Archon%20of%20the%20Triumvirate.jpg",
+  "items": [
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blade-tips-triple-steel.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "GGR",
+          "hash": "multiattack_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "6fg9mdn1yvpccmax",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The archon makes two Hammer of Justice attacks.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.6fg9mdn1yvpccmax"
+    },
+    {
+      "name": "Hammer of Justice",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/sword-brandish.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "GGR",
+          "hash": "hammer%20of%20justice_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "737tpqat832o76b6",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]] (+10) to hit, reach 5 ft., one target. <i>Hit:</i> 12 ([[/r 2d6 + 5]]) bludgeoning damage plus 18 ([[/r 4d8]]) force damage. If the target is a creature, it must succeed on a DC <span class=\"rd__dc\">18</span> Strength saving throw or be knocked @condition[prone].</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d6  + @mod",
+              "bludgeoning"
+            ],
+            [
+              "4d8",
+              "force"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "str",
+          "dc": 18,
+          "scaling": "flat"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.737tpqat832o76b6"
+    },
+    {
+      "name": "Pacifying Presence",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mailed-fist.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "GGR",
+          "hash": "pacifying%20presence_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "yehw89vadzp2dup5",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>Each creature of the archon's choice that the archon can see within 120 feet of it must succeed on a DC <span class=\"rd__dc\">18</span> Wisdom saving throw, or else the target drops any weapons it is holding, ends its concentration on any spells or other effects, and becomes @condition[charmed] by the archon for 1 minute. The @condition[charmed] creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the archon's Pacifying Presence for the next 24 hours.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": 18,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.yehw89vadzp2dup5"
+    },
+    {
+      "name": "Eye of the Law",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "GGR",
+          "hash": "eye%20of%20the%20law_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "2qm1c53qyxq9w6ha",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>As a bonus action, the archon can target a creature it can see within 120 feet of it and determine which laws that creature has broken in the last 24 hours.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "bonus",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.2qm1c53qyxq9w6ha"
+    },
+    {
+      "name": "Mount",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "GGR",
+          "hash": "mount_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "irrz5ydddlm3i8or",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount along with any equipment it is wearing or carrying. While mounted and not @condition[incapacitated], the archon can't be surprised, and both it and its mount gain advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "bonus",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.irrz5ydddlm3i8or"
+    },
+    {
+      "name": "Rejoin Mount",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterLegendary",
+          "source": "GGR",
+          "hash": "rejoin%20mount_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "jv5k2t18rvsuujoq",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>If the archon isn't mounted, it magically teleports to its steed and mounts it as long as the archon and its steed are on the same plane of existence.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "legendary",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "attribute",
+          "target": "resources.legact.value",
+          "amount": 1
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.jv5k2t18rvsuujoq"
+    },
+    {
+      "name": "Smite",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterLegendary",
+          "source": "GGR",
+          "hash": "smite_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "m813vepfzbhm3cas",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The archon makes a Hammer of Justice attack, and then its mount can use its reaction to make a melee weapon attack.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "legendary",
+          "cost": 2,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "attribute",
+          "target": "resources.legact.value",
+          "amount": 2
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.m813vepfzbhm3cas"
+    },
+    {
+      "name": "Detention",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterLegendary",
+          "source": "GGR",
+          "hash": "detention_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "f8khy2isx4q5ui02",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The archon targets a creature it can see within 60 feet of it. The target must succeed on a DC <span class=\"rd__dc\">18</span> Charisma saving throw or be magically teleported to a harmless demiplane until the end of the archon's next turn, whereupon the target reappears in the space it left or the nearest unoccupied space if that space is occupied.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "legendary",
+          "cost": 3,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "attribute",
+          "target": "resources.legact.value",
+          "amount": 3
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "cha",
+          "dc": 18,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.f8khy2isx4q5ui02"
+    },
+    {
+      "name": "Legendary Actions",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/light/hand-sparks-glow-yellow.webp",
+      "flags": {},
+      "effects": [],
+      "_id": "gl4moe2k8obxszv9",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div>\n\t\t\t<div>The archon of the triumvirate can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The archon of the triumvirate regains spent legendary actions at the start of its turn.</div>\n\t\t\t<div><ul class=\"rd__list\"><li class=\"rd__li \">@ActorEmbeddedItem[null][Rejoin Mount]</li><li class=\"rd__li \">@ActorEmbeddedItem[null][Smite]</li><li class=\"rd__li \">@ActorEmbeddedItem[null][Detention]</li></ul></div>\n\t\t</div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": null,
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.gl4moe2k8obxszv9"
+    },
+    {
+      "name": "Plate Armor",
+      "type": "equipment",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+      "flags": {
+        "srd5e": {
+          "page": "items.html",
+          "source": "PHB",
+          "hash": "plate%20armor_phb"
+        }
+      },
+      "effects": [],
+      "_id": "1gnrhjfmbhmhdj6u",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "\n\t\t<div  class=\"rd__b  rd__b--2\"><p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "quantity": 1,
+        "weight": 65,
+        "price": 1500,
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": false,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 0,
+          "long": 0,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 18,
+          "type": "heavy",
+          "dex": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "baseItem": "plate",
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 15,
+        "stealth": true,
+        "proficient": true,
+        "attuned": false
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.1gnrhjfmbhmhdj6u"
+    },
+    {
+      "name": "Calm Emotions",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/social/trading-justice-scale-gold.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "calm%20emotions_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "r5ncsmkxmvczqz6g",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.</p><div class=\"rd__spc-inline-post\"></div><p>You can suppress any effect causing a target to be @condition[charmed] or @condition[frightened]. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p><p>Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 20,
+          "width": null,
+          "units": "ft",
+          "type": "sphere"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "cha",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 2,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.r5ncsmkxmvczqz6g"
+    },
+    {
+      "name": "Command",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/control/control-influence-puppet.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "command_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "kiu1pn0fhdoa8gqt",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><div class=\"rd__spc-inline-post\"></div><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1284\" > <span class=\"entry-title-inner\">Approach.</span></span> <p>The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1285\" > <span class=\"entry-title-inner\">Drop.</span></span> <p>The target drops whatever it is holding and then ends its turn.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1286\" > <span class=\"entry-title-inner\">Flee.</span></span> <p>The target spends its turn moving away from you by the fastest available means.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1287\" > <span class=\"entry-title-inner\">Grovel.</span></span> <p>The target falls @condition[prone] and then ends its turn.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1288\" > <span class=\"entry-title-inner\">Halt.</span></span> <p>The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><div class=\"rd__spc-inline-post\"></div></div></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1289\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "round"
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 1,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": false,
+          "material": false,
+          "ritual": false,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.kiu1pn0fhdoa8gqt"
+    },
+    {
+      "name": "Compelled Duel",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/strike-stake-gray.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "compelled%20duel_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "8946a3ndx0q5kbsa",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn.</p><div class=\"rd__spc-inline-post\"></div><p>The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "bonus",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 30,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 1,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": false,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.8946a3ndx0q5kbsa"
+    },
+    {
+      "name": "Innate Spellcasting",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/light/projectiles-star-purple.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterSpellcasting",
+          "source": "GGR",
+          "hash": "innate%20spellcasting_archon%20of%20the%20triumvirate_ggr_ggr"
+        }
+      },
+      "effects": [],
+      "_id": "ee7usgszy0wp4b3n",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1290\" > <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> <p>The archon's innate spellcasting ability is Wisdom (spell save DC <span class=\"rd__dc\">18</span>, [[/r 1d20+10]] (+10) to hit with spell attacks). The archon can innately cast the following spells, requiring no material components:</p><div class=\"rd__spc-inline-post\"></div><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @spell[calm emotions], @spell[command], @spell[compelled duel]</p></li></ul></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "GGR",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": null,
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!drMxexqpPjJC0kNY.ee7usgszy0wp4b3n"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "GGR",
+      "hash": "archon%20of%20the%20triumvirate_ggr"
+    }
+  },
+  "_id": "drMxexqpPjJC0kNY",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "con": {
+        "value": 19,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 4
+      },
+      "int": {
+        "value": 15,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "wis": {
+        "value": 21,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 4
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calc": "default",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 144,
+        "min": 0,
+        "max": 144,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "17d8 + 68"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 2,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "walk": 30,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 120,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "wis",
+      "prof": 5,
+      "spelldc": 10
+    },
+    "details": {
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Archons are enigmatic, supernatural embodiments of the harshest aspects of law and order. They espouse a rigid sense of justice and deal ruthless punishment to those who break the law. This nature often aligns them with the Azorius Senate, and they are commonly seen circling above the Azorius guildhall astride their winged felidar mounts, soaring alongside griffon-mounted hussars.</p><div class=\"rd__spc-inline-post\"></div><p>An archon appears as an armored humanoid figure, nearly always mounted. Its face is usually shadowed beneath a large hood; those who have seen beneath the hood describe a face of celestial beauty with a stern expression and blank white eyes.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1282\"> <span class=\"entry-title-inner\">Eternal Riders.</span></span> <p>The bond between an archon and its winged felidar mount is so close that the two are sometimes considered a single being, acting with a single mind. If an archon is ever thrown from its saddle, it can magically return to its place astride its mount in an instant.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1283\"> <span class=\"entry-title-inner\">Immortal Nature.</span></span> <p>An archon doesn't require food, drink, or sleep.</p><div class=\"rd__spc-inline-post\"></div></div></div></div></div>",
+        "public": ""
+      },
+      "alignment": "lawful neutral",
+      "race": "",
+      "type": {
+        "value": "celestial",
+        "subtype": "",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "",
+      "cr": 14,
+      "spellLevel": 0,
+      "xp": {
+        "value": 11500
+      },
+      "source": "GGR",
+      "class": {}
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "physical"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "aarakocra",
+          "abyssal",
+          "aquan",
+          "auran",
+          "celestial",
+          "deep",
+          "draconic",
+          "druidic",
+          "dwarvish",
+          "elvish",
+          "giant",
+          "gith",
+          "gnomish",
+          "goblin",
+          "gnoll",
+          "halfling",
+          "ignan",
+          "infernal",
+          "orc",
+          "primordial",
+          "sylvan",
+          "terran",
+          "cant",
+          "undercommon"
+        ],
+        "custom": ""
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-little-details": {
+        "bloodsplat-colour": "#a3f4ff"
+      },
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Archon of the Triumvirate",
+    "width": 1,
+    "height": 1,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/GGR/Archon of the Triumvirate.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 120,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_key": "!actors!drMxexqpPjJC0kNY"
+}

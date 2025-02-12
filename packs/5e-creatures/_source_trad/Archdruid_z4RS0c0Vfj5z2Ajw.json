@@ -1,0 +1,2090 @@
+{
+  "name": "Archdruid",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/MPMM/Archdruid.webp",
+  "items": [
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blade-tips-triple-steel.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MPMM",
+          "hash": "multiattack_archdruid_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "_id": "lgewbsx2bbdz4tvs",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The archdruid makes three Staff or Wildfire attacks. It can replace one attack with a use of Spellcasting.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MPMM",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.lgewbsx2bbdz4tvs"
+    },
+    {
+      "name": "Staff",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/weapons/staves/staff-ornate-engraved-blue.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MPMM",
+          "hash": "staff_archdruid_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "_id": "vz6ixlwezqphplg6",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]] (+6) to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/r 1d6 + 2]]) bludgeoning damage plus 21 ([[/r 6d6]]) poison damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MPMM",
+        "quantity": 1,
+        "weight": 4,
+        "price": 5,
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": false,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d6  + @mod",
+              "bludgeoning"
+            ],
+            [
+              "6d6",
+              "poison"
+            ]
+          ],
+          "versatile": "",
+          "value": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": null,
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "simpleM",
+        "baseItem": "",
+        "properties": {
+          "value": "",
+          "foc": true,
+          "amm": false,
+          "hvy": false,
+          "fin": false,
+          "fir": false,
+          "lgt": false,
+          "lod": false,
+          "rch": false,
+          "rel": false,
+          "ret": false,
+          "spc": false,
+          "thr": false,
+          "two": false,
+          "ver": false,
+          "mgc": true
+        },
+        "proficient": true,
+        "attributes": {
+          "spelldc": 10
+        },
+        "attuned": false,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.vz6ixlwezqphplg6"
+    },
+    {
+      "name": "Wildfire",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/fairy-wand.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MPMM",
+          "hash": "wildfire_archdruid_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "_id": "eue5j3scc89xabir",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Ranged Spell Attack:</i> [[/r 1d20+9]] (+9) to hit, range 120 ft., one target. <i>Hit:</i> 26 ([[/r 6d6 + 5]]) fire damage, and the target is @condition[blinded] until the start of the druid's next turn.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MPMM",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 120,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "rsak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "6d6  + @mod",
+              "fire"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.eue5j3scc89xabir"
+    },
+    {
+      "name": "Change Shape",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/control/silhouette-hold-change-blue.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterBonus",
+          "source": "MPMM",
+          "hash": "change%20shape%20(2%2fday)_archdruid_mpmm_mpmm"
+        }
+      },
+      "effects": [],
+      "_id": "ydu1js3hh7n3q1yz",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The archdruid magically transforms into a Beast or an Elemental with a challenge rating of 6 or less and can remain in that form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls @condition[unconscious]. The archdruid can revert to its true form using a bonus action.</p><div class=\"rd__spc-inline-post\"></div><p>While in a new form, the archdruid's stat block is replaced by the stat block of that form, except the archdruid keeps its current hit points, its hit point maximum, this bonus action, its languages and ability to speak, and its Spellcasting action.</p><p>The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MPMM",
+        "activation": {
+          "type": "bonus",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 2,
+          "max": "2",
+          "per": "day"
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.ydu1js3hh7n3q1yz"
+    },
+    {
+      "name": "Hide Armor",
+      "type": "equipment",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/equipment/chest/breastplate-scale-leather.webp",
+      "flags": {
+        "srd5e": {
+          "page": "items.html",
+          "source": "PHB",
+          "hash": "hide%20armor_phb"
+        }
+      },
+      "effects": [],
+      "_id": "qzoawttsgk9y03zp",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "\n\t\t<div  class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "quantity": 1,
+        "weight": 12,
+        "price": 10,
+        "attunement": 0,
+        "equipped": true,
+        "rarity": "",
+        "identified": false,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 0,
+          "long": 0,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 12,
+          "type": "medium",
+          "dex": 2
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "baseItem": "hide",
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": null,
+        "stealth": false,
+        "proficient": true,
+        "attuned": false
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.qzoawttsgk9y03zp"
+    },
+    {
+      "name": "Commune with Nature",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/nature/plant-sprout-hands-vines.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "commune%20with%20nature_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "n6rhkx0f5dirlew7",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.</p><div class=\"rd__spc-inline-post\"></div><p>You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:</p><ul class=\"rd__list\"><li class=\"rd__li \">terrain and bodies of water</li><li class=\"rd__li \">prevalent plants, minerals, animals, or peoples</li><li class=\"rd__li \">powerful celestials, fey, fiends, elementals, or undead</li><li class=\"rd__li \">influence from other planes of existence</li><li class=\"rd__li \">buildings</li></ul><p>For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "minute",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 0,
+          "units": "inst"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "self",
+          "type": "self"
+        },
+        "range": {
+          "value": 0,
+          "long": null,
+          "units": "self"
+        },
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 5,
+        "school": "div",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": true,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.n6rhkx0f5dirlew7"
+    },
+    {
+      "name": "Mass Cure Wounds",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/life/cross-explosion-burst-green.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "mass%20cure%20wounds_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "5v07ov78inikqhxv",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to [[/r 3d8]] + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5526\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>When you cast this spell using a spell slot of 6th level or higher, the healing increases by [[/r 1d8]] for each slot level above 5th.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 0,
+          "units": "inst"
+        },
+        "target": {
+          "value": 30,
+          "width": null,
+          "units": "ft",
+          "type": "sphere"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "heal",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "3d8 + @mod",
+              "healing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 5,
+        "school": "evo",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": false,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "level",
+          "formula": "1d8"
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.5v07ov78inikqhxv"
+    },
+    {
+      "name": "Animal Messenger",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/birds/dove-pigeon-flying-white.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "animal%20messenger_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "j7yaaah3y8ic0fcc",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.</p><div class=\"rd__spc-inline-post\"></div><p>When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.</p></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5527\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 24,
+          "units": "hour"
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 30,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 3,
+          "max": 3,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 2,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": true,
+          "ritual": true,
+          "concentration": false
+        },
+        "materials": {
+          "value": "a morsel of food",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.j7yaaah3y8ic0fcc"
+    },
+    {
+      "name": "Dominate Beast",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/weapons/misc/whip-red-yellow.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "dominate%20beast_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "f6zyi3f0drab8ded",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be @condition[charmed] by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p><div class=\"rd__spc-inline-post\"></div><p>While the beast is @condition[charmed], you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p><p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p><p>Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5528\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 3,
+          "max": 3,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 4,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.f6zyi3f0drab8ded"
+    },
+    {
+      "name": "Faerie Fire",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/light/explosion-star-glow-silhouette.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "faerie%20fire_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "2oimpy0cw04xzdfr",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.</p><div class=\"rd__spc-inline-post\"></div><p>Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being @condition[invisible].</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 20,
+          "width": null,
+          "units": "ft",
+          "type": "cube"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 3,
+          "max": 3,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "dex",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 1,
+        "school": "evo",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": false,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.2oimpy0cw04xzdfr"
+    },
+    {
+      "name": "Tree Stride",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/nature/tree-elm-roots-brown.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "tree%20stride_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "7ba47o6cl4yucwex",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.</p><div class=\"rd__spc-inline-post\"></div><p>You can use this transportation ability once per round for the duration. You must end each turn outside a tree.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "self",
+          "type": "self"
+        },
+        "range": {
+          "value": 0,
+          "long": null,
+          "units": "self"
+        },
+        "uses": {
+          "value": 3,
+          "max": 3,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 5,
+        "school": "con",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.7ba47o6cl4yucwex"
+    },
+    {
+      "name": "Beast Sense",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/fire/flame-burning-eye.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "beast%20sense_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "d9rrpxfuacse5x9r",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are @condition[blinded] and @condition[deafened] to your own surroundings.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "hour"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "touch",
+          "type": ""
+        },
+        "range": {
+          "value": 0,
+          "long": null,
+          "units": "touch"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 2,
+        "school": "div",
+        "components": {
+          "value": "",
+          "vocal": false,
+          "somatic": true,
+          "material": false,
+          "ritual": true,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.d9rrpxfuacse5x9r"
+    },
+    {
+      "name": "Entangle",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/tentacles/tentacle-earth-green.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "entangle_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "pqybnxyslest6cuk",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.</p><div class=\"rd__spc-inline-post\"></div><p>A creature in the area when you cast the spell must succeed on a Strength saving throw or be @condition[restrained] by the entangling plants until the spell ends. A creature @condition[restrained] by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p><p>When the spell ends, the conjured plants wilt away.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 20,
+          "width": null,
+          "units": "ft",
+          "type": "square"
+        },
+        "range": {
+          "value": 90,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "str",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 1,
+        "school": "con",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.pqybnxyslest6cuk"
+    },
+    {
+      "name": "Speak with Animals",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/mammals/deer-antlers-blue.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "speak%20with%20animals_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "pfae2a0deosdfjlf",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 10,
+          "units": "minute"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "self",
+          "type": "self"
+        },
+        "range": {
+          "value": 0,
+          "long": null,
+          "units": "self"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "wis",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "wis"
+        },
+        "level": 1,
+        "school": "div",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": true,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!z4RS0c0Vfj5z2Ajw.pfae2a0deosdfjlf"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "MPMM",
+      "hash": "archdruid_mpmm"
+    }
+  },
+  "_id": "z4RS0c0Vfj5z2Ajw",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 1
+      },
+      "int": {
+        "value": 12,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 1
+      },
+      "wis": {
+        "value": 20,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calc": "default",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 154,
+        "min": 0,
+        "max": 154,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "28d8 + 28"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 2,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "walk": 30,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "wis",
+      "prof": 4,
+      "spelldc": 9
+    },
+    "details": {
+      "biography": {
+        "value": "<p>Archdruids watch over the natural wonders of their domains. They seldom interact with folk away from their druid groves and shrines, unless there is a great threat to the natural order or to a nearby community. An archdruid typically has one or more pupils who are @creature[druid||druids], and the archdruid's lair is usually guarded by loyal Beasts and Fey creatures.</p><p>When an archdruid uses their Change Shape action, you may choose the creature they turn into, abiding by the action's restrictions. Or you may roll on the Archdruid Favored Shapes table to determine the form the archdruid adopts.</p><table class=\"w-100 rd__table  stripe-odd-table\"><caption>Archdruid Favored Shapes</caption><thead><tr><th class=\"col-1 text-center\" data-rd-isroller=\"true\">[[/r d8]]</th><th class=\"col-11\" data-rd-isroller=\"false\">Favored Shape</th></tr></thead><tbody><tr><td class=\"col-1 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-11\">@creature[Air elemental]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-11\">@creature[Earth elemental]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-11\">@creature[Fire elemental]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-11\">@creature[Giant crocodile]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"col-11\">@creature[Mammoth]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"col-11\">@creature[Flail snail|MPMM]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"col-11\">@creature[Triceratops]</td></tr><tr><td class=\"col-1 text-center\" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"col-11\">@creature[Water elemental]</td></tr></tbody></table>",
+        "public": ""
+      },
+      "alignment": "any alignment",
+      "race": "",
+      "type": {
+        "value": "humanoid",
+        "subtype": "druid",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "Forest, Mountain, Swamp, Underwater",
+      "cr": 12,
+      "spellLevel": 0,
+      "xp": {
+        "value": 8400
+      },
+      "source": "MPMM",
+      "class": {}
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "druidic"
+        ],
+        "custom": "Druidic plus any two languages"
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Archdruid",
+    "width": 1,
+    "height": 1,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/MPMM/Archdruid.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 0,
+      "brightness": 1,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_key": "!actors!z4RS0c0Vfj5z2Ajw"
+}

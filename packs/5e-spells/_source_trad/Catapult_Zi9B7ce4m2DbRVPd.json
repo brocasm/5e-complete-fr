@@ -1,0 +1,211 @@
+{
+  "_id": "Zi9B7ce4m2DbRVPd",
+  "name": "Catapult",
+  "type": "spell",
+  "img": "icons/weapons/artillery/catapult-simple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        },
+        "context": {
+          "0": ""
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.N28BN41pr0tI4XZu"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Choisissez un objet pesant entre 0.45 et 2.27 kilos à portée qui n'est ni porté ni porté. L'objet vole en ligne droite jusqu'à 27 mètres dans une direction de votre choix avant de tomber au sol, s'arrêtant tôt s'il heurte une surface solide. Si l'objet doit frapper une créature, cette créature doit effectuer un jet de sauvegarde de Dexterity. En cas d'échec du jet de sauvegarde, l'objet frappe la cible et s'arrête de bouger. Lorsque l'objet frappe quelque chose, l'objet et ce qu'il frappe subissent chacun de dégâts contondants.</p><h3>À des niveaux supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une fente de sort de 2e niveau ou supérieur, le poids maximum des objets que vous pouvez cibler avec ce sort augmente de 2.27 kilos, et les dégâts augmentent de , pour chaque niveau de fente au-dessus du 1er.</p><p><strong>Listes de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.3wFSjqwXndAQ8P2i], @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.NX28XQnco4pjOzF6], @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 18,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d8",
+          "bludgeoning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "trs",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667934036930,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.N28BN41pr0tI4XZu",
+    "duplicateSource": null
+  },
+  "_key": "!items!Zi9B7ce4m2DbRVPd"
+}

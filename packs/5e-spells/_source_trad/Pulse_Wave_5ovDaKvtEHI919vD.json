@@ -1,0 +1,129 @@
+{
+  "name": "Pulse Wave",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-explosion-purple.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "EGW",
+      "hash": "pulse%20wave_egw",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.RDbGUphh8eXP28FG"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous créez une pression intense, la libérez dans un cône de 9 mètres, et décidez si la pression attire ou repousse les créatures et les objets. Chaque créature dans ce cône doit effectuer un jet de sauvegarde de Constitution. Une créature subit [[/r 6d6]] dégâts de force en cas d'échec de la sauvegarde, ou la moitié des dégâts en cas de succès. Et chaque créature qui échoue la sauvegarde est soit attirée à 5 mètres de vous, soit repoussée à 5 mètres de vous, selon le choix que vous avez fait pour le sort.</p><p>De plus, les objets non fixés qui sont complètement à l'intérieur du cône sont également attirés ou repoussés de 5 mètres.</p><h3>À des niveaux supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une fente de sort de 4e niveau ou supérieure, les dégâts augmentent de [[/r 1d6]] et la distance attirée ou repoussée augmente de 2 mètres pour chaque niveau de fente au-dessus du 3e.</p><p><strong>Listes de sorts.</strong> Magicien</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "EGW",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 9,
+      "width": null,
+      "units": "m",
+      "type": "cone"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "6d6",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665650504852,
+    "modifiedTime": 1666575991230,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.RDbGUphh8eXP28FG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "5ovDaKvtEHI919vD",
+  "_key": "!items!5ovDaKvtEHI919vD"
+}

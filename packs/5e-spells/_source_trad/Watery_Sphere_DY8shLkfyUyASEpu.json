@@ -1,0 +1,124 @@
+{
+  "name": "Watery Sphere",
+  "type": "spell",
+  "img": "icons/commodities/materials/glass-orb-teal.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "watery%20sphere_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.EtJgbHuCoOXbGlzQ"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous invoquez une sphère d'eau d'un rayon de 1,5 mètres à un point que vous pouvez voir dans la portée. La sphère peut flotter dans l'air, mais pas plus de 3 mètres au-dessus du sol. La sphère reste pendant la durée du sort.</p><p>Toute créature dans l'espace de la sphère doit faire un jet de sauvegarde de Force. En cas de réussite, une créature est éjectée de cet espace vers l'espace inoccupé le plus proche en dehors de celui-ci. Une créature de taille Huge ou plus grande réussit automatiquement le jet de sauvegarde. En cas d'échec, une créature est <strong>restrained</strong> par la sphère et est engloutie par l'eau. À la fin de chacun de ses tours, une cible <strong>restrained</strong> peut répéter le jet de sauvegarde.</p><p>La sphère peut retenir un maximum de quatre créatures de taille Medium ou inférieure ou une créature de taille Large. Si la sphère retient une créature en excès de ces nombres, une créature au hasard qui était déjà retenue par la sphère en tombe et atterrit <strong>prone</strong> dans un espace à moins de 1,5 mètres de celle-ci.</p><p>En tant qu'action, vous pouvez déplacer la sphère jusqu'à 9 mètres en ligne droite. Si elle se déplace au-dessus d'un puits, d'une falaise ou d'une autre chute, elle descend en toute sécurité jusqu'à ce qu'elle flotte à 3 mètres au-dessus du sol. Toute créature retenue par la sphère se déplace avec elle. Vous pouvez faire entrer la sphère en collision avec des créatures, les forçant à faire le jet de sauvegarde, mais pas plus d'une fois par tour.</p><p>Lorsque le sort se termine, la sphère tombe au sol et éteint toutes les flammes normales dans un rayon de 9 mètres autour d'elle. Toute créature retenue par la sphère est renversée dans l'espace où elle tombe.</p><p><strong>Spell Lists.</strong> Druid, Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 3,
+      "width": null,
+      "units": "m",
+      "type": "sphere"
+    },
+    "range": {
+      "value": 27,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": null,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "str",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A droplet of water",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665646646253,
+    "modifiedTime": 1667347593650,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.EtJgbHuCoOXbGlzQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "DY8shLkfyUyASEpu",
+  "_key": "!items!DY8shLkfyUyASEpu"
+}

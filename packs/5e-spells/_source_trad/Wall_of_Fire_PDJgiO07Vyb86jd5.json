@@ -1,0 +1,157 @@
+{
+  "_id": "PDJgiO07Vyb86jd5",
+  "name": "Wall of Fire",
+  "type": "spell",
+  "img": "icons/magic/fire/flame-burning-building.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.X3DrXgxjwI2dvkD6"
+    },
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous créez un mur de feu sur une surface solide à portée. Vous pouvez faire le mur jusqu'à 18 mètres de long, 6 mètres de haut et 0,3 mètres d'épaisseur, ou un mur annulaire jusqu'à 6 mètres de diamètre, 6 mètres de haut et 0,3 mètres d'épaisseur. Le mur est opaque et dure pour la durée.</p><p>Lorsque le mur apparaît, chaque créature dans sa zone doit faire un jet de sauvegarde de Dexterity. En cas d'échec de la sauvegarde, une créature subit 5d8 dégâts de feu, ou la moitié des dégâts en cas de sauvegarde réussie.</p><p>Un côté du mur, sélectionné par vous lorsque vous lancez ce sort, inflige 5d8 dégâts de feu à chaque créature qui termine son tour à moins de 3 mètres de ce côté ou à l'intérieur du mur. Une créature subit les mêmes dégâts lorsqu'elle entre dans le mur pour la première fois sur un tour ou termine son tour là. L'autre côté du mur n'inflige pas de dégâts.</p><p><h3>At Higher Levels</h3> Lorsque vous lancez ce sort en utilisant une fente de sort de 5e niveau ou supérieur, les dégâts augmentent de 1d8 pour chaque niveau de fente au-dessus du 4e.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 285",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 18,
+      "width": null,
+      "units": "m",
+      "type": "wall"
+    },
+    "range": {
+      "value": 37,
+      "long": 0,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "5d8",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A small piece of phosphorous",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664780323471,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Compendium.world.spells-expanded.X3DrXgxjwI2dvkD6",
+    "duplicateSource": null
+  },
+  "_key": "!items!PDJgiO07Vyb86jd5"
+}

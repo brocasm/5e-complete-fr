@@ -1,0 +1,151 @@
+{
+  "name": "Wrath of Nature",
+  "type": "spell",
+  "img": "icons/magic/nature/tree-animated-strike.webp",
+  "effects": [],
+  "flags": {
+    "srd5e": {
+      "page": "spells.html",
+      "source": "XGE",
+      "hash": "wrath%20of%20nature_xge",
+      "propDroppable": "spell"
+    },
+    "core": {
+      "sourceId": "Item.3G5krC0ngfOiW2WZ"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Trees",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Rocks",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous appelez les esprits de la nature pour les inciter à se dresser contre vos ennemis. Choisissez un point que vous pouvez voir à portée. Les esprits font en sorte que les arbres, les rochers et les herbes dans un cube de 18 mètres centré sur ce point deviennent animés jusqu'à la fin du sort.</p><h3>Grasses and Undergrowth</h3><p>Any area of ground in the cube that is covered by grass or undergrowth is <strong>difficult terrain</strong> for your enemies.</p><h3>Trees</h3><p>At the start of each of your turns, each of your enemies within 3 mètres of any tree in the cube must succeed on a Dexterity saving throw or take [[/r 4d6]] slashing damage from whipping branches.</p><h3>Roots and Vines</h3><p>At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength saving throw or become <strong>restrained</strong> until the spell ends. A restrained creature can use an action to make a Strength (<strong>Athletics</strong>) check against your spell save DC, ending the effect on itself on a success.</p><h3>Rocks</h3><p>As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes [[/r 3d8]] nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall <strong>prone</strong>.</p><p><strong>Spell Lists.</strong> Druid, Ranger</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 18,
+      "width": null,
+      "units": "m",
+      "type": "cube"
+    },
+    "range": {
+      "value": 37,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "rsak",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "4d6",
+          "slashing"
+        ],
+        [
+          "3d8",
+          "bludgeoning"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 5,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665648474662,
+    "modifiedTime": 1667359336180,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.3G5krC0ngfOiW2WZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "K6urIKPQdzDMrR4i",
+  "_key": "!items!K6urIKPQdzDMrR4i"
+}

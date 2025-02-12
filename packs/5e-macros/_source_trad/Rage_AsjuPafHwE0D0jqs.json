@@ -1,0 +1,31 @@
+{
+  "name": "Rage",
+  "type": "script",
+  "author": "RoD9QmAeldkRTqNP",
+  "img": "icons/creatures/abilities/mouth-teeth-human.webp",
+  "scope": "global",
+  "command": "game.dnd5e.macros.rollItem(\"Rage\")\n\n// Enable all rage effects\nconst effectNames = [\"Rage\", \"Spirit of the Elk\"];\nconst filter = token.actor.effects.filter(i => effectNames.includes(i.data.label));\nconst updates = filter.map(i => ({_id: i.id, disabled: !i.data.disabled}));\nawait token.actor.updateEmbeddedDocuments(\"ActiveEffect\", updates);\n\n// Wild Surge\nconst surge = actor.items.getName(\"Wild Surge\");\nif(surge.hasMacro()) await surge.executeMacro();\nelse await surge.roll();",
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.sjxXx1F9XqgWITyQ"
+    }
+  },
+  "_id": "AsjuPafHwE0D0jqs",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "RoD9QmAeldkRTqNP": 3
+  },
+  "_key": "!macros!AsjuPafHwE0D0jqs"
+}

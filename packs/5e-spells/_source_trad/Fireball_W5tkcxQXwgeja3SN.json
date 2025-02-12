@@ -1,0 +1,173 @@
+{
+  "_id": "W5tkcxQXwgeja3SN",
+  "name": "Fireball",
+  "type": "spell",
+  "img": "icons/magic/fire/explosion-mushroom-nuke-yellow.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        }
+      },
+      "quickOther": {
+        "context": "",
+        "value": true,
+        "altValue": true
+      },
+      "critRange": {
+        "value": null
+      },
+      "critDamage": {
+        "value": ""
+      },
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickVersatile": {
+        "value": false,
+        "altValue": false
+      },
+      "quickTemplate": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.ztgcdrWPshKRpFd0"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Une traînée lumineuse jaillit de votre doigt pointé vers un point de votre choix dans la portée, puis s'épanouit avec un faible rugissement en une explosion de flammes. Chaque créature dans une sphère de 6 mètres de rayon, centrée sur ce point, doit réussir un jet de sauvegarde de Dextérité. Une cible subit 8d6 dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite.</p>\n<p>Le feu se propage autour des coins. Il enflamme les objets inflammables dans la zone qui ne sont ni portés ni portés.</p>\n<p><h3>At Higher Levels</h3> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>\n<p><strong>Spell Lists.</strong> Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB pg. 241",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 6,
+      "width": null,
+      "units": "m",
+      "type": "sphere"
+    },
+    "range": {
+      "value": 46,
+      "long": 0,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "8d6",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": 0,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A tiny ball of bat guano and sulfur",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "1d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664687557476,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Compendium.world.spells-expanded.ztgcdrWPshKRpFd0",
+    "duplicateSource": null
+  },
+  "_key": "!items!W5tkcxQXwgeja3SN"
+}

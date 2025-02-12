@@ -1,0 +1,195 @@
+{
+  "_id": "A9mEp40B170X6pPu",
+  "name": "Arcane Shot: Piercing Arrow",
+  "type": "feat",
+  "img": "icons/magic/lightning/strike-arrow-spear-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true
+        },
+        "altValue": {
+          "0": true
+        },
+        "context": {
+          "0": ""
+        }
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true,
+          "charge": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.yUeARHCP2dzn9zGU"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous utilisez la magie de Transmutation pour donner à votre flèche une qualité éthérée. Lorsque vous utilisez cette option, vous ne faites pas de jet d'Attaque pour l'Attaque. Au lieu de cela, la flèche se projette en ligne droite, qui est large de 0,3048 mètres et longue de 9,144 mètres, avant de disparaître. La flèche traverse sans dommage les Objets, ignorant la couverture. Chaque créature dans cette ligne doit faire un <strong>jet de sauvegarde de Dexterity</strong>. En cas d'échec, une créature subit des dégâts comme si elle était touchée par la flèche, plus un extra de <strong>1d6 dégâts perforants</strong>. En cas de réussite, une cible subit la moitié des dégâts.</p>\n<p>Les dégâts perforants augmentent à <strong>2d6</strong> lorsque vous atteignez le niveau 18 de cette classe.</p>\n<section class=\"secret\">\n<p><em>Note: Après avoir ajouté cette fonctionnalité à votre personnage, définissez la Consommation de Ressources sur Utilisations d'Item : Arcane Shot.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "special",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "line"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "Failed save - Take damage as if hit by the arrow, plus an extra 1d6 piercing damage",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.arcane-archer.piercing-arrow",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Arcane Archer 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!A9mEp40B170X6pPu"
+}

@@ -1,0 +1,125 @@
+{
+  "_id": "e88Y4uaWvBBGBDyq",
+  "name": "Disintegrate",
+  "type": "spell",
+  "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.spells-expanded.HBHbOGKNVVprSlwn"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Un mince rayon vert jaillit de votre doigt pointé vers une cible que vous pouvez voir à portée. La cible peut être une créature, un objet ou une Création de force magique, comme le mur créé par Wall of Force.</p><p>Une créature ciblée par ce sort doit effectuer un jet de sauvegarde de Dextérité. En cas d'échec, la cible subit [[/r 10d6 + 40]] dégâts de force. Si ces dégâts réduisent la cible à 0 points de vie, elle est désintégrée.</p><p>Une créature désintégrée et tout ce qu'elle porte, à l'exception des objets magiques, sont réduits à un tas de fine poussière grise. La créature ne peut être ramenée à la vie que par un sort de Résurrection véritable ou de souhait.</p><p>Ce sort désintègre automatiquement un objet non magique de taille Grande ou inférieure ou une Création de force magique. Si la cible est un objet de taille Géante ou supérieure ou une Création de force, ce sort désintègre une portion de 3 mètres cubes. Un objet magique n'est pas affecté par ce sort.</p><h3>At Higher Levels</h3><p>Lorsque vous lancez ce sort en utilisant une emprise de sort de 7e niveau ou supérieur, les dégâts augmentent de 3d6 pour chaque niveau d'emprise de sort au-dessus du 6e.</p><p><strong>Spell Lists.</strong> Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 18,
+      "long": 0,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "10d6 + 40",
+          "force"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 6,
+    "school": "trs",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A lodestone and a pinch of dust",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "level",
+      "formula": "3d6"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664785864851,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Compendium.world.spells-expanded.HBHbOGKNVVprSlwn",
+    "duplicateSource": null
+  },
+  "_key": "!items!e88Y4uaWvBBGBDyq"
+}

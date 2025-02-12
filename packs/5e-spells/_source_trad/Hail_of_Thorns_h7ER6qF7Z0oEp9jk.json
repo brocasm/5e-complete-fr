@@ -1,0 +1,122 @@
+{
+  "name": "Hail of Thorns",
+  "type": "spell",
+  "img": "icons/skills/ranged/arrows-flying-salvo-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>La prochaine fois que vous touchez une créature avec une attaque à distance avant la fin du sort, ce sort crée une pluie d'épines qui jaillit de votre arme à distance ou de votre munition. En plus de l'effet normal de l'attaque, la cible de l'attaque et chaque créature à moins de 1,5 mètres d'elle doivent faire un jet de sauvegarde de Dexterité. Une créature subit de dégâts perforants en cas d'échec du jet de sauvegarde, ou la moitié de ces dégâts en cas de réussite.</p><h3>À des Niveaux Supérieurs</h3><p>Si vous lancez ce sort en utilisant une fente de sort de 2e niveau ou supérieur, les dégâts augmentent de pour chaque niveau de fente au-dessus du 1er (jusqu'à un maximum de ).</p><p><strong>Listes de Sorts.</strong> Ranger</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 2,
+      "width": null,
+      "units": "m",
+      "type": "radius"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "spec"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "min(6,@item.level)d10",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 1,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": false,
+      "material": false,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "KEn0n6JsNNAtXIka": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Item.Pg0cB5zuRDPvzzV5"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": 1665640350618,
+    "modifiedTime": 1666258526254,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.Pg0cB5zuRDPvzzV5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "h7ER6qF7Z0oEp9jk",
+  "_key": "!items!h7ER6qF7Z0oEp9jk"
+}

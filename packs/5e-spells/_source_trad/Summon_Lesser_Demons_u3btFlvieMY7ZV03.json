@@ -1,0 +1,183 @@
+{
+  "name": "Summon Lesser Demons",
+  "type": "spell",
+  "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [],
+        "altValue": [],
+        "context": []
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.tevy9Taj9fKPi6Va"
+    }
+  },
+  "_id": "u3btFlvieMY7ZV03",
+  "system": {
+    "description": {
+      "value": "<p>Vous prononcez des paroles impies, invoquant un démon depuis le chaos de l'Abysse. Lancez sur le tableau suivant pour déterminer ce qui apparaît.</p><table style=\"width:98.5222%;height:64px\" border=\"1\"><thead><tr style=\"height:16px\"><td style=\"width:16.6396%;height:16px\"><strong>d6</strong></td><td style=\"width:82.1104%;height:16px\"><strong>Démons invoqués</strong></td></tr></thead><tbody><tr style=\"height:16px\"><td style=\"width:16.6396%;height:16px\">1-2</td><td style=\"width:82.1104%;height:16px\">Deux démons de défi 1 ou inférieur</td></tr><tr style=\"height:16px\"><td style=\"width:16.6396%;height:16px\">3-4</td><td style=\"width:82.1104%;height:16px\">Quatre démons de défi 1/2 ou inférieur</td></tr><tr style=\"height:16px\"><td style=\"width:16.6396%;height:16px\">5-6</td><td style=\"width:82.1104%;height:16px\">Huit démons de défi 1/4 ou inférieur</td></tr></tbody></table><p>Le MJ choisit les démons, tels que les manes ou les dretches, et vous choisissez les espaces inoccupés que vous pouvez voir à portée où ils apparaissent. Un démon invoqué disparaît lorsqu'il tombe à 0 points de vie ou lorsque le sort se termine.</p><p>Les démons sont hostiles à toutes les créatures, y compris vous. Lancez l'initiative pour les démons invoqués en tant que groupe, qui a ses propres tours. Les démons poursuivent et attaquent les non-démons les plus proches de leur mieux.</p><p>Dans le cadre de la prononciation du sort, vous pouvez former un cercle au sol avec le sang utilisé comme composant matériel. Le cercle est assez grand pour englober votre espace. Tant que le sort dure, les démons invoqués ne peuvent pas traverser le cercle ou le blesser, et ils ne peuvent pas cibler quiconque à l'intérieur. Utiliser le composant matériel de cette manière le consomme lorsque le sort se termine.</p><h3>À des niveaux supérieurs</h3><p>Lorsque vous lancez ce sort en utilisant une emplacement de sort de 6e ou 7e niveau, vous invoquez deux fois plus de démons. Si vous le lancez en utilisant une emplacement de sort de 8e ou 9e niveau, vous invoquez trois fois plus de démons.</p><p><strong>Listes de sorts.</strong> Sorcier, Magicien</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": 18,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A vial of blood from a humanoid killed within the past 24 hours",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664782521961,
+    "lastModifiedBy": "UjfixXuqstXNdypa",
+    "compendiumSource": "Item.tevy9Taj9fKPi6Va",
+    "duplicateSource": null
+  },
+  "_key": "!items!u3btFlvieMY7ZV03"
+}

@@ -1,0 +1,143 @@
+{
+  "name": "Hunger of Hadar",
+  "type": "spell",
+  "img": "icons/creatures/unholy/demon-winged-cyclops-drooling.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Cold",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "Acid",
+          "formulaSet": [
+            1
+          ]
+        }
+      ],
+      "autoRollundefined": true
+    },
+    "core": {
+      "sourceId": "Item.2SHab7lSFZueuXKu"
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "_id": "9QIqQoaCHIhURD6m",
+  "system": {
+    "description": {
+      "value": "<p>Vous ouvrez une porte vers l'obscurité entre les étoiles, une région infestée d'horreurs inconnues. Une sphère de noirceur et de froid mordant d'un rayon de 6 mètres apparaît, centrée sur un point à portée et dure pendant toute la durée. Ce vide est rempli d'une cacophonie de doux murmures et de bruits de succion qui peuvent être entendus jusqu'à 9 mètres de distance. Aucune lumière, magique ou autre, ne peut éclairer la zone, et les créatures entièrement dans la zone sont aveuglées.</p><p>Le vide crée une distorsion dans le tissu de l'espace, et la zone est un <strong>terrain difficile</strong>. Toute créature qui commence son tour dans la zone subit [[/r 2d6]] dégâts de froid. Toute créature qui termine son tour dans la zone doit réussir un <strong>jet de sauvegarde de Dexterity</strong> ou subir [[/r 2d6]] dégâts d'acide lorsque des tentacules laiteux et autres mondes se frottent contre elle.</p><p><strong>Spell Lists.</strong> Warlock</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "target": {
+      "value": 6,
+      "width": null,
+      "units": "m",
+      "type": "radius"
+    },
+    "range": {
+      "value": 46,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d6",
+          "cold"
+        ],
+        [
+          "2d6",
+          "acid"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "con",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "A pickled octopus tentacle",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667705474329,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.2SHab7lSFZueuXKu",
+    "duplicateSource": null
+  },
+  "_key": "!items!9QIqQoaCHIhURD6m"
+}

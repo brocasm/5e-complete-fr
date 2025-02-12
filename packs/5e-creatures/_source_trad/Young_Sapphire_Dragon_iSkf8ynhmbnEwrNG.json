@@ -1,0 +1,1486 @@
+{
+  "name": "Young Sapphire Dragon",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/FTD/Young%20Sapphire%20Dragon.webp",
+  "items": [
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blade-tips-triple-steel.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "FTD",
+          "hash": "multiattack_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "79mvhal43zpico4i",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon makes one Bite attack and two Claw attacks.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.79mvhal43zpico4i"
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "FTD",
+          "hash": "bite_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "9hvl5whvl88o9s5s",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]] (+9) to hit, reach 10 ft., one target. <i>Hit:</i> 16 ([[/r 2d10 + 5]]) piercing damage plus 4 ([[/r 1d8]]) thunder damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 10,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d10  + @mod",
+              "piercing"
+            ],
+            [
+              "1d8",
+              "thunder"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.9hvl5whvl88o9s5s"
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blood-slash-foam-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "FTD",
+          "hash": "claw_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "9icd5bssmc8w6lo6",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]] (+9) to hit, reach 5 ft., one target. <i>Hit:</i> 8 ([[/r 1d6 + 5]]) slashing damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d6  + @mod",
+              "slashing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.9icd5bssmc8w6lo6"
+    },
+    {
+      "name": "Debilitating Breath",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mailed-fist.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "FTD",
+          "hash": "debilitating%20breath%20%7b%40recharge%205%7d_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "3gpatxo4lnr36zeg",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon exhales a pulse of high-pitched, nearly inaudible sound in a 30-foot cone. Each creature in that area must make a DC <span class=\"rd__dc\">17</span> Constitution saving throw. On a failed save, the creature takes 33 ([[/r 6d10]]) thunder damage and is @condition[incapacitated] until the end of its next turn. On a successful save, the creature takes half as much damage and isn't @condition[incapacitated].</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": 30,
+          "width": null,
+          "units": "ft",
+          "type": "cone"
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "6d10",
+              "thunder"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "con",
+          "dc": 17,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": 5,
+          "charged": true
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.3gpatxo4lnr36zeg"
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/invertebrates/spider-beetle-runed-green.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "FTD",
+          "hash": "spider%20climb_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "otws7bmwzlqg675d",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.otws7bmwzlqg675d"
+    },
+    {
+      "name": "Tunneler",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/unholy/orb-glowing-yellow-purple.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "FTD",
+          "hash": "tunneler_young%20sapphire%20dragon_ftd_ftd"
+        }
+      },
+      "effects": [],
+      "_id": "izb49kyqt9oirsib",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon can burrow through solid rock at half its burrowing speed and can leave a 10-foot-diameter tunnel in its wake.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "FTD",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.izb49kyqt9oirsib"
+    },
+    {
+      "name": "Dissonant Whispers",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/death/mouth-teeth-fangs-vampire.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "dissonant%20whispers_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "klj6u0tta64iwlfc",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes [[/r 3d6]] psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A @condition[deafened] creature automatically succeeds on the save.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1262\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/r 1d6]] for each slot level above 1st.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 0,
+          "units": "inst"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "int",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "3d6",
+              "psychic"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": null,
+          "scaling": "int"
+        },
+        "level": 1,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": false,
+          "material": false,
+          "ritual": false,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "level",
+          "formula": "1d6"
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.klj6u0tta64iwlfc"
+    },
+    {
+      "name": "Hold Person",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/control/debuff-chains-shackle-movement-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "hold%20person_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "qxb42k6ia5c6jw1j",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be @condition[paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><div class=\"rd__spc-inline-post\"></div></div><div  class=\"rd__b  rd__b--3\"><div  class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1263\" > <span class=\"entry-title-inner\">At Higher Levels.</span></span> <p>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 1,
+          "units": "minute"
+        },
+        "target": {
+          "value": 1,
+          "width": null,
+          "units": "",
+          "type": "creature"
+        },
+        "range": {
+          "value": 60,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "int",
+        "actionType": "save",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "wis",
+          "dc": null,
+          "scaling": "int"
+        },
+        "level": 2,
+        "school": "enc",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": true,
+          "ritual": false,
+          "concentration": true
+        },
+        "materials": {
+          "value": "a small, straight piece of iron",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.qxb42k6ia5c6jw1j"
+    },
+    {
+      "name": "Meld into Stone",
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/magic/earth/lava-stone-fire-eye.webp",
+      "flags": {
+        "srd5e": {
+          "page": "spells.html",
+          "source": "PHB",
+          "hash": "meld%20into%20stone_phb",
+          "propDroppable": "spell"
+        }
+      },
+      "effects": [],
+      "_id": "xn3nlmdr05ctk3o8",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.</p><div class=\"rd__spc-inline-post\"></div><p>While merged with the stone, you can't see what occurs outside it, and any Wisdom (@skill[Perception]) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise can't move.</p><p>Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals [[/r 6d6]] bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall @condition[prone] in an unoccupied space closest to where you first entered.</p></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "PHB",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": 8,
+          "units": "hour"
+        },
+        "target": {
+          "value": 0,
+          "width": null,
+          "units": "touch",
+          "type": "self"
+        },
+        "range": {
+          "value": 0,
+          "long": null,
+          "units": "touch"
+        },
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "per": "day"
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": "int",
+        "actionType": "util",
+        "attackBonus": null,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "6d6",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "int"
+        },
+        "level": 3,
+        "school": "trs",
+        "components": {
+          "value": "",
+          "vocal": true,
+          "somatic": true,
+          "material": false,
+          "ritual": true,
+          "concentration": false
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "innate",
+          "prepared": true
+        },
+        "scaling": {
+          "mode": "none",
+          "formula": ""
+        }
+      },
+      "_key": "!actors.items!iSkf8ynhmbnEwrNG.xn3nlmdr05ctk3o8"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "FTD",
+      "hash": "young%20sapphire%20dragon_ftd"
+    }
+  },
+  "_id": "iSkf8ynhmbnEwrNG",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 21,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 3
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 17,
+        "calc": "natural",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 157,
+        "min": 0,
+        "max": 157,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "15d10 + 75"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 2,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": 20,
+        "climb": 40,
+        "fly": 80,
+        "swim": null,
+        "walk": 40,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 120,
+        "blindsight": 30,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "int",
+      "prof": 4,
+      "spelldc": 7
+    },
+    "details": {
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><p>The thunderous clash of conflict is part of the very nature of sapphire dragons. Militant and territorial, they defend their lairs fiercely, ambushing intruders and plotting assaults against their rivals. The sonic pulse of their breath weapon sows weakness, leaving the victims unable to fight back.</p></div><div class=\"rd__b  rd__b--0\"><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1252\"> <span class=\"entry-title-inner\">Luminous Blue</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>Sapphire dragons' scales and wing membranes show varied shades of blue, ranging from the light tones of a spring sky to the rich, crystalline azure of sapphire gems and compressed glacial ice. In the light, the scales glitter and shine like luminous starbursts. The dragons' psionic nature is evident in the horn and bone structures of their bodies. Their tail barbs and horn tips are all separate pieces, but they float in place, held aloft by psychic energy while the dragons live. These levitating horns and spines shift slightly with the dragons' moods, bobbing in amusement or flaring with anger.</p></div><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1253\"> <span class=\"entry-title-inner\">Art of War</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>The warlike sapphire dragons devise strategies and ambushes based on their ability to maneuver underground. A sapphire dragon often refrains from striking immediately, preferring to assess intruders first in order to devise the most advantageous approach to dealing with them.</p><p>Sapphire dragons watch for signs of Aberrations and other creatures corrupted by the Far Realm. They frequently ally with emerald dragons, drawing on their kin's knowledge of occult phenomena to track the influence of the Far Realm. Armed with that knowledge, sapphire dragons stamp out alien influence before it spreads.</p><p>People who dwell or delve deep beneath the earth can easily find themselves at odds with a sapphire dragon if they cross into the dragon's territory. But sapphire dragons sometimes forge peaceful relationships with rock gnomes or deep gnomes, relying on these folk to help protect the territory surrounding their lairs.</p></div><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1254\"> <span class=\"entry-title-inner\">Martial Hoards</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>Sapphire dragons' favorite prizes are weapons and armor, records of military history and tactics, and magic items that protect against psychic damage or mental intrusion. The centerpiece of a sapphire dragon's hoard is usually a cataloged, orderly collection of war gear, which can contain ancient relics of immense power.</p></div><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1255\"> <span class=\"entry-title-inner\">Creating a Sapphire Dragon</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>Use the Sapphire Dragon Personality Traits and Sapphire Dragon Ideals tables to inspire your portrayal of distinctive sapphire dragon characters.</p><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"1256\"> <span class=\"entry-title-inner\">Sapphire Dragon Personality Traits</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d8]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Trait</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\">I often fixate on specific historical battles or wars and won't rest until my hoard contains that conflict's most significant artifacts.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\">I am constantly aware of a call from beyond this world. I must prepare to answer that call by amassing powerful arms and armor.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\">I secretly look forward to adventurers trying to infiltrate my lair. How else could I try out new defenses?</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\">Give me a storied helmet or scimitar over a pile of gold any day.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"col-10\">No creature can outsmart my defenses—if they do, they obviously cheated.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"col-10\">Any creature that can hold their own against me must teach me how—whether they want to or not.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"col-10\">I cannot resist a game of dragonchess—which, I will have you know, my ancestors probably invented.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"col-10\">The sight of blood makes me queasy.</td></tr></tbody></table></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"1257\"> <span class=\"entry-title-inner\">Sapphire Dragon Ideals</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d6]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Ideal</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\">Solitude. A stranger is just an intruder I haven't dealt with yet. (Neutral)</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\">Preservation. Most creatures cannot be trusted to properly safeguard historically significant artifacts. I can. (Lawful)</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\">Knowledge. The stories surrounding every piece in my collection are as important as the treasures themselves. (Any)</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\">Order. An organized hoard makes me happy—and you don't want to see me unhappy. (Lawful)</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"col-10\">Preparation. Justice and righteousness do not guarantee victory. Planning and tactics do. (Lawful)</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"col-10\">Companionship. Sure, my hoard brings me great joy. But the real treasures are the guests who stop by to see it. (Good)</td></tr></tbody></table></div></div><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1258\"> <span class=\"entry-title-inner\">Sapphire Dragon Adventures</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>The Sapphire Dragon Adventure Hooks table offers suggestions for stories and adventures involving sapphire dragons.</p><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"1259\"> <span class=\"entry-title-inner\">Sapphire Dragon Adventure Hooks</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d8]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Adventure Hook</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\">Posing as an avatar of an evil earth elemental-god, a sapphire dragon serves as general to a fanatical cult—and claims the spoils of the cult's victories.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\">A sapphire dragon is bound by an ancient pact to advise a monarchy on matters of defense—until someone bests the dragon's security measures.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\">A sapphire dragon seeks adventurers to lead into battle against the mind flayers that usurped the dragon's lair.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\">Powerful infernal creatures have opened a portal in the middle of a city square. The key to closing the portal is a mythical holy weapon that happens to be the pride and joy of a sapphire dragon's hoard.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"col-10\">A sapphire dragon threatens to sink a town into the Underdark unless the authorities find and turn over a thief who stole from the dragon.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"col-10\">A village is beset by swarms of giant spiders drawn to the area when a sapphire dragon took up residence nearby. Ridding the village of the spiders means tampering with the dragon's food supply.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"col-10\">A sapphire dragon invites warriors to vie for the honor of studying military tactics under the dragon. The front-runner is an infamous bandit leader who will undoubtedly terrorize the area if they win.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"col-10\">A sapphire dragon's lair is so well protected that its inner defenses have never been tested. The dragon spreads rumors of the treasures within to attract adventurers who can put the traps to the test.</td></tr></tbody></table></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"1260\"> <span class=\"entry-title-inner\">Connected Creatures</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <p>Sapphire dragons are generally solitary creatures. On the rare occasion that one forms nonhostile relationships with other beings, it is almost always to bolster the defenses of the dragon's lair and hoard.</p></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"1261\"> <span class=\"entry-title-inner\">Young Sapphire Dragon Connections</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d6]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Connected Creatures</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\">A young sapphire dragon practices martial skills by regularly using a horn of Valhalla to summon berserker spirits to fight.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\">A young sapphire dragon has found a collection of long-forgotten clay golems and is trying to teach them military tactics.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\">A druid summoned galeb duhr to guard a young sapphire dragon's hoard in exchange for the dragon controlling the giant spider population, but the galeb duhr are causing trouble for local miners.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\">Two Lolth cultists seek a magical relic that attracts giant spiders, but the relic's resting place has become a young sapphire dragon's feeding ground.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"col-10\">A young sapphire dragon and a hobgoblin warlord have become friends. The hobgoblin visits regularly to trade war stories and tactics with the dragon.</td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"col-10\">A kuo-toa archpriest believes a young sapphire dragon is a god named Sliploopdreegoo, and calls on other kuo-toa to worship the dragon.</td></tr></tbody></table></div></div></div><div class=\"rd__b-special rd__b-inset \" data-source=\"FTD\"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"1248\"><h4 class=\"entry-title-inner\">Customizing Dragons</h4><span class=\"ve-flex-vh-center\"> <span class=\"rd__title-link rd__title-link--inset\"><span class=\"help-subtle\" title=\"Fizban’s Treasury of Dragons\">FTD</span> p33</span><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-special-toggle-button=\"true\">[–]</span></span></span><p>You can customize any dragon's stat block to reflect the dragon's unique character. Minor changes such as those below are easy to make and have no impact on a dragon's challenge rating.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1249\"> <span class=\"entry-title-inner\">Languages.</span></span> <p>Most dragons prefer to speak Draconic but learn Common for dealing with allies and minions. But given their high Intelligence and long life span, dragons can easily learn additional languages. You can add languages to a dragon's stat block.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1250\"> <span class=\"entry-title-inner\">Skills.</span></span> <p>Most dragons are proficient in the <span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"perception_phb\" data-vet-is-faux-page=\"true\">Perception</span> and <span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"stealth_phb\" data-vet-is-faux-page=\"true\">Stealth</span> skills, and many dragons have additional skill proficiencies. As with languages, you can customize a dragon's skill list (even doubling their proficiency bonus with certain skills) to reflect particular interests and activities. You can also give a dragon tool proficiencies, particularly if the dragon spends time in Humanoid form.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1251\"> <span class=\"entry-title-inner\">Other Traits and Actions.</span></span> <p>You can borrow traits and actions from other monsters to add unique flavor to a dragon. Consider these examples:</p><div class=\"rd__spc-inline-post\"></div><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Change Shape.</span> You can decide that a dragon acquires this action at a younger age than usual, particularly if you want to feature a dragon in Humanoid form in your campaign:<span class=\"rd__p-cont-indent\">The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).</span><span class=\"rd__p-cont-indent\">In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Flyby.</span> The dragon is an agile flier, quick to fly out of enemies' reach.<span class=\"rd__p-cont-indent\">The dragon doesn't provoke an opportunity attack when it flies out of an enemy's reach.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Mimicry.</span> Impersonating characters or their allies could be a fun trick for a crafty dragon.<span class=\"rd__p-cont-indent\">The dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC <span class=\"rd__dc\">11</span> Wisdom (<span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"insight_phb\" data-vet-is-faux-page=\"true\">Insight</span>) check.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Rejuvenation.</span> You might decide that dragons in your campaign, being an essential part of the Material Plane, are nearly impossible to destroy. A dragon's life essence might be preserved in the egg from which it first emerged, in its hoard, or in a cavernous hall at the center of the world, just as a lich's essence is hidden in a phylactery.<span class=\"rd__p-cont-indent\">If it has an essence-preserving object, a destroyed dragon gains a new body in [[/r 1d10]] days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the object.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Special Senses.</span> Most dragons have <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\">blindsight</span> and <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"darkvision_phb\" data-vet-is-faux-page=\"true\">darkvision</span>. You might upgrade <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\">blindsight</span> to <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"truesight_phb\" data-vet-is-faux-page=\"true\">truesight</span>, or you could give a dragon with a burrowing speed <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"MM\" data-vet-hash=\"tremorsense_mm\" data-vet-is-faux-page=\"true\">tremorsense</span>.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Tunneler.</span> The dragon can burrow through solid rock at half its burrowing speed and leaves a tunnel in its wake.</p></li></ul></div><div class=\"float-clear\"></div></div>",
+        "public": ""
+      },
+      "alignment": "lawful neutral",
+      "race": "",
+      "type": {
+        "value": "dragon",
+        "subtype": "gem",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "",
+      "cr": 9,
+      "spellLevel": 0,
+      "xp": {
+        "value": 5000
+      },
+      "source": "FTD",
+      "class": {}
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "lightning",
+          "thunder"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "draconic"
+        ],
+        "custom": "telepathy 120 ft."
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Young Sapphire Dragon",
+    "width": 2,
+    "height": 2,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/FTD/Young Sapphire Dragon.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 120,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "hexagonalShape": 1,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_key": "!actors!iSkf8ynhmbnEwrNG"
+}

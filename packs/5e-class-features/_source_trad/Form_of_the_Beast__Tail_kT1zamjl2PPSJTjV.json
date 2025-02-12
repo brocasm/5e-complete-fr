@@ -1,0 +1,145 @@
+{
+  "_id": "kT1zamjl2PPSJTjV",
+  "name": "Form of the Beast: Tail",
+  "type": "feat",
+  "img": "icons/creatures/abilities/tail-swipe-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": false
+      },
+      "quickOther": {
+        "value": false,
+        "altValue": true,
+        "context": "Added to AC"
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "value": true,
+        "altValue": false
+      },
+      "quickDamage": {
+        "context": {
+          "0": ""
+        },
+        "value": {
+          "0": true,
+          "1": true
+        },
+        "altValue": {
+          "0": false,
+          "1": true
+        }
+      }
+    },
+    "core": {
+      "sourceId": "Item.MqD5oXIvphkxeDL4"
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous développez une queue épineuse et fouettante, qui inflige <strong>1d8 dégâts perforants</strong> en cas de coup réussi et possède la propriété de portée. Si une créature que vous pouvez voir à 3 mètres de vous vous attaque et réussit son jet d'attaque, vous pouvez utiliser votre réaction pour fouetter votre queue et lancer un <strong>d8</strong>, en ajoutant un bonus à votre <strong>CA</strong> égal au nombre obtenu, ce qui peut potentiellement faire rater l'attaque.</p>\n<section class=\"secret\">\n<p><em>Note: Alt roll this feature to roll the d8 for your AC bonus.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 10,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "str",
+    "actionType": "mwak",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d8 + @mod",
+          "piercing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "1d8",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Path of the Beast 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!kT1zamjl2PPSJTjV"
+}

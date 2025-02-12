@@ -1,0 +1,194 @@
+{
+  "name": "Melf's Minute Meteors",
+  "type": "spell",
+  "img": "icons/magic/fire/orbs-silhouette-sun.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": [
+          true
+        ],
+        "altValue": [
+          true
+        ],
+        "context": {
+          "0": ""
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.ZqyKye0yMrcIh2Xu"
+    }
+  },
+  "_id": "nPCjls7QQG7X8AGi",
+  "system": {
+    "description": {
+      "value": "<p>Vous créez six minuscules météores dans votre espace. Elles flottent dans l'air et vous orbitent pendant la durée du sort. Lorsque vous lancez le sort — et comme action bonus à chacun de vos tours par la suite — vous pouvez dépenser une ou deux des météores, les envoyant en direction d'un point ou de points de votre choix à 37 mètres de vous. Une fois qu'une météorite atteint sa destination ou heurte une surface solide, la météorite explose. Chaque créature à 2 mètres du point où la météorite explose doit faire un jet de sauvegarde de Dexterity. Une créature subit 2d6 dégâts de feu en cas d'échec de sauvegarde, ou la moitié de ces dégâts en cas de réussite.</p>\n<p><em><h3>At Higher Levels</h3></em> Lorsque vous lancez ce sort en utilisant une fente de sort de 4e niveau ou supérieur, le nombre de météores créées augmente de deux pour chaque niveau de fente au-dessus du 3e.</p>\n<p><strong>Spell Lists.</strong> Sorcerer, Wizard</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "XGE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 2,
+      "width": null,
+      "units": "m",
+      "type": "radius"
+    },
+    "range": {
+      "value": 37,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d6",
+          "fire"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "dex",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 3,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": true,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": true
+    },
+    "materials": {
+      "value": "Niter, sulfur, and pine tar formed into a bead",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "none",
+      "formula": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1664779629506,
+    "lastModifiedBy": "KEn0n6JsNNAtXIka",
+    "compendiumSource": "Item.ZqyKye0yMrcIh2Xu",
+    "duplicateSource": null
+  },
+  "_key": "!items!nPCjls7QQG7X8AGi"
+}

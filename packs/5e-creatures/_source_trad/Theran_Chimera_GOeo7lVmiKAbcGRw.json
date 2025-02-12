@@ -1,0 +1,1160 @@
+{
+  "name": "Theran Chimera",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/MOT/Theran%20Chimera.jpg",
+  "items": [
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blade-tips-triple-steel.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MOT",
+          "hash": "multiattack_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "567kt8zmmovb5a82",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The chimera makes three attacks: one with its claws, one with its head, and one with its tail. When its breath weapon is available, it can use the breath in place of its head or its claws.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.567kt8zmmovb5a82"
+    },
+    {
+      "name": "Claws",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/strike-slashes-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MOT",
+          "hash": "claws_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "58v8j93y6xwz1x1p",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]] (+7) to hit, reach 5 ft., one target. <i>Hit:</i> 13 ([[/r 2d8 + 4]]) slashing damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d8  + @mod",
+              "slashing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.58v8j93y6xwz1x1p"
+    },
+    {
+      "name": "Head",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/sword-brandish.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MOT",
+          "hash": "head_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "967csi7zj6aprqnb",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]] (+7) to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/r 1d12 + 4]]) piercing damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d12  + @mod",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.967csi7zj6aprqnb"
+    },
+    {
+      "name": "Tail",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MOT",
+          "hash": "tail_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "47se22ttryvgwyj3",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]] (+7) to hit, reach 10 ft., one target. <i>Hit:</i> 11 ([[/r 2d6 + 4]]) bludgeoning damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 10,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d6  + @mod",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.47se22ttryvgwyj3"
+    },
+    {
+      "name": "Breath Weapon",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mailed-fist.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MOT",
+          "hash": "breath%20weapon%20%7b%40recharge%205%7d_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "gfwpmfqe0lk2qyso",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The chimera exhales fire in a 15-foot cone. Each creature in that area must make a DC <span class=\"rd__dc\">15</span> Dexterity saving throw, taking 32 ([[/r 5d12]]) fire damage on a failed save, or half as much damage on a successful one.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": 15,
+          "width": null,
+          "units": "ft",
+          "type": "cone"
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "5d12",
+              "fire"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "dex",
+          "dc": 15,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": 5,
+          "charged": true
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.gfwpmfqe0lk2qyso"
+    },
+    {
+      "name": "Spell Turning",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/6294414eee44137435f45555/modules/plutonium/media/icon/mighty-force.svg",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "MOT",
+          "hash": "spell%20turning_theran%20chimera_mot_mot"
+        }
+      },
+      "effects": [],
+      "_id": "y74evrz9p29248r1",
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The chimera has advantage on a saving throw against any spell that targets only the chimera (not an area). If the chimera's saving throw is successful and the spell is of 4th level or lower, the spell has no effect on the chimera and instead targets the caster.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MOT",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "_key": "!actors.items!GOeo7lVmiKAbcGRw.y74evrz9p29248r1"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "MOT",
+      "hash": "theran%20chimera_mot"
+    }
+  },
+  "_id": "GOeo7lVmiKAbcGRw",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 4
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 1
+      },
+      "con": {
+        "value": 19,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 4
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": -4
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 15,
+        "calc": "natural",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 95,
+        "min": 0,
+        "max": 95,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "10d10 + 40"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 1,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": 60,
+        "swim": null,
+        "walk": 30,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "",
+      "prof": 3,
+      "spelldc": 8
+    },
+    "details": {
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><p>The term chimera applies to a wide variety of disparate monsters that combine the features of multiple beasts. While many artistic depictions represent chimeras as an amalgam of lion, ram, and dragon, these beasts appear with nearly endless variations.</p><p>The Akroans tell a tale of the first chimera's origin, wherein the god Keranos sought to test Nylea's favorite champion, Renata of Setessa, by creating a beast so deadly that even she would balk at trying to hunt it. When Renata slayed this lion-ram-dragon creation effortlessly, Keranos created another combination of deadlier beasts to challenge her. She slayed that beast, too. Despite countless attempts, Keranos was unable to create a beast that Renata couldn't best.</p><p>Chimeras typically roam the deep wilds of the world, constantly seeking a lair that would perfectly suit one of its heads, but then finding it unsatisfying to two-thirds of its being. As a result, a hungry chimera might appear out of a clear sky to pick off prey nearly anywhere. This threat grows even more significant in regions where magic runs rampant or where portals to the realm of Nyx exist, as unrestrained magical energy often causes more chimeras to appear in a region. As such chaotic magic is inherent to a chimera's being, these monsters often manage to shrug off spells cast against them.</p></div><div class=\"rd__b  rd__b--0\"><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"6220\"> <span class=\"entry-title-inner\">Customizing a Chimera</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>The Theran chimera stat block presents one possible chimera configuration. You may customize these statistics to design your own unique chimera. To do so, simply roll once on one or all of the following tables. Results from the Body Composition table adjust the Theran chimera as described, while results on the Breath Weapons, Head Attacks, and Tail Attacks tables replace those respective actions in the stat block. Theran chimeras always have the Claws action. If the results of multiple tables conflict, chose your preferred result.</p><table class=\"w-100 rd__table  stripe-odd-table\"><caption>Body Composition</caption><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d4]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Attack</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6221\"> <span class=\"entry-title-inner\">Plains Creature.</span></span> <p>The chimera's body is that of a large lowland creature, such as a bull or a bear, and it lacks wings and a flying speed. The chimera is especially resilient, gaining resistance to cold and fire damage.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6222\"> <span class=\"entry-title-inner\">Coast Creature.</span></span> <p>The chimera's body is that of a coastal or aquatic creature, such as a heron or a shark. The chimera gains a swimming speed equal to its walking speed and can breathe air and water.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6223\"> <span class=\"entry-title-inner\">Mountain Creature.</span></span> <p>The chimera's body is that of a mountain-dwelling creature, such as a ram or a dragon. The chimera doesn't provoke an opportunity attack when it flies out of an enemy's reach.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6224\"> <span class=\"entry-title-inner\">Swamp Creature.</span></span> <p>The chimera's body is that of a swamp creature or a cavern-dweller, such as a giant lizard or spider. The chimera gains a climbing speed equal to its walking speed and it can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr></tbody></table><table class=\"w-100 rd__table  stripe-odd-table\"><caption>Head Attacks</caption><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d4]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Attack</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6225\"> <span class=\"entry-title-inner\">Bull Horns.</span></span> <p>If the chimera moves at least 20 feet straight toward a target and then hits it with a head attack on the same turn, the target takes an extra 7 ([[/r 2d6]]) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6226\"> <span class=\"entry-title-inner\">Shark Bite.</span></span> <p>The chimera has advantage on a head attack roll against any creature that doesn't have all its hit points.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6227\"> <span class=\"entry-title-inner\">Unicorn Horn.</span></span> <p>The chimera's head attack is magical and deals an extra 4 ([[/r 1d8]]) radiant damage.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6228\"> <span class=\"entry-title-inner\">Cockatrice Beak.</span></span> <p>A creature hit by the chimera's head attack must succeed on a DC 15 Constitution saving throw or be restrained as it begins to turn to stone. The restrained creature must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr></tbody></table><table class=\"w-100 rd__table  stripe-odd-table\"><caption>Breath Weapons</caption><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d4]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Attack</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6229\"> <span class=\"entry-title-inner\">Lightning Breath (Recharge [[/r 1d6]] (5–6)).</span></span> <p>The chimera exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 36 ([[/r 8d8]]) lightning damage on a failed save, or half as much damage on a successful one.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6230\"> <span class=\"entry-title-inner\">Tidal Wave Breath (Recharge [[/r 1d6]] (5–6)).</span></span> <p>The chimera has an aquatic creature's head that exhales a torrent of acidic water in a 60-foot line that is 5 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw. On failed save, a creature takes 27 ([[/r 5d10]]) acid damage and is knocked prone. On a successful save, it takes half as much damage and isn't knocked prone.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6231\"> <span class=\"entry-title-inner\">Venom Spray (Recharge [[/r 1d6]] (5–6)).</span></span> <p>The chimera has a venomous creature's head that exhales a spray of poison in a 15-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, a target takes 35 ([[/r 10d6]]) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6232\"> <span class=\"entry-title-inner\">Necrotic Breath (Recharge [[/r 1d6]] (5–6)).</span></span> <p>The chimera exhales necrotic energy in a 15-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw, or it takes 31 ([[/r 7d8]]) necrotic damage and is unable to regain hit points until the end of its next turn.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr></tbody></table><table class=\"w-100 rd__table  stripe-odd-table\"><caption>Tail Attacks</caption><thead><tr><th class=\"col-2 text-center\" data-rd-isroller=\"true\">[[/r d4]]</th><th class=\"col-10\" data-rd-isroller=\"false\">Attack</th></tr></thead><tbody><tr><td class=\"col-2 text-center\" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6233\"> <span class=\"entry-title-inner\">Venomous Tail.</span></span> <p>The chimera's tail ends in a snake's head or a stinger, which deals piercing damage instead of bludgeoning damage. In addition, when the chimera hits a creature with its tail, the creature must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6234\"> <span class=\"entry-title-inner\">Perplexing Tail.</span></span> <p>The chimera has an additional head where its tail should be. The chimera loses its tail attack and makes two head attacks when it takes the Multiattack action. Use the Head Attacks table to determine the nature of the new head.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6235\"> <span class=\"entry-title-inner\">Shark Tail.</span></span> <p>The chimera's tail is a large fin. When the chimera hits a creature with its tail, the creature is also pushed up to 10 feet away.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr><tr><td class=\"col-2 text-center\" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"col-10\"><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6236\"> <span class=\"entry-title-inner\">Constricting Tail.</span></span> <p>The chimera's tail can constrict prey. If the chimera hits a creature with its tail, the target is grappled (escape DC 15) if it is Large or smaller. Until this grapple ends, the target is restrained, and the chimera can't use its tail on another target.</p><div class=\"rd__spc-inline-post\"></div></div></td></tr></tbody></table></div></div>",
+        "public": ""
+      },
+      "alignment": "unaligned",
+      "race": "",
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "",
+      "cr": 7,
+      "spellLevel": 0,
+      "xp": {
+        "value": 2900
+      },
+      "source": "MOT",
+      "class": {}
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "draconic"
+        ],
+        "custom": "understands Draconic but can't speak"
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-little-details": {
+        "bloodsplat-colour": "#ff1000"
+      },
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Theran Chimera",
+    "width": 2,
+    "height": 2,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/MOT/Theran Chimera.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "hexagonalShape": 1,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_key": "!actors!GOeo7lVmiKAbcGRw"
+}

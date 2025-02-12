@@ -1,0 +1,242 @@
+{
+  "_id": "gbOZq7WNm4vReku3",
+  "name": "Booming Blade",
+  "type": "spell",
+  "img": "icons/skills/melee/strike-sword-slashing-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "betterRolls5e": {
+      "critRange": {
+        "type": "String",
+        "value": null
+      },
+      "critDamage": {
+        "type": "String",
+        "value": ""
+      },
+      "quickDesc": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickAttack": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickSave": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickDamage": {
+        "type": "Array",
+        "value": {
+          "0": true,
+          "1": true
+        },
+        "altValue": {
+          "0": true,
+          "1": true
+        },
+        "context": {
+          "0": "If the target willingly moves 5 feet or more before the start of your next turn",
+          "1": "Immediate"
+        }
+      },
+      "quickVersatile": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      },
+      "quickProperties": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickCharges": {
+        "type": "Boolean",
+        "value": {
+          "use": true,
+          "resource": true
+        },
+        "altValue": {
+          "use": true,
+          "resource": true
+        }
+      },
+      "quickTemplate": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true,
+        "context": ""
+      },
+      "quickFlavor": {
+        "type": "Boolean",
+        "value": true,
+        "altValue": true
+      },
+      "quickPrompt": {
+        "type": "Boolean",
+        "value": false,
+        "altValue": false
+      }
+    },
+    "core": {
+      "sourceId": "Item.QReAl6oDFNEAEOl4"
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "On Hit",
+          "formulaSet": [
+            0
+          ]
+        },
+        {
+          "label": "On Move",
+          "formulaSet": [
+            1
+          ]
+        }
+      ]
+    },
+    "rest-recovery": {
+      "data": {
+        "recovery": {
+          "enabled": false
+        }
+      }
+    },
+    "rollgroups": {
+      "config": {
+        "groups": [
+          {
+            "label": "Primary",
+            "parts": [
+              0
+            ]
+          },
+          {
+            "label": "Secondary",
+            "parts": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>Vous brandissez l'arme utilisée dans le lancement du sort et effectuez une attaque au corps à corps avec elle contre une créature à moins de 2 mètres de vous. En cas de coup, la cible subit les effets normaux de l'attaque de l'arme, puis est enveloppée d'une énergie tonitruante jusqu'au début de votre prochain tour. Si la cible se déplace volontairement de 2 mètres ou plus avant cela, la cible subit [[/r 1d8]] dégâts de tonnerre, et le sort prend fin.</p><h3>À des niveaux supérieurs</h3><p>Au 5e niveau, l'attaque au corps à corps inflige un supplément de [[/r 1d8]] dégâts de tonnerre à la cible en cas de coup, et les dégâts subis par la cible en se déplaçant augmentent à [[/r 2d8]]. Les deux jets de dégâts augmentent de [[/r 1d8]] au 11e niveau ([[/r 2d8]] et [[/r 3d8]]) et encore au 17e niveau ([[/r 3d8]] et [[/r 4d8]]).</p><p><strong>Listes de sorts.</strong> @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.3wFSjqwXndAQ8P2i], @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.NX28XQnco4pjOzF6], @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.JsbrmCx9VF1Sizn8], @UUID[Compendium.5e-complete-fr.5e-journals.7iH4qANs2gxn0MIs.JournalEntryPage.5YX3k6END6NQWHOB]</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "TCE",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 2,
+      "long": null,
+      "units": "m"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "int",
+    "actionType": "other",
+    "attackBonus": "0",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "0d8",
+          "thunder"
+        ],
+        [
+          "floor(floor(@details.level+1)/6)d8",
+          "thunder"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "level": 0,
+    "school": "evo",
+    "components": {
+      "value": "",
+      "vocal": false,
+      "somatic": true,
+      "material": true,
+      "ritual": false,
+      "concentration": false
+    },
+    "materials": {
+      "value": "A melee weapon worth at least 1 sp",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "scaling": {
+      "mode": "cantrip",
+      "formula": "1d8"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667931438181,
+    "lastModifiedBy": "EHpONhziSoZpUpN3",
+    "compendiumSource": "Item.QReAl6oDFNEAEOl4",
+    "duplicateSource": null
+  },
+  "_key": "!items!gbOZq7WNm4vReku3"
+}

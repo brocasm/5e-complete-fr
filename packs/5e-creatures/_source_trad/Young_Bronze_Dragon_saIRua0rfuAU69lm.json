@@ -1,0 +1,1254 @@
+{
+  "_id": "saIRua0rfuAU69lm",
+  "name": "Young Bronze Dragon",
+  "type": "npc",
+  "img": "https://5etools-mirror-1.github.io/img/bestiary/MM/Bronze%20Dragon.jpg",
+  "items": [
+    {
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blade-tips-triple-steel.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "multiattack_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "5mwms31hzn32sjg1",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon makes three attacks: one with its bite and two with its claws.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.5mwms31hzn32sjg1"
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "bite_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "i2kr41pif18uuf3l",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]] (+8) to hit, reach 10 ft., one target. <i>Hit:</i> 16 ([[/r 2d10 + 5]]) piercing damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 10,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d10  + @mod",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.i2kr41pif18uuf3l"
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/skills/melee/blood-slash-foam-red.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "claw_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "skf3ds8bkisgdb5w",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]] (+8) to hit, reach 5 ft., one target. <i>Hit:</i> 12 ([[/r 2d6 + 5]]) slashing damage.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d6  + @mod",
+              "slashing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "weaponType": "natural",
+        "baseItem": "",
+        "properties": {},
+        "proficient": true,
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.skf3ds8bkisgdb5w"
+    },
+    {
+      "name": "Breath Weapons",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "flags": {
+        "srd5e": {
+          "_tmpItemId": "700ae476-3598-4795-ab1e-c6e0967a58ce",
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "breath%20weapons%20%7b%40recharge%205%7d_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "4kmlrkw14moklvfz",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon uses one of the following breath weapons: Lightning Breath or Repulsion Breath</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": 5,
+          "charged": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.4kmlrkw14moklvfz"
+    },
+    {
+      "name": "Breath Weapons: Lightning Breath",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "flags": {
+        "srd5e": {
+          "_tmpItemId": "bafb863e-d7e9-4500-8e96-eaf3151311fb",
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "breath%20weapons%3a%20lightning%20breath_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "fe0s04pide85bv8t",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC <span class=\"rd__dc\">15</span> Dexterity saving throw, taking 55 ([[/r 10d10]]) lightning damage on a failed save, or half as much damage on a successful one.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": 60,
+          "width": null,
+          "units": "ft",
+          "type": "line"
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "charges",
+          "target": "4kmlrkw14moklvfz",
+          "amount": 1
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "10d10",
+              "lightning"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "dex",
+          "dc": 15,
+          "scaling": "con"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.fe0s04pide85bv8t"
+    },
+    {
+      "name": "Breath Weapons: Repulsion Breath",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "flags": {
+        "srd5e": {
+          "_tmpItemId": "02a6405c-41cf-4f36-8238-c1806bece8a5",
+          "page": "monsterAction",
+          "source": "MM",
+          "hash": "breath%20weapons%3a%20repulsion%20breath_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "3wg1yiodbdnlurmd",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC <span class=\"rd__dc\">15</span> Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": 30,
+          "width": null,
+          "units": "ft",
+          "type": "cone"
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": "charges",
+          "target": "4kmlrkw14moklvfz",
+          "amount": 1
+        },
+        "ability": null,
+        "actionType": "save",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "str",
+          "dc": 15,
+          "scaling": "con"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.3wg1yiodbdnlurmd"
+    },
+    {
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/bazaar/core/icons/environment/creatures/frog-spotted-green.webp",
+      "flags": {
+        "srd5e": {
+          "page": "monsterTrait",
+          "source": "MM",
+          "hash": "amphibious_young%20bronze%20dragon_mm_mm"
+        }
+      },
+      "effects": [],
+      "_id": "lljq3anltgic7mz5",
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<div  class=\"rd__b  rd__b--3\"><p>The dragon can breathe air and water.</p><div class=\"rd__spc-inline-post\"></div></div>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "MM",
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": ""
+        },
+        "consume": {
+          "type": null,
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "other",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "requirements": "",
+        "recharge": {
+          "value": null,
+          "charged": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!saIRua0rfuAU69lm.lljq3anltgic7mz5"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "srd5e": {
+      "page": "bestiary.html",
+      "source": "MM",
+      "hash": "young%20bronze%20dragon_mm"
+    }
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 21,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 5
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 0
+      },
+      "con": {
+        "value": 19,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 4
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 2
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 1
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": 0
+        },
+        "mod": 3
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 18,
+        "calc": "natural",
+        "formula": null,
+        "min": 0,
+        "value": null
+      },
+      "hp": {
+        "value": 142,
+        "min": 0,
+        "max": 142,
+        "temp": null,
+        "tempmax": null,
+        "formula": "15d10 + 60"
+      },
+      "init": {
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "total": 0,
+        "prof": 0
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": 80,
+        "swim": 40,
+        "walk": 40,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 120,
+        "blindsight": 30,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "",
+      "prof": 3,
+      "spelldc": 8
+    },
+    "details": {
+      "biography": {
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Bronze dragons are coastal dwellers that feed primarily on aquatic plants and fish. They take the forms of friendly animals to observe other creatures of interest. They are also fascinated by warfare and eagerly join armies fighting for a just cause.</p><p>A ribbed and fluted crest defines the shape of a bronze dragon's head. Curving horns extend out from the crest, echoed by spines on its lower jaw and chin. To help them swim, bronze dragons have webbed feet and smooth scales. A bronze wyrmling's scales are yellow tinged with green; only as the dragon approaches adulthood does its color deepen to a darker, rich bronze tone. The pupils of a bronze dragon's eyes fade as the dragon ages, until they resemble glowing green orbs.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5303\"> <span class=\"entry-title-inner\">Dragons of the Coast.</span></span> <p>Bronze dragons love to watch ships traveling up and down the coastlines near their lairs, sometimes taking the forms of dolphins or seagulls to inspect those ships and their crews more closely. A daring bronze dragon might slip aboard a ship in the guise of a bird or rat, inspecting the hold for treasure. If the dragon finds a worthy addition to its hoard, it barters with the ship's captain for the item.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5304\"> <span class=\"entry-title-inner\">War Machines.</span></span> <p>Bronze dragons actively oppose tyranny, and many bronze dragons yearn to test their mettle by putting their size and strength to good use. When a conflict unfolds near its lair, a bronze dragon ascertains the underlying cause, then offers its services to any side that fights for good. Once a bronze dragon commits to a cause, it remains a staunch ally.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5305\"> <span class=\"entry-title-inner\">Well-Organized Wealth.</span></span> <p> Bronze dragons loot sunken ships and also collect colorful coral and pearls from the reefs and seabeds near their lairs. When a bronze dragon pledges to help an army wage war against tyranny, it asks for nominal payment. If such a request is beyond its allies' means, it might settle for a collection of old books on military history or a ceremonial item commemorating the alliance. A bronze dragon might also lay claim to a treasure held by the enemy that it feels would be safer under its protection.</p><div class=\"rd__spc-inline-post\"></div></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5306\"> <span class=\"entry-title-inner\">A Bronze Dragon's Lair.</span></span> <p>A bronze dragon lairs in coastal caves. It might salvage a wrecked ship, reconstruct it within the confines of its lair, and use it as a treasure vault or nest for its eggs.</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"5307\"> <span class=\"entry-title-inner\">Metallic Dragons</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h2> <p>Metallic dragons seek to preserve and protect, viewing themselves as one powerful race among the many races that have a place in the world.</p><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5308\"> <span class=\"entry-title-inner\">Noble Curiosity</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <p>Metallic dragons covet treasure as do their evil chromatic kin, but they aren't driven as much by greed in their pursuit of wealth. Rather, metallic dragons are driven to investigate and collect, taking unclaimed relics and storing them in their lairs. A metallic dragon's treasure hoard is filled with items that reflect its persona, tell its history, and preserve its memories. Metallic dragons also seek to protect other creatures from dangerous magic. As such, powerful magic items and even evil artifacts are sometimes secreted away in a metallic dragon's hoard.</p><p>A metallic dragon can be persuaded to part with an item in its hoard for the greater good. However, another creature's need for or right to the item is often unclear from the dragon's point of view. A metallic dragon must be bribed or otherwise convinced to part with the item.</p></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5309\"> <span class=\"entry-title-inner\">Solitary Shapeshifters</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <p>At some point in their long lives, metallic dragons gain the magical ability to assume the forms of humanoids and beasts. When a dragon learns how to disguise itself, it might immerse itself in other cultures for a time. Some dragons are too shy or paranoid to stray far from their lairs and their treasure hoards, but bolder dragons love to wander city streets in humanoid form, taking in the local culture and cuisine, and amusing themselves by observing how the smaller races live.</p><p>Some metallic dragons prefer to stay as far away from civilization as possible so as to not attract enemies. However, this means that they are often far out of touch with current events.</p></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5310\"> <span class=\"entry-title-inner\">The Persistence of Memory</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <p>Metallic dragons have long memories, and they form opinions of humanoids based on previous contact with related humanoids. Good dragons can recognize humanoid bloodlines by smell, sniffing out each person they meet and remembering any relatives they have come into contact with over the years. A gold dragon might never suspect duplicity from a cunning villain, assuming that the villain is of the same mind and heart as a good and virtuous grandmother. On the other hand, the dragon might resent a noble paladin whose ancestor stole a silver statue from the dragon's hoard three centuries before.</p></div><div class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5311\"> <span class=\"entry-title-inner\">King of Good Dragons</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-toggle-button=\"true\">[–]</span></span></h3> <p>The chief deity of the metallic dragons is Bahamut, the Platinum Dragon. He dwells in the Seven Heavens of Mount Celestia, but often wanders the Material Plane in the magical guise of a venerable human male in peasant robes. In this form, he is usually accompanied by seven golden canaries-actually seven ancient gold dragons in polymorphed form.</p><p>Bahamut seldom interferes in the affairs of mortal creatures, though he makes exceptions to help thwart the machinations of Tiamat the Dragon Queen and her evil brood. Good-aligned clerics and paladins sometimes worship Bahamut for his dedication to justice and protection. As a lesser god, he has the power to grant divine spells.</p></div></div><p>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.</p><p>Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.</p><p>Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.</p><p>True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.</p><p>Dragon Age Categories</p><table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"col-4\" data-rd-isroller=\"false\">Category</th><th class=\"col-4\" data-rd-isroller=\"false\">Size</th><th class=\"col-4\" data-rd-isroller=\"false\">Age Range</th></tr></thead><tbody><tr><td class=\"col-4\">Wyrmling</td><td class=\"col-4\">Medium</td><td class=\"col-4\">5 years or less</td></tr><tr><td class=\"col-4\">Young</td><td class=\"col-4\">Large</td><td class=\"col-4\">6–100 years</td></tr><tr><td class=\"col-4\">Adult</td><td class=\"col-4\">Huge</td><td class=\"col-4\">101–800 years</td></tr><tr><td class=\"col-4\">Ancient</td><td class=\"col-4\">Gargantuan</td><td class=\"col-4\">801 years or more</td></tr></tbody></table><div class=\"rd__b-special rd__b-inset \" data-source=\"FTD\"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"5298\"><h4 class=\"entry-title-inner\">Customizing Dragons</h4><span class=\"ve-flex-vh-center\"> <span class=\"rd__title-link rd__title-link--inset\"><span class=\"help-subtle\" title=\"Fizban’s Treasury of Dragons\">FTD</span> p33</span><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-special-toggle-button=\"true\">[–]</span></span></span><p>You can customize any dragon's stat block to reflect the dragon's unique character. Minor changes such as those below are easy to make and have no impact on a dragon's challenge rating.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5299\"> <span class=\"entry-title-inner\">Languages.</span></span> <p>Most dragons prefer to speak Draconic but learn Common for dealing with allies and minions. But given their high Intelligence and long life span, dragons can easily learn additional languages. You can add languages to a dragon's stat block.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5300\"> <span class=\"entry-title-inner\">Skills.</span></span> <p>Most dragons are proficient in the <span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"perception_phb\" data-vet-is-faux-page=\"true\">Perception</span> and <span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"stealth_phb\" data-vet-is-faux-page=\"true\">Stealth</span> skills, and many dragons have additional skill proficiencies. As with languages, you can customize a dragon's skill list (even doubling their proficiency bonus with certain skills) to reflect particular interests and activities. You can also give a dragon tool proficiencies, particularly if the dragon spends time in Humanoid form.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5301\"> <span class=\"entry-title-inner\">Spells.</span></span> <p><i class=\"ve-muted\">See the \"Variant: Dragons as Innate Spellcasters\" inset(s), below.</i></p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5302\"> <span class=\"entry-title-inner\">Other Traits and Actions.</span></span> <p>You can borrow traits and actions from other monsters to add unique flavor to a dragon. Consider these examples:</p><div class=\"rd__spc-inline-post\"></div><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Change Shape.</span> You can decide that a dragon acquires this action at a younger age than usual, particularly if you want to feature a dragon in Humanoid form in your campaign:<span class=\"rd__p-cont-indent\">The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).</span><span class=\"rd__p-cont-indent\">In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Flyby.</span> The dragon is an agile flier, quick to fly out of enemies' reach.<span class=\"rd__p-cont-indent\">The dragon doesn't provoke an opportunity attack when it flies out of an enemy's reach.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Mimicry.</span> Impersonating characters or their allies could be a fun trick for a crafty dragon.<span class=\"rd__p-cont-indent\">The dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC <span class=\"rd__dc\">11</span> Wisdom (<span class=\"help help--hover\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"insight_phb\" data-vet-is-faux-page=\"true\">Insight</span>) check.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Rejuvenation.</span> You might decide that dragons in your campaign, being an essential part of the Material Plane, are nearly impossible to destroy. A dragon's life essence might be preserved in the egg from which it first emerged, in its hoard, or in a cavernous hall at the center of the world, just as a lich's essence is hidden in a phylactery.<span class=\"rd__p-cont-indent\">If it has an essence-preserving object, a destroyed dragon gains a new body in [[/r 1d10]] days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the object.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">Special Senses.</span> Most dragons have <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\">blindsight</span> and <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"darkvision_phb\" data-vet-is-faux-page=\"true\">darkvision</span>. You might upgrade <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\">blindsight</span> to <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"truesight_phb\" data-vet-is-faux-page=\"true\">truesight</span>, or you could give a dragon with a burrowing speed <span class=\"help help--hover\" data-vet-page=\"sense\" data-vet-source=\"MM\" data-vet-hash=\"tremorsense_mm\" data-vet-is-faux-page=\"true\">tremorsense</span>.</p></li></ul></div><div class=\"float-clear\"></div></div><div class=\"rd__b-special rd__b-inset\" data-source=\"FTD\"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"5296\"><h4 class=\"entry-title-inner\">Variant: Dragons as Innate Spellcasters</h4><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-special-toggle-button=\"true\">[–]</span></span></span><p>This dragon can innately cast three spells, once per day each, requiring no material components. Each spell's level can be no higher than 2nd. The dragon's spell save DC is DC <span class=\"rd__dc\">14</span>, and it has [[/r 1d20+6]] (+6) to hit with spell attacks.</p><p>A suggested spell list is shown below, but you can also choose spells to reflect the dragon's character. A dragon who innately casts <a href=\"https://5etools-mirror-1.github.io/spells.html#blankhash,flstclass:druid=1\">druid</a> spells feels different from one who casts <a href=\"https://5etools-mirror-1.github.io/spells.html#blankhash,flstclass:warlock=1\">warlock</a> spells. You can also give a dragon spells of a higher level than this rule allows, but such a tweak might increase the dragon's challenge rating—especially if those spells deal damage or impose conditions on targets.</p><ul class=\"rd__list\"><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#beast%20sense_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"beast%20sense_phb\">beast sense</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#detect%20thoughts_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"detect%20thoughts_phb\">detect thoughts</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#speak%20with%20animals_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"speak%20with%20animals_phb\">speak with animals</a></li></ul><b>Source:</b> <i title=\"Fizban’s Treasury of Dragons\">FTD</i></div><div class=\"rd__b-special rd__b-inset\"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"5297\"><h4 class=\"entry-title-inner\">Variant: Dragons as Innate Spellcasters</h4><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable\" data-rd-h-special-toggle-button=\"true\">[–]</span></span></span><p>Dragons are innately magical creatures that can master a few spells as they age, using this variant.</p><p>A young or older dragon can innately cast a number of spells equal to its Charisma modifier. Each spell can be cast once per day, requiring no material components, and the spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Charisma bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Charisma modifier.</p><p><i class=\"ve-muted\">This dragon can innately cast three spells, once per day each, requiring no material components. Each spell's level can be no higher than 2nd. The dragon's spell save DC is DC <span class=\"rd__dc\">14</span>, and it has [[/r 1d20+6]] (+6) to hit with spell attacks. See the <a href=\"https://5etools-mirror-1.github.io/spells.html#blankhash,flstlevel:0=1~1=1~2=1\">spell page</a> for a list of spells the dragon is capable of casting. A selection of examples are shown below:</i></p><ul class=\"rd__list rd__list-italic\"><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#gust%20of%20wind_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"gust%20of%20wind_phb\">gust of wind</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#misty%20step_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"misty%20step_phb\">misty step</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#locate%20object_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"locate%20object_phb\">locate object</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#blur_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"blur_phb\">blur</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#witch%20bolt_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"witch%20bolt_phb\">witch bolt</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#thunderwave_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"thunderwave_phb\">thunderwave</a></li><li class=\"rd__li \"><a href=\"https://5etools-mirror-1.github.io/spells.html#shield_phb\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"shield_phb\">shield</a></li></ul></div>",
+        "public": ""
+      },
+      "alignment": "lawful good",
+      "race": "",
+      "type": {
+        "value": "dragon",
+        "subtype": "",
+        "swarm": null,
+        "custom": ""
+      },
+      "environment": "Coastal",
+      "cr": 8,
+      "spellLevel": 0,
+      "xp": {
+        "value": 3900
+      },
+      "source": "MM",
+      "class": {},
+      "gender": "",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "eyes": "",
+      "skin": "",
+      "hair": "",
+      "notes1name": "",
+      "notes2name": "",
+      "notes3name": "",
+      "notes4name": ""
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "lightning"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "draconic"
+        ],
+        "custom": ""
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": 0,
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell2": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell3": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell4": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell5": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell6": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell7": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell8": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "spell9": {
+        "value": 0,
+        "override": null,
+        "max": 0
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20
+      }
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "prototypeToken": {
+    "disposition": -1,
+    "displayBars": 40,
+    "flags": {
+      "monks-little-details": {
+        "bloodsplat-colour": "#4f0000"
+      },
+      "monks-enhanced-journal": {
+        "chatbubble": ""
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "displayName": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "name": "Young Bronze Dragon",
+    "width": 2,
+    "height": 2,
+    "rotation": 0,
+    "actorLink": false,
+    "randomImg": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": "https://assets.forge-vtt.com/6294414eee44137435f45555/assets/srd5e/img/MM/Young Bronze Dragon.png",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 120,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "hexagonalShape": 1,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.0.3",
+    "coreVersion": "12.331",
+    "createdTime": null,
+    "modifiedTime": 1667159666506,
+    "lastModifiedBy": "7VbuHmckfo5rIhG3",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!actors!saIRua0rfuAU69lm"
+}
