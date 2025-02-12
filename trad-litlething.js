@@ -22,12 +22,6 @@ async function trad_value(textToTranslate) {
   }
 
 
-
-
-
-
-
-
 const packsDir = path.join(__dirname, 'packs'); // Dossier racine des packs
 const spellsDir = path.join(packsDir,'5e-spells', "_source");
 
