@@ -48,19 +48,38 @@ async function processAllSourceDirs(packsDir) {
   const allFiles = [];
   for (const subDir of subDirs) {
       const sourceDir = path.join(packsDir, subDir, '_source');
-      const targetDir = path.join(packsDir, subDir, '_source_trad');
+      const sourceTradDir = path.join(packsDir, subDir, '_source_trad');
+      const to_tradDir = path.join(packsDir,subDir,'_source_to_trad');
 
-      if (fs.existsSync(sourceDir)) {
-          
-          if (fs.existsSync(targetDir)) {
-            fs.rmSync(sourceDir, { recursive: true });
-            console.log(`Supprimé le dossier __source : ${sourceDir}`);
-            fs.renameSync(targetDir, sourceDir);
-             
-          }
-
-         
+      if (!fs.existsSync(sourceDir)) {
+        //Création du dossier _source s'il n'existe pas
+        fs.mkdirSync(sourceDir, { recursive: true });
       }
+
+      if(fs.existsSync(sourceTradDir)){
+        // Lire tous les fichiers dans le dossier _source_trad      
+        const files = fs.readdirSync(sourceTradDir);   
+        files.forEach(file => {
+          const sourceFilePath = path.join(sourceTradDir, file);
+          const destinationFilePath = path.join(sourceDir, file);
+          
+          try {
+            // Déplacer ou remplacer le fichier dans le dossier _source
+            fs.renameSync(sourceFilePath, destinationFilePath);
+            console.log(`✅ Déplacé ${sourceFilePath} vers ${destinationFilePath}`);
+          } catch (error) {
+            console.error(`❌ Erreur sur ${sourceFilePath}:`, error.message);
+          }
+        });
+
+        console.log('Tous les fichiers ont été déplacés avec succès. ', subDir);
+        fs.rmSync(sourceTradDir, { recursive: true, force: true });
+        fs.rmSync(to_tradDir, { recursive: true, force: true });
+      }else{
+        console.log(`⏩ SKIP Pas de dossier _source_trad: `, subDir);
+      }
+      
+        
   }
   
 }
