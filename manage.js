@@ -45,7 +45,7 @@ async function unpackFolders() {
     const command = `fvtt package unpack ${folder}`;
     try {
       await runCommand(command);
-      console.log(`Successfully unpacked ${folder}`);
+      console.log(`Successfully unpacked ${folder}`);      
     } catch (error) {
       console.error(`Failed to unpack ${folder}: ${error}`);
     }
@@ -111,6 +111,7 @@ async function packFolders() {
       try {
         await runCommand(command);
         console.log(`Successfully packed ${folder}`);
+        folder.rmSync({ recursive: true, force: true })
       } catch (error) {
         console.error(`Failed to pack ${folder}: ${error}`);
       }
