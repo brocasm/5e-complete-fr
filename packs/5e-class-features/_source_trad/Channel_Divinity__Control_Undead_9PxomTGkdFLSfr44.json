@@ -1,0 +1,112 @@
+{
+  "name": "Channel Divinity: Control Undead",
+  "type": "feat",
+  "img": "icons/magic/death/undead-skeleton-worn-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": []
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "core": {
+      "sourceId": "Item.37abGPUMOjJA3e1U"
+    }
+  },
+  "_id": "9PxomTGkdFLSfr44",
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "UjfixXuqstXNdypa": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>As an action, you target one <strong>undead</strong> creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is <strong>immune</strong> to this effect.</p>\n<section class=\"secret\">\n<p><em>Note: When you add this feature to your character, set Resource Consumption to Item Uses: Channel Divinity.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "DMG",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "save",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "requirements": "Oathbreaker 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!9PxomTGkdFLSfr44"
+}

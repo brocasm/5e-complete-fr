@@ -1,0 +1,139 @@
+{
+  "_id": "4cH2arviqIuNhl6g",
+  "name": "Cutting Words",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-impact-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.class-features-expanded.5zPmHPQUne7RDfaU"
+    },
+    "betterRolls5e": {
+      "quickDesc": {
+        "value": true,
+        "altValue": true
+      },
+      "quickProperties": {
+        "value": true,
+        "altValue": true
+      },
+      "quickOther": {
+        "value": true,
+        "altValue": true
+      },
+      "quickFlavor": {
+        "value": true,
+        "altValue": true
+      }
+    },
+    "mre-dnd5e": {
+      "formulaGroups": [
+        {
+          "label": "Primary",
+          "formulaSet": [
+            0
+          ]
+        }
+      ]
+    },
+    "magicitems": {
+      "enabled": false,
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "reaches 0 charges: it crumbles into ashes and is destroyed.",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "LCw1mxC8S2Al3dWA": 3
+  },
+  "system": {
+    "description": {
+      "value": "<p>En réaction, vous soustrayez le résultat de votre dé d'Inspiration Bardique du jet d'attaque, du jet de caractéristique ou du jet de dégâts d'un ennemi.</p>\n<details>\n<summary style=\"padding-bottom:8px\"><strong>Full Description</strong></summary>\n<blockquote style=\"font-style:normal\">\n<p>À partir du 3ème niveau, vous apprenez à utiliser votre esprit pour distraire, confondre et, de manière générale, saper la confiance et la compétence des autres.</p>\n<p>Lorsque une créature que vous pouvez voir dans un rayon de 60 pieds de vous fait un <strong>attack roll</strong>, un <strong>ability check</strong>, ou un <strong>damage roll</strong>, vous pouvez utiliser votre réaction pour dépenser une de vos utilisations de @Compendium[5e-complete-fr.5e-class-features.7Q7X8BnKOsk2SXSt]{Bardic Inspiration}, en lançant un dé d'Inspiration Bardique et en soustrayant le nombre obtenu du jet de la créature.</p>\n<p>Vous pouvez choisir d'utiliser cette fonctionnalité après que la créature a fait son jet, mais avant que le MJ ne détermine si le jet d'attaque ou le jet de caractéristique réussit ou échoue, ou avant que la créature ne cause ses dégâts. La créature est <strong>immune</strong> si elle ne peut pas vous entendre ou si elle est immunisée contre le fait d'être <strong>charmed</strong>.</p>\n</blockquote>\n</details>\n<section class=\"secret\">\n<p><em>Note: Lorsque vous ajoutez cette fonctionnalité à votre personnage, définissez Resource Consumption sur Item Uses: Bardic Inspiration.</em></p>\n</section>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "PHB",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "Target must be able to hear you and not be immune to being Charmed."
+    },
+    "duration": {
+      "value": null,
+      "units": "inst"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 0,
+      "max": "0",
+      "per": "",
+      "type": ""
+    },
+    "consume": {
+      "type": "charges",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "other",
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": null
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.bard.inspiration-die",
+          ""
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell",
+      "value": ""
+    },
+    "requirements": "College of Lore 3",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "_key": "!items!4cH2arviqIuNhl6g"
+}
